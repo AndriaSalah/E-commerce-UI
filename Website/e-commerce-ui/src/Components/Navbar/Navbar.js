@@ -1,18 +1,16 @@
 import logo from '../../Assets/Logo.png'
-import MidSection from "./MidSection/MidSection";
-import AccountSection from "./AccountSection/AccountSection";
+import NavLinks from "./NavLinks/NavLinks";
 import "./Navbar.css"
-import {Link} from "react-router-dom";
+import EndSection from "./Search_Account/EndSection";
+
+
 const Navbar = ()=>{
 
     return(
         <nav>
-            <Link to="/">
-                <img id={"logo"} src={logo}  alt={"Logo"}/>
-            </Link>
-            <MidSection></MidSection>
-            <input type={"search"}/>
-            <AccountSection></AccountSection>
+            <img id={"logo"} src={logo}  alt={"Logo"}/>
+            <NavLinks></NavLinks>
+            <EndSection></EndSection>
         </nav>
     );
 

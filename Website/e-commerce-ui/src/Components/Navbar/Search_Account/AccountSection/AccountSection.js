@@ -1,5 +1,6 @@
-import FavIcon from "../../../Assets/Icons/Favourites.png"
-import Cart from "../../../Assets/Icons/Cart.png"
+import FavIcon from "../../../../Assets/Icons/Favourites.png"
+import Cart from "../../../../Assets/Icons/Cart.png"
+import profile from "../../../../Assets/Icons/icon.png"
 import "./AccountSection.css"
 const AccountSection = () => {
 
@@ -12,7 +13,7 @@ const AccountSection = () => {
                 <img src={Cart} alt={"Cart"}/>
             </button>
             <div className={"profile"}>
-                <img/>
+                <img src={profile} alt={profile} />
                 <p>Name</p>
             </div>
         </div>
