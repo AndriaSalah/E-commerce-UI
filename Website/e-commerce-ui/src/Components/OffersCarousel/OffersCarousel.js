@@ -11,6 +11,7 @@ const OffersCarousel = ()=>{
             "--swiper-pagination-color": "#002482",
             "--swiper-pagination-bullet-size": "10px",
             "--swiper-pagination-bullet-horizontal-gap": "4px"
+        //margin 2rem
         }}
             modules={[Pagination]}
             grabCursor={true}
