@@ -1,0 +1,27 @@
+:root{
+    --bottom-offset: 10%;
+    --left-offset:10%;
+}
+
+.swiper-pagination-bullet-active{
+    width: 13px;
+    height: 13px;
+}
+
+.OfferImg{
+    object-fit: cover;
+    width: 100%;
+}
+
+.OffersExplore{
+
+    position: absolute;
+    outline: solid black 2px;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    right: 18%;
+    bottom:24% ;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+}
