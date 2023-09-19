@@ -4,10 +4,11 @@ import image2 from '../../Assets/TrendingNow/img2.png'
 import image3 from '../../Assets/TrendingNow/img3.png'
 import image4 from '../../Assets/TrendingNow/img4.png'
 import image5 from '../../Assets/TrendingNow/img5.png'
+import {faStar} from "@fortawesome/free-solid-svg-icons";
 import 'swiper/css';
-// import 'swiper/css/scrollbar';
 import './TrendingNow.css'
 import {Scrollbar} from "swiper/modules";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const TrendingItemsData = [
     {
         ItemName:"Women's Denim Jacket",
@@ -65,8 +66,6 @@ const TrendingNow = ()=>{
                     spaceBetween={50}
                     slidesPerView={4}
                     grabCursor={true}
-                    // pagination={{ clickable: true , type:"bullets" }}
-                    // scrollbar={{ draggable: true , snapOnRelease:true , dragSize:1000}}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
             >
@@ -78,7 +77,9 @@ const TrendingNow = ()=>{
                             <h3>{item.ItemName}</h3>
                             <div id={"Section1"}>
                                 <h4>{item.BrandName}</h4>
-                                <p>{item.score}</p>
+                                <p>{item.score }
+                                    <FontAwesomeIcon id={"icon"} icon={faStar} />
+                                </p>
                             </div>
                             <div id={'Section2'}>
                                 <h3>{item.OfferPrice}</h3>
