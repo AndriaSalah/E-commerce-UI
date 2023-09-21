@@ -1,4 +1,4 @@
-import NavButton from "../UI/NavButton";
+import NavButton from "../../Ui/NavButton/NavButton";
 import './NavLinks.css'
 
 const NavLinks = () =>{

@@ -7,7 +7,6 @@ import image5 from '../../Assets/TrendingNow/img5.png'
 import {faStar} from "@fortawesome/free-solid-svg-icons";
 import 'swiper/css';
 import './TrendingNow.css'
-import {Scrollbar} from "swiper/modules";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 const TrendingItemsData = [
     {
@@ -62,7 +61,7 @@ const TrendingNow = ()=>{
         <div className={'TrendingItems'}>
             <h2>Trending Now</h2>
             <Swiper
-                    modules={[Scrollbar]}
+
                     spaceBetween={50}
                     slidesPerView={4}
                     grabCursor={true}

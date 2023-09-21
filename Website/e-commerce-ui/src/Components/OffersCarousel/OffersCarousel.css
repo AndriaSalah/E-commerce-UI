@@ -14,14 +14,12 @@
 }
 
 .OffersExplore{
-
+    /*color: black!important;*/
     position: absolute;
-    outline: solid black 2px;
-    border-radius: 5px;
+    /*outline: solid black 1px !important;*/
+    /*border-radius: 5px;*/
     padding: 0.5rem 2rem;
-    text-align: center;
     right: 18%;
     bottom:24% ;
-    font-family: 'Libre Baskerville', serif;
     font-size: 18px;
 }

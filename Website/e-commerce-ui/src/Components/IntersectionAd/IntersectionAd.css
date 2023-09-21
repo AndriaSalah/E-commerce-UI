@@ -1,0 +1,32 @@
+.IntersectionAd{
+    display: flex;
+    width: 96.7%;
+    height: 727px;
+    background-image:url("../../Assets/IntersectionAd/bannerImg.png") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 1.5rem 1.5rem 2rem;
+    font-family: 'Libre Baskerville', serif;
+    border-radius: 10px;
+
+}
+.IntersectionAd .Dim__adData{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.IntersectionAd .Dim__adData h2{
+    color: #FFFFFF;
+    font-size: 68px;
+}
+
+.IntersectionAd .Dim__adData h4{
+    color: #FFFFFF;
+    font-size: 34px;
+}
