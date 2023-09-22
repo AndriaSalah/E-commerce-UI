@@ -3,7 +3,9 @@
     margin-left: 2rem;
     font-family: 'Libre Baskerville', serif;
 }
-
+.TrendingItems .swiper{
+    padding: 1rem !important;
+}
 .TrendingItems h2{
     font-size: 28px;
     margin-bottom: 2rem;
@@ -11,14 +13,19 @@
 
 .TrendingItem{
     display: flex;
+    width: fit-content;
     flex-direction: column;
+    box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
+    -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
+    -moz-box-shadow: 0 0 10px 1px rgba(59, 58, 58, 0.78);
+    border-radius: 10px;
 }
-
 .TrendingItem img{
     aspect-ratio: 1/1;
     height: 220px ;
     width: 280px;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .TrendingItem #Section1{
@@ -27,6 +34,7 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+    margin-left: 1rem;
 }
 
 .TrendingItem #Section1 h4 {
@@ -45,11 +53,15 @@
     width: 100%;
 }
 
-.TrendingItem #Section2 h3, .TrendingItem #Section2 h4, .TrendingItem #Section2 p{
+.TrendingItem #Section2 #priceData{
     margin-top: 0;
-    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .TrendingItem #Section2 p{
     color: #0A8200;
+}
+
+.TrendingItem #itemName ,.TrendingItem #Section1,.TrendingItem #Section2 #priceData {
+    margin-left: 1rem;
 }

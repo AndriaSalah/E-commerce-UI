@@ -10,17 +10,25 @@
 }
 
 .DealOfTheDay{
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
+    -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
+    -moz-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
+    border-radius: 10px;
+    margin: 1rem;
 }
-
+.DealOfTheDay img{
+    border-radius:10px 10px 0 0 ;
+}
 .DealOfTheDay img:nth-child(1){
     aspect-ratio: 1/1;
     height: 220px ;
-    width: 350px;
-    object-fit: contain;
+    width: 24vw;
+    object-fit: cover;
 }
 
 .DealOfTheDay img:nth-child(2){

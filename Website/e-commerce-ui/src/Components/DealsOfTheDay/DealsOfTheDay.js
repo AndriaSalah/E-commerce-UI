@@ -38,7 +38,7 @@ const TrendingNow = ()=>{
             <h2>Deals of theDay</h2>
             <Swiper
                 modules={[Scrollbar]}
-                spaceBetween={-50}
+                spaceBetween={-100}
                 slidesPerView={3}
                 grabCursor={true}
                 onSwiper={(swiper) => console.log(swiper)}

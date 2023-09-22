@@ -40,8 +40,8 @@ const TrendingOffers = ()=>{
             <Swiper
                 modules={[EffectCoverflow]}
                 effect={'coverflow'}
-                // spaceBetween={50}
                 slidesPerView={2}
+                initialSlide={1}
                 centeredSlides={true}
                 grabCursor={true}
                 coverflowEffect={{

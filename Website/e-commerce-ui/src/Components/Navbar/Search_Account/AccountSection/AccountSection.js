@@ -1,6 +1,6 @@
-import FavIcon from "../../../../Assets/Icons/Favourites.png"
-import Cart from "../../../../Assets/Icons/Cart.png"
-import profile from "../../../../Assets/Icons/icon.png"
+import FavIcon from "../../../../Assets/Icons/Navbar/Favourites.png"
+import Cart from "../../../../Assets/Icons/Navbar/Cart.png"
+import profile from "../../../../Assets/Icons/Navbar/icon.png"
 import "./AccountSection.css"
 const AccountSection = () => {
 

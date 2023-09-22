@@ -10,9 +10,9 @@
 .TrendingOffer{
     display: flex;
     width: fit-content;
-    box-shadow: 0px 0px 10px 1px rgba(87,85,85,0.75);
-    -webkit-box-shadow: 0px 0px 10px 1px rgba(87,85,85,0.75);
-    -moz-box-shadow: 0px 0px 10px 1px rgba(87,85,85,0.75);
+    box-shadow: 0 0 10px 1px rgba(87,85,85,0.75);
+    -webkit-box-shadow: 0 0 10px 1px rgba(87,85,85,0.75);
+    -moz-box-shadow: 0 0 10px 1px rgba(87,85,85,0.75);
     border-radius: 10px;
 }
 .TrendingOffer #OfferDetails{

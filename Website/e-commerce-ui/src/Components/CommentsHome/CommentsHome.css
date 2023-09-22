@@ -1,0 +1,75 @@
+.Comments{
+    margin-top: 2rem;
+    font-family: 'Libre Baskerville', serif;
+
+}
+.Comments .swiper{
+    padding: 1rem !important;
+}
+.Comments h2{
+    font-size: 28px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.Comment{
+    display: flex;
+    width: 78%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
+    -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
+    -moz-box-shadow: 0 0 10px 1px rgba(59, 58, 58, 0.78);
+    border-radius: 10px;
+}
+.Comment img{
+    aspect-ratio: 1/1;
+    height: 10vw ;
+    width: 10vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Comment #Section1{
+
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.Comment h4 {
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    color: #272727;
+}
+
+.Comment #Section1 p{
+    margin-top: 0;
+    color: #848484;
+}
+.swiper-button-prev, .swiper-button-next{
+    background-color: black;
+    border-radius: 50%;
+    width: 62px !important;
+    height: 62px !important;
+    color: #FFFFFF !important;
+}
+
+.swiper-button-prev::after{
+    width: 30px;
+}
+.swiper-button-next::after{
+    width: 20px;
+}
+
+
+
+
+
+
+
+

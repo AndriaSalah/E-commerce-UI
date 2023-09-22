@@ -62,7 +62,7 @@ const TrendingNow = ()=>{
             <h2>Trending Now</h2>
             <Swiper
 
-                    spaceBetween={50}
+                    spaceBetween={-50}
                     slidesPerView={4}
                     grabCursor={true}
                     onSwiper={(swiper) => console.log(swiper)}
@@ -73,7 +73,7 @@ const TrendingNow = ()=>{
                     [<SwiperSlide key={Math.random()}>
                         <div className={'TrendingItem'}>
                             <img src={item.ImgSrc} alt={"item"}/>
-                            <h3>{item.ItemName}</h3>
+                            <h3 id={"itemName"}>{item.ItemName}</h3>
                             <div id={"Section1"}>
                                 <h4>{item.BrandName}</h4>
                                 <p>{item.score }
@@ -81,9 +81,9 @@ const TrendingNow = ()=>{
                                 </p>
                             </div>
                             <div id={'Section2'}>
-                                <h3>{item.OfferPrice}</h3>
-                                <h4>{item.ActualPrice}</h4>
-                                <p>{item.SalePercentage}</p>
+                                <h3 id={"priceData"}>{item.OfferPrice}</h3>
+                                <h4 id={"priceData"}>{item.ActualPrice}</h4>
+                                <p id={"priceData"}>{item.SalePercentage}</p>
                             </div>
                         </div>
                     </SwiperSlide>
