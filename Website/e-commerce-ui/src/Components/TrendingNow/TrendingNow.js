@@ -82,7 +82,7 @@ const TrendingNow = ()=>{
                             </div>
                             <div id={'Section2'}>
                                 <h3 id={"priceData"}>{item.OfferPrice}</h3>
-                                <h4 id={"priceData"}>{item.ActualPrice}</h4>
+                                <h4 id={"priceData"} className={"actual"}>{item.ActualPrice}</h4>
                                 <p id={"priceData"}>{item.SalePercentage}</p>
                             </div>
                         </div>

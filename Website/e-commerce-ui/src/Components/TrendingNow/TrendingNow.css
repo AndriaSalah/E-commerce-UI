@@ -65,3 +65,8 @@
 .TrendingItem #itemName ,.TrendingItem #Section1,.TrendingItem #Section2 #priceData {
     margin-left: 1rem;
 }
+
+.TrendingItem #Section2 .actual{
+    text-decoration: line-through;
+    color: #848484;
+}
