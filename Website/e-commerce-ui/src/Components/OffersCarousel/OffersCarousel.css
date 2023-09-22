@@ -1,0 +1,25 @@
+:root{
+    --bottom-offset: 10%;
+    --left-offset:10%;
+}
+
+.swiper-pagination-bullet-active{
+    width: 13px;
+    height: 13px;
+}
+
+.OfferImg{
+    object-fit: cover;
+    width: 100%;
+}
+
+.OffersExplore{
+    /*color: black!important;*/
+    position: absolute;
+    /*outline: solid black 1px !important;*/
+    /*border-radius: 5px;*/
+    padding: 0.5rem 2rem;
+    right: 18%;
+    bottom:24% ;
+    font-size: 18px;
+}

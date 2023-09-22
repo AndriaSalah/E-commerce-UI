@@ -1,0 +1,14 @@
+.Body{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px ;
+    padding: 2rem;
+    margin: 0 6rem;
+}
+#partition1 { grid-area: 1 / 1 / 2 / 2; }
+#partition2 { grid-area: 1 / 2 / 2 / 3; }
+#partition3 { grid-area: 1 / 3 / 2 / 4; }
+#partition4 { grid-area: 1 / 4 / 2 / 5; }
+#partition5 { grid-area: 1 / 5 / 2 / 6; }
+#partition6 { grid-area: 1 / 6 / 2 / 8; }

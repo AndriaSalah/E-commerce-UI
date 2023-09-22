@@ -1,0 +1,10 @@
+.NavButton{
+    text-decoration: none;
+    color: black;
+    margin: auto 15px;
+    transition-duration: 0.2s;
+}
+
+.NavButton:hover{
+    color: #706f6f;
+}

@@ -1,0 +1,18 @@
+.legals{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+
+.legals #icons{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.legals #icons img{
+    height: 32px;
+    width: 32px;
+}

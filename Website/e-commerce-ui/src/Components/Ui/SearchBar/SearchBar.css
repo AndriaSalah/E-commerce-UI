@@ -1,0 +1,24 @@
+:root{}
+
+.SearchBar{
+
+    margin: auto 2.5rem ;
+    background: #F0F0F0;
+    border-radius: 5px;
+    width: 20rem;
+
+}
+
+.SearchBar #InputField{
+    width: 17rem;
+    height: 2.1rem;
+    background: transparent;
+    outline: transparent;
+    border: transparent;
+    margin-left: 0.5rem;
+}
+
+.SearchBar #icon{
+    margin-left: 0.2rem;
+    color: #706f6f;
+}
