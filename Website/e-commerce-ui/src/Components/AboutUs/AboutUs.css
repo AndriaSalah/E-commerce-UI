@@ -1,0 +1,20 @@
+.AboutUs{
+    padding: 2rem;
+    font-family: 'Libre Baskerville', serif;
+}
+.AboutUs #title{
+    font-size: 28px;
+}
+.AboutUs .content {
+    display: flex;
+    justify-content: space-around;
+}
+.AboutUs .content img{
+    width: 45% ;
+}
+.AboutUs .content #data #text{
+    width: 75%;
+}
+.AboutUs .content #data h4{
+    margin-bottom: 5px;
+}

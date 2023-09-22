@@ -1,4 +1,4 @@
-import Searchbar from "./SearchBar/Searchbar";
+import Searchbar from "../../Ui/SearchBar/Searchbar";
 import AccountSection from "./AccountSection/AccountSection";
 import './EndSection.css'
 const EndSection = ()=> {

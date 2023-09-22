@@ -11,6 +11,8 @@ import Categories from "./Components/Categories/Categories";
 import CommentsHome from "./Components/CommentsHome/CommentsHome";
 import FeaturedBlogs from "./Components/FeaturedBlogs/FeaturedBlogs";
 import Benefits from "./Components/Benifits/Benefits";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import Footer from "./Components/Footer/Footer";
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <CommentsHome></CommentsHome>
           <FeaturedBlogs></FeaturedBlogs>
           <Benefits></Benefits>
+          <AboutUs></AboutUs>
+          <Footer></Footer>
       </div>
   );
 }

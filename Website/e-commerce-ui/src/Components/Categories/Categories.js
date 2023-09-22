@@ -9,46 +9,46 @@ import img6 from '../../Assets/Categories/img6.png'
 const Categories = () => {
     const categoryData = [
         {
-            className: "div1",
+            className: "Category1",
             page: "../Pages/Men.js",
             imgSrc: img1,
             categoryTitle:"Summer Clothes"
         },
         {
-            className: "div2",
+            className: "Category2",
             page: "../Pages/Men.js",
             imgSrc: img2,
             categoryTitle:"Coats"
         },
         {
-            className: "div3",
+            className: "Category3",
             page: "../Pages/Men.js",
             imgSrc: img3,
             categoryTitle:"Sweaters"
         },
         {
-            className: "div4",
+            className: "Category4",
             page: "../Pages/Men.js",
             imgSrc: img4,
             categoryTitle:"Jackets"
         },
         {
-            className: "div5",
+            className: "Category5",
             page: "../Pages/Men.js",
             imgSrc: img5,
             categoryTitle:"Pants"
         },
         {
-            className: "div6",
+            className: "Category6",
             page: "../Pages/Men.js",
             imgSrc: img6,
             categoryTitle:"Hoodies"
         },
     ]
     return (
-        <div className={"Categories"}>
+        <div className={"CategoriesContainer"}>
             <h2>Shop by category</h2>
-            <div className="parent">
+            <div className="Categories">
                 {categoryData.map((category) => (
                     <div className={category.className}>
                         <a href={category.page}>

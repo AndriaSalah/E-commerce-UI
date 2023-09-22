@@ -1,16 +1,16 @@
-.Categories {
+.CategoriesContainer {
     margin: 2rem;
 
 }
 
-.Categories h2 {
+.CategoriesContainer h2 {
     font-size: 28px;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: 'Libre Baskerville', serif;
 }
 
-.parent {
+.Categories {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -19,40 +19,40 @@
 
 }
 
-.div1, .div2, .div2, .div3, .div4, .div5, .div6 {
+.Category1, .Category2, .Category2, .Category3, .Category4, .Category5, .Category6 {
     position: relative;
 }
 
-.div1 {
+.Category1 {
     grid-area: 1 / 1 / 3 / 3;
 }
 
-.div2 {
+.Category2 {
     grid-area: 1 / 3 / 2 / 5;
 }
 
-.div3 {
+.Category3 {
     grid-area: 2 / 3 / 3 / 5;
 }
 
-.div4 {
+.Category4 {
     grid-area: 1 / 5 / 2 / 7;
 }
 
-.div5 {
+.Category5 {
     grid-area: 2 / 5 / 3 / 6;
 }
 
-.div6 {
+.Category6 {
     grid-area: 2 / 6 / 3 / 7;
 }
 
-.parent img {
+.Categories img {
     width: 100%;
     transition-duration: 0.4s;
 }
 
-.Categories p {
+.CategoriesContainer p {
     color: white;
     text-shadow: black 1px 0 10px;
     font-size: 28px;
@@ -62,7 +62,7 @@
     transition-duration: 0.4s;
 }
 
-.parent img:hover {
+.Categories img:hover {
     scale: 1.03;
     box-shadow: 0 0 10px 2px rgba(59, 58, 58, 0.78);
     -webkit-box-shadow: 0 0 10px 2px rgba(59, 58, 58, 0.78);
@@ -70,6 +70,6 @@
     border-radius: 10px;
 }
 
-.parent img:hover ~ p {
+.Categories img:hover ~ p {
     scale: 1.1;
 }

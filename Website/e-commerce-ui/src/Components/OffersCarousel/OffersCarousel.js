@@ -4,7 +4,7 @@ import './OffersCarousel.css'
 import home from "../Pages/Home"
 import offer1 from '../../Assets/MainCarousel.png'
 import {Pagination, Autoplay} from "swiper/modules";
-import ExploreButton from "../Ui/ExploreButton/ExploreButton";
+import Button from "../Ui/ExploreButton/Button";
 
 const OffersCarousel = () => {
     const offersData =[
@@ -43,7 +43,7 @@ const OffersCarousel = () => {
             {offersData.map((item)=>([
                 <SwiperSlide key={Math.random()}>
                     <img className={"OfferImg"} src={item.OfferImg} alt={'carousel'}/>
-                    <ExploreButton className={"dark OffersExplore"} href={home}>Explore</ExploreButton>
+                    <Button lightMode={false} className={"OffersExplore"} href={home}>Explore</Button>
                 </SwiperSlide>
             ]))}
 

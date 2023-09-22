@@ -1,7 +1,7 @@
-import logo from '../../Assets/Logo.png'
+import logo from '../../Assets/Logo.svg'
 import NavLinks from "./NavLinks/NavLinks";
 import "./Navbar.css"
-import EndSection from "./Search_Account/EndSection";
+import EndSection from "./Account/EndSection";
 
 
 const Navbar = ()=>{

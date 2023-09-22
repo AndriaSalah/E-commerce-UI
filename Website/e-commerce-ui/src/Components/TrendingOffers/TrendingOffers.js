@@ -4,7 +4,7 @@ import image2 from '../../Assets/TrendingOffers/img2.png'
 import brandImg from '../../Assets/Icons/brand1.png'
 import './TrendingOffers.css'
 import {EffectCoverflow} from "swiper/modules";
-import ExploreButton from "../Ui/ExploreButton/ExploreButton";
+import Button from "../Ui/ExploreButton/Button";
 const TrendingOffersData = [
     {
         BrandImgSrc:brandImg,
@@ -61,7 +61,7 @@ const TrendingOffers = ()=>{
                                 <div id={"OfferDetails"}>
                                     <img src={item.BrandImgSrc} alt={"brand"}/>
                                     <h2>{item.PunchLine}</h2>
-                                    <ExploreButton className={"dark"} href="../Pages/Men.js">Explore</ExploreButton>
+                                    <Button lightMode={false} href="../Pages/Men.js">Explore</Button>
                                 </div>
                                 <img id={"CoverImg"} src={item.ImgSrc} alt={"offer"}/>
                             </div>
