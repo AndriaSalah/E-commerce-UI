@@ -1,12 +1,21 @@
 .ProductDisplay{
     width: 75%;
+    margin-top: 1rem;
+}
+.Expand{
+    width: 100% !important;
 }
 .ProductDisplay .swiper{
     padding: 2rem;
 }
-
+.Expand .swiper{
+    padding: 1rem !important;
+}
 .ProductDisplay .swiper-pagination{
     bottom: 5px !important;
+}
+.Expand .swiper-pagination{
+    bottom: -4px !important;
 }
 .ProductDisplay #options{
     text-align: right;

@@ -8,7 +8,7 @@ import './ProductsDisplay.css'
 import 'swiper/css/navigation';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSliders,faChevronDown} from "@fortawesome/free-solid-svg-icons";
-const ProductsDisplay = ()=>{
+const ProductsDisplay = (props)=>{
     const Products=Object.values(productImages).map((img)=>(
 
         {
@@ -23,16 +23,16 @@ const ProductsDisplay = ()=>{
 
     ))
     return(
-        <div className={"ProductDisplay"}>
+        <div className={"ProductDisplay " + (!props.Shown ? "Expand" : "")}>
             <div id={"options"}>
-                <button>Filters <FontAwesomeIcon id={"icon"} icon={faSliders} /></button>
+                <button onClick={props.ShowFiltersBar}>Filters <FontAwesomeIcon id={"icon"} icon={faSliders} /></button>
                 <button>Sort By  <FontAwesomeIcon id={"icon"} icon={faChevronDown} /></button>
             </div>
             <div id={"View"}>
                 <Swiper
                     modules={[Grid ,Pagination ,Navigation]}
                     spaceBetween={20}
-                    slidesPerView={3.6}
+                    slidesPerView={props.Shown? 3.6:4.6}
                     navigation={true}
                     pagination={{clickable: true, type: "bullets"}}
                     grid={{rows:2 , fill:"row"}}
