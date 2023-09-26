@@ -1,0 +1,48 @@
+.ProductFilters{
+    font-family: 'Libre Baskerville', serif;
+    width: 20rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
+    -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
+    -moz-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
+    border-radius: 10px;
+}
+.ProductFilters span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #d9d8d8;
+}
+.ProductFilters #tag{
+    margin: 8px 0;
+}
+.ProductFilters #tag label{
+    color: #6e6e6e;
+    margin-left: 8px;
+}
+.ProductFilters #tag input[type="checkbox"]{
+    background-color: #848484 ;
+}
+.ProductFilters .selectedTags{
+    display:flex;
+    flex-flow: wrap;
+    transition-duration: 1s;
+    min-height: 5rem;
+}
+.ProductFilters .selectedTags .Tag{
+    background : #F0F0F0;
+    color:black ;
+    border-radius:10px;
+    width:fit-content;
+    height: fit-content;
+    padding:5px 12px;
+    margin:2px;
+}
+.ProductFilters .selectedTags .Tag button{
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.ProductFilters .selectedTags .Tag button:hover{
+    color: #b03535;
+}

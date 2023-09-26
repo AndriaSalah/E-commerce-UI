@@ -5,11 +5,11 @@ const NavLinks = () =>{
 
     return(
         <div className={"NavButtons"}>
-            <NavButton src="./Components/Men">Men</NavButton>
-            <NavButton src="./Components/Men">Women</NavButton>
-            <NavButton src="./Components/Men">Kids</NavButton>
-            <NavButton src="./Components/Men">Shop</NavButton>
-            <NavButton src="./Components/Men">Contact us</NavButton>
+            <NavButton src="/Products">Men</NavButton>
+            <NavButton src="/Products">Women</NavButton>
+            <NavButton src="/Products">Kids</NavButton>
+            <NavButton src="/Products">Shop</NavButton>
+            <NavButton src="/Products">Contact us</NavButton>
         </div>
     )
 }

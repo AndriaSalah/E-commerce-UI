@@ -1,36 +1,22 @@
 
 import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
-import OffersCarousel from "./Components/OffersCarousel/OffersCarousel";
-import TrendingNow from "./Components/TrendingNow/TrendingNow";
-import DealsOfTheDay from "./Components/DealsOfTheDay/DealsOfTheDay";
 import 'swiper/css';
-import TrendingOffers from "./Components/TrendingOffers/TrendingOffers";
-import IntersectionAd from "./Components/IntersectionAd/IntersectionAd";
-import Categories from "./Components/Categories/Categories";
-import CommentsHome from "./Components/CommentsHome/CommentsHome";
-import FeaturedBlogs from "./Components/FeaturedBlogs/FeaturedBlogs";
-import Benefits from "./Components/Benifits/Benefits";
-import AboutUs from "./Components/AboutUs/AboutUs";
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import Home from "./Components/Pages/Home";
+import Products from "./Components/Pages/Products";
 import Footer from "./Components/Footer/Footer";
-
 
 function App() {
   return (
-      <div>
-          <Navbar></Navbar>
-          <OffersCarousel></OffersCarousel>
-          <TrendingNow></TrendingNow>
-          <DealsOfTheDay></DealsOfTheDay>
-          <TrendingOffers></TrendingOffers>
-          <IntersectionAd></IntersectionAd>
-          <Categories></Categories>
-          <CommentsHome></CommentsHome>
-          <FeaturedBlogs></FeaturedBlogs>
-          <Benefits></Benefits>
-          <AboutUs></AboutUs>
-          <Footer></Footer>
-      </div>
+        <Router>
+            <Navbar/>
+            <Routes>
+                <Route path={"/"} element={<Home/>}/>
+                <Route path={"/Products"} element={<Products/>}/>
+            </Routes>
+            <Footer/>
+        </Router>
   );
 }
 

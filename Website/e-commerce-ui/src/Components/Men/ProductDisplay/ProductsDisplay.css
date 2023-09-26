@@ -1,0 +1,26 @@
+.ProductDisplay{
+    width: 75%;
+}
+.ProductDisplay .swiper{
+    padding: 2rem;
+}
+
+.ProductDisplay .swiper-pagination{
+    bottom: 5px !important;
+}
+.ProductDisplay #options{
+    text-align: right;
+}
+.ProductDisplay #options button{
+    background-color: transparent;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    padding: 1vh 1.5vw;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.ProductDisplay #options button:hover{
+    background-color: rgba(161, 161, 161, 0.15);
+}
