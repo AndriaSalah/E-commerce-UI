@@ -1,5 +1,5 @@
 .Products{
     display: flex;
     justify-content: space-around;
-
+    overflow-x: hidden;
 }

@@ -5,15 +5,17 @@
     font-family: 'Libre Baskerville', serif;
     width: 20rem;
     height: 50rem;
+    left: 0;
     box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
     -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
     -moz-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
     border-radius: 10px;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s ;
     margin: 1rem;
 }
 .Hide{
-    display: none;
+    left: -30rem;
+    opacity: 0;
 }
 .ProductFilters .Container{
     margin: 1rem;

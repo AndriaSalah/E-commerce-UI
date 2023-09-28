@@ -22,7 +22,7 @@ const ProductsDisplay = ({Shown, ShowFiltersBar, Products})=>{
                     slidesPerView={Shown? 4:5}
                     navigation={true}
                     pagination={{clickable: true, type: "bullets"}}
-                    grid={{rows:2 , fill:"row"}}
+                    grid={{rows:2 , fill:"row" }}
                     className={'men'}
                 >
                     {

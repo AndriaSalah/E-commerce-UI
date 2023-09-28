@@ -1,16 +1,19 @@
 .ProductDisplay{
     width: 75%;
     margin: 1rem 0;
+    transition-duration: 0.4s;
+
 }
 .Expand{
     width: 100% !important;
 }
 .ProductDisplay .swiper{
-    padding: 2rem;
-}
+    padding: 2rem 0.5rem;
 
+}
 .Expand .swiper{
-    padding: 1rem !important;
+    margin-right:1rem;
+
 }
 .ProductDisplay .swiper-pagination{
     bottom: 5px !important;

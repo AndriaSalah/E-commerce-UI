@@ -12,45 +12,45 @@ const TrendingItemsData = [
         ItemName:"Women's Denim Jacket",
         BrandName: "Brand Name",
         score: 4.1,
-        ActualPrice:"Rs. 1000",
-        OfferPrice:"Rs. 700",
-        SalePercentage: "(-30% off)",
+        ActualPrice:1000,
+        OfferPrice:700,
+        SalePercentage: 30,
         ImgSrc : image5
     },
     {
         ItemName:"Women's Denim Jacket",
         BrandName: "Brand Name",
         score: 4.3,
-        ActualPrice:"Rs. 1000",
-        OfferPrice:"Rs. 700",
-        SalePercentage: "(-30% off)",
+        ActualPrice:1000,
+        OfferPrice:700,
+        SalePercentage: 30,
         ImgSrc : image2
     },
     {
         ItemName:"Women's Denim Jacket",
         BrandName: "Brand Name",
         score: 4.2,
-        ActualPrice:"Rs. 1000",
-        OfferPrice:"Rs. 700",
-        SalePercentage: "(-30% off)",
+        ActualPrice:1000,
+        OfferPrice:700,
+        SalePercentage: 30,
         ImgSrc : image3
     },
     {
         ItemName:"Women's Denim Jacket",
         BrandName: "Brand Name",
         score: 4.1,
-        ActualPrice:"Rs. 1000",
-        OfferPrice:"Rs. 700",
-        SalePercentage: "(-30% off)",
+        ActualPrice:1000,
+        OfferPrice:700,
+        SalePercentage: 30,
         ImgSrc : image4
     },
     {
         ItemName:"Women's Denim Jacket",
         BrandName: "Brand Name",
         score: 4.4,
-        ActualPrice:"Rs. 1000",
-        OfferPrice:"Rs. 700",
-        SalePercentage: "(-30% off)",
+        ActualPrice:1000,
+        OfferPrice:700,
+        SalePercentage: 30,
         ImgSrc : image1
     }
 ]

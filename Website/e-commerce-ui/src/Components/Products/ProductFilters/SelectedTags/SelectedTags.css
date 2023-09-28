@@ -20,6 +20,14 @@
     height: fit-content;
     padding:5px 12px;
     margin:2px;
+    opacity: 0;
+    transition: opacity 1s ;
+    animation: add 0.5s forwards;
+}
+@keyframes add {
+    100%{
+        opacity: 1;
+    }
 }
 .ProductFilters .Right__Button{
     text-align: right;

@@ -52,7 +52,7 @@ const ProductFilters = ({Shown, ShowFiltersBar, SetFilteredProducts}) => {
 
 
     return (
-        <div className={"ProductFilters " + (!Shown ? "Hide" : "")}>
+        <div className={"ProductFilters " + (!Shown ? "Hide absolute" : "")}>
             <div className={"Container"}>
                 <SelectedTags
                     tags={Tags}
