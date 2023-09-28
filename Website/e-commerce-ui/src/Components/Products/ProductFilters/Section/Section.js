@@ -1,5 +1,5 @@
 import './Section.css'
-const Section = ({title, content , setFilter , selectedTags}) => {
+const Section = ({title, content , setFilter , selectedTags }) => {
     return (
         <div>
             <h2>{title}</h2>
@@ -9,10 +9,13 @@ const Section = ({title, content , setFilter , selectedTags}) => {
                             <input type={"checkbox"}
                                    value={item}
                                    name={item}
-                                   onClick={() => setFilter(item)}
+                                   onChange={() => [setFilter(item)]}
                                    checked={selectedTags.includes(item)}
+
                             />
-                            <label htmlFor={item}>{item}</label>
+                            <label htmlFor={item}>{item}
+
+                            </label>
                         </div>
                     )
                 )

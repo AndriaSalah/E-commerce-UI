@@ -1,5 +1,6 @@
 .ProductFilters{
     overflow-y: scroll;
+    overflow-x: hidden ;
     position: relative;
     font-family: 'Libre Baskerville', serif;
     width: 20rem;
@@ -12,7 +13,7 @@
     margin: 1rem;
 }
 .Hide{
-   display: none;
+    display: none;
 }
 .ProductFilters .Container{
     margin: 1rem;

@@ -24,13 +24,13 @@
 .ProductFilters .Right__Button{
     text-align: right;
 }
-.ProductFilters .Right__Button button{
+.ProductFilters .Right__Button button , .ProductFilters .selectedTags button{
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
 }
-.ProductFilters .Right__Button button:hover{
+.ProductFilters .Right__Button button:hover , .ProductFilters .selectedTags button:hover{
     color: #b03535;
 }
 

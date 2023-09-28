@@ -1,15 +1,16 @@
 import './SelectedTags.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faXmark} from "@fortawesome/free-solid-svg-icons";
-const SelectedTags = ({tags, ShowFilterBar , ClearFilter}) =>{
+const SelectedTags = ({tags, ShowFilterBar , ClearFilter,addTags}) =>{
     return(
         <div className={tags.length !== 0 ? "Sticky":""}>
             <div className={"Right__Button"}>
-                <button onClick={ShowFilterBar}><FontAwesomeIcon icon={faXmark}/></button>
+                <button onClick={ShowFilterBar} className={"close"} ><FontAwesomeIcon icon={faXmark}/></button>
             </div>
             <h1>Filters</h1>
             <div className={"selectedTags"}>{tags.map(tag =>
                 <div className={"Tag"}>
+                    <button onClick={()=>addTags(tag)}><FontAwesomeIcon icon={faXmark}/></button>
                     {tag}
                 </div>
             )}</div>

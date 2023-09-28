@@ -1,6 +1,6 @@
 .ProductDisplay{
     width: 75%;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 .Expand{
     width: 100% !important;
@@ -8,6 +8,7 @@
 .ProductDisplay .swiper{
     padding: 2rem;
 }
+
 .Expand .swiper{
     padding: 1rem !important;
 }
