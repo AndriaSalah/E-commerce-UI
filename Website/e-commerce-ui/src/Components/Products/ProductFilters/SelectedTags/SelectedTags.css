@@ -1,0 +1,40 @@
+.ProductFilters .Sticky{
+    position: sticky;
+    top:0;
+    background-color: #FFFFFF;
+    padding-bottom:1rem;
+
+}
+
+.ProductFilters .selectedTags{
+    display:flex;
+    flex-flow: wrap;
+    transition-duration: 1s;
+
+}
+.ProductFilters .selectedTags .Tag{
+    background : #F0F0F0;
+    color:black ;
+    border-radius:10px;
+    width:fit-content;
+    height: fit-content;
+    padding:5px 12px;
+    margin:2px;
+}
+.ProductFilters .Right__Button{
+    text-align: right;
+}
+.ProductFilters .Right__Button button , .ProductFilters .selectedTags button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.ProductFilters .Right__Button button:hover , .ProductFilters .selectedTags button:hover{
+    color: #b03535;
+}
+
+.ProductFilters .Right__Button .Hide{
+    position: absolute;
+    opacity: 0;
+}

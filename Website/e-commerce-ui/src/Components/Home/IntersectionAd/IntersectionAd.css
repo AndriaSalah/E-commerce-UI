@@ -1,0 +1,49 @@
+.IntersectionAd{
+    display: flex;
+    background-image:url("../../../Assets/IntersectionAd/bannerImg.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 1.5rem 1.5rem 2rem;
+    font-family: 'Libre Baskerville', serif;
+    border-radius: 10px;
+
+}
+.IntersectionAd .Dim__adData {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.IntersectionAd .Dim__adData h2 {
+    color: #FFFFFF;
+    font-size: 4vw; /* Responsive font size based on viewport width */
+}
+
+.IntersectionAd .Dim__adData h4 {
+    color: #FFFFFF;
+    font-size: 2vw; /* Responsive font size based on viewport width */
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .IntersectionAd {
+        width: auto;
+        height: auto; /* Allow the height to adjust based on content */
+        padding: 1rem; /* Add padding to create spacing */
+    }
+
+    .IntersectionAd .Dim__adData h2 {
+        font-size: 5vw;
+    }
+
+    .IntersectionAd .Dim__adData h4 {
+        font-size: 3vw;
+    }
+}
