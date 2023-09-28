@@ -1,12 +1,8 @@
 import 'package:ecom/core/common/buttons/primary_button.dart';
+import 'package:ecom/core/utils/app_decoration.dart';
 import 'package:ecom/core/utils/utils.dart';
-import 'package:ecom/features/auth/screens/otp_screen.dart';
 import 'package:ecom/features/auth/screens/widgets/auth_field.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import '../../../core/utils/app_decoration.dart';
-import '../controller/controller.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
   const ForgotPasswordScreen({super.key});
@@ -29,23 +25,14 @@ class ForgotPasswordScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: AppTypography.regular14(color: AppColors.darkGrey)),
             Space(height: AppSizes.height! * 0.052),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "Email", icon: AppIcons.user),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "Email", icon: AppIcons.user),
             ),
             Space(height: AppSizes.height! * 0.04),
             PrimaryButton(
-              onTap: () {
-                Get.to(() => const OtpScreen(),
-                    transition: Transition.leftToRight,
-                    duration: const Duration(milliseconds: 300));
-              },
+              onTap: () {},
               text: "Send Verification",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),
