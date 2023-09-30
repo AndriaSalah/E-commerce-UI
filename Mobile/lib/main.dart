@@ -1,4 +1,4 @@
-import 'package:ecom/core/utils/app_sizes.dart';
+import 'package:ecom/core/utils/utils.dart';
 import 'package:ecom/features/auth/screens/signIn_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +15,8 @@ class MyApp extends StatelessWidget {
     AppSizes.config(context);
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
+      onGenerateRoute: Routes.generate,
+      initialRoute: Screens.landingScreen,
       home: SignInScreen(),
     );
   }

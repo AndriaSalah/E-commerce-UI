@@ -1,5 +1,6 @@
 import 'package:ecom/core/common/buttons/primary_button.dart';
 import 'package:ecom/core/utils/app_decoration.dart';
+import 'package:ecom/core/utils/app_routes.dart';
 import 'package:ecom/core/utils/utils.dart';
 import 'package:flutter/material.dart';
 
@@ -36,11 +37,13 @@ class SignInScreen extends StatelessWidget {
                   hint: "password", icon: AppIcons.lock),
             ),
             const Space(height: 10),
-            const ForgetPassword(),
+            const ForgotPassword(),
             const RememberMeCheckBox(),
             Space(height: AppSizes.height! * 0.026),
             PrimaryButton(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, Screens.homeScreen);
+              },
               text: "Login",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),
@@ -52,7 +55,9 @@ class SignInScreen extends StatelessWidget {
             HaveAccountOrNot(
               content: 'Don’t have a account? ',
               link: 'Register',
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, Screens.signUpScreen);
+              },
             )
           ],
         ),

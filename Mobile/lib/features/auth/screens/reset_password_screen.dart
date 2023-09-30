@@ -38,7 +38,9 @@ class ResetPasswordScreen extends StatelessWidget {
             ),
             Space(height: AppSizes.height! * 0.04),
             PrimaryButton(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, Screens.signInScreen);
+              },
               text: "Confirm",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),

@@ -14,6 +14,10 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  carousel_slider:
+  flutter_staggered_animations:
+  smooth_page_indicator:
+  like_button:
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,8 @@
 import 'package:ecom/core/utils/utils.dart';
 import 'package:flutter/material.dart';
 
-class ForgetPassword extends StatelessWidget {
-  const ForgetPassword({
+class ForgotPassword extends StatelessWidget {
+  const ForgotPassword({
     super.key,
   });
 
@@ -11,9 +11,11 @@ class ForgetPassword extends StatelessWidget {
     return Align(
       alignment: Alignment.centerRight,
       child: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.pushReplacementNamed(context, Screens.forgotPasswordScreen);
+        },
         child: Text(
-          "Forget Password?",
+          "Forgot Password?",
           style: AppTypography.bold12(color: AppColors.primary),
         ),
       ),
