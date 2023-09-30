@@ -1,11 +1,7 @@
 import 'package:ecom/core/common/buttons/primary_button.dart';
 import 'package:ecom/core/utils/app_decoration.dart';
 import 'package:ecom/core/utils/utils.dart';
-import 'package:ecom/features/auth/controller/controller.dart';
-import 'package:ecom/features/auth/screens/signUp_screen.dart';
-import 'package:ecom/features/home/screens/home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import 'widgets/widets.dart';
 
@@ -28,37 +24,23 @@ class SignInScreen extends StatelessWidget {
             Text('Sign in to continue',
                 style: AppTypography.regular18(color: AppColors.darkGrey)),
             Space(height: AppSizes.height! * 0.052),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "Email", icon: AppIcons.user),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "Email", icon: AppIcons.user),
             ),
             const Space(height: 10),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "password", icon: AppIcons.lock),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "password", icon: AppIcons.lock),
             ),
             const Space(height: 10),
             const ForgetPassword(),
             const RememberMeCheckBox(),
             Space(height: AppSizes.height! * 0.026),
             PrimaryButton(
-              onTap: () {
-                Get.to(() => const HomeScreen(),
-                    transition: Transition.native,
-                    duration: const Duration(milliseconds: 300));
-              },
+              onTap: () {},
               text: "Login",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),
@@ -70,11 +52,7 @@ class SignInScreen extends StatelessWidget {
             HaveAccountOrNot(
               content: 'Don’t have a account? ',
               link: 'Register',
-              onTap: () {
-                Get.to(() => const SignUpScreen(),
-                    transition: Transition.leftToRight,
-                    duration: const Duration(milliseconds: 300));
-              },
+              onTap: () {},
             )
           ],
         ),

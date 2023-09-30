@@ -1,12 +1,8 @@
 import 'package:ecom/core/common/buttons/primary_button.dart';
 import 'package:ecom/core/utils/app_decoration.dart';
 import 'package:ecom/core/utils/utils.dart';
-import 'package:ecom/features/auth/controller/controller.dart';
-import 'package:ecom/features/auth/screens/signIn_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-import '../../home/screens/home_screen.dart';
 import 'widgets/widets.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -28,56 +24,32 @@ class SignUpScreen extends StatelessWidget {
             Text('Let’s make your account.',
                 style: AppTypography.regular18(color: AppColors.darkGrey)),
             Space(height: AppSizes.height! * 0.052),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "Name", icon: AppIcons.user),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "Name", icon: AppIcons.user),
             ),
             const Space(height: 10),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "Email", icon: AppIcons.user),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "Email", icon: AppIcons.user),
             ),
             const Space(height: 10),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "password", icon: AppIcons.lock),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "password", icon: AppIcons.lock),
             ),
             const Space(height: 10),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "Confirm Password", icon: AppIcons.lock),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "Confirm Password", icon: AppIcons.lock),
             ),
             Space(height: AppSizes.height! * 0.026),
             PrimaryButton(
-              onTap: () {
-                Get.to(() => const HomeScreen(),
-                    transition: Transition.native,
-                    duration: const Duration(milliseconds: 300));
-              },
+              onTap: () {},
               text: "Login",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),
@@ -89,11 +61,7 @@ class SignUpScreen extends StatelessWidget {
             HaveAccountOrNot(
               content: 'Already have an account? ',
               link: 'Log In',
-              onTap: () {
-                Get.to(() => const SignInScreen(),
-                    transition: Transition.rightToLeft,
-                    duration: const Duration(milliseconds: 300));
-              },
+              onTap: () {},
             )
           ],
         ),

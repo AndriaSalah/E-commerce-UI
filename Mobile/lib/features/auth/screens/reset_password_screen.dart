@@ -1,11 +1,9 @@
 import 'package:ecom/core/utils/utils.dart';
 import 'package:ecom/features/auth/screens/widgets/auth_field.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_state_manager/src/simple/get_state.dart';
 
 import '../../../core/common/buttons/primary_button.dart';
 import '../../../core/utils/app_decoration.dart';
-import '../controller/controller.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   const ResetPasswordScreen({super.key});
@@ -27,26 +25,16 @@ class ResetPasswordScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: AppTypography.regular14(color: AppColors.darkGrey)),
             Space(height: AppSizes.height! * 0.052),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "Password", icon: AppIcons.lock),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "Password", icon: AppIcons.lock),
             ),
             const Space(height: 10),
-            GetBuilder<AuthController>(
-              init: AuthController(),
-              builder: (controller) {
-                return AuthField(
-                  controller: controller.emailController,
-                  decoration: TextFormDecoration.outlineDecoration(
-                      hint: "Confirm Password", icon: AppIcons.lock),
-                );
-              },
+            AuthField(
+              controller: TextEditingController(),
+              decoration: TextFormDecoration.outlineDecoration(
+                  hint: "Confirm Password", icon: AppIcons.lock),
             ),
             Space(height: AppSizes.height! * 0.04),
             PrimaryButton(
