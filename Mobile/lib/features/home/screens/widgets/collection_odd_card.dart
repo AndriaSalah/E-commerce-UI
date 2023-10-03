@@ -1,6 +1,6 @@
 import 'package:ecom/core/common/buttons/primary_button.dart';
 import 'package:ecom/core/utils/utils.dart';
-import 'package:ecom/features/home/data/collection_model.dart';
+import 'package:ecom/features/home/data/product_model.dart';
 import 'package:flutter/material.dart';
 import 'package:like_button/like_button.dart';
 
@@ -9,7 +9,7 @@ class CollectionOddCard extends StatelessWidget {
     super.key,
     required this.collection,
   });
-  final CollectionModel collection;
+  final ProductModel collection;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -28,7 +28,7 @@ class CollectionOddCard extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         image: DecorationImage(
-                            image: AssetImage(collection.images.mainImage),
+                            image: AssetImage(collection.images[0]),
                             fit: BoxFit.cover)),
                   ),
                 ),
@@ -42,8 +42,7 @@ class CollectionOddCard extends StatelessWidget {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               image: DecorationImage(
-                                  image:
-                                      AssetImage(collection.images.secondImage),
+                                  image: AssetImage(collection.images[1]),
                                   fit: BoxFit.cover)),
                         ),
                       ),
@@ -56,14 +55,14 @@ class CollectionOddCard extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               image: DecorationImage(
                                   image: AssetImage(
-                                    collection.images.thirdImage,
+                                    collection.images[2],
                                   ),
                                   fit: BoxFit.cover)),
                           child: Container(
                             alignment: Alignment.center,
                             color: Colors.black.withOpacity(0.5),
                             child: Text(
-                              collection.images.imagesNumber,
+                              collection.images.length.toString(),
                               style: AppTypography.bold36(
                                   color: AppColors.background),
                             ),

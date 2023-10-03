@@ -3,6 +3,8 @@ import 'package:ecom/features/auth/screens/otp_screen.dart';
 import 'package:ecom/features/auth/screens/reset_password_screen.dart';
 import 'package:ecom/features/auth/screens/signIn_screen.dart';
 import 'package:ecom/features/auth/screens/signUp_screen.dart';
+import 'package:ecom/features/home/data/product_model.dart';
+import 'package:ecom/features/home/screens/detail_screen.dart';
 import 'package:ecom/features/home/screens/home_screen.dart';
 import 'package:ecom/features/landing_screen/landing_Screen.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +16,7 @@ class Screens {
   static const otpScreen = "otpScreen";
   static const resetPasswordScreen = "resetPasswordScreen";
   static const homeScreen = "homeScreen";
+  static const detailScreen = "detailScreen";
   static const landingScreen = "landingScreen";
 }
 
@@ -44,6 +47,15 @@ class Routes {
         return MaterialPageRoute(
           builder: (context) => const HomeScreen(),
         );
+      case Screens.detailScreen:
+        if (settings.arguments != null) {
+          ProductModel product = settings.arguments as ProductModel;
+          return MaterialPageRoute(
+            builder: (context) => DetailScreen(product: product),
+          );
+        } else {
+          return _unHandleRoute();
+        }
       case Screens.landingScreen:
         return MaterialPageRoute(
           builder: (context) => const LandingScreen(),

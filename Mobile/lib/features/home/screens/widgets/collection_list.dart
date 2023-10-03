@@ -1,5 +1,5 @@
 import 'package:ecom/core/utils/utils.dart';
-import 'package:ecom/features/home/data/collection_model.dart';
+import 'package:ecom/features/home/data/product_model.dart';
 import 'package:ecom/features/home/screens/widgets/collection_Even_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
@@ -22,8 +22,11 @@ class CollectionList extends StatelessWidget {
           position: index,
           duration: const Duration(milliseconds: 500),
           child: ScaleAnimation(
+            curve: Curves.easeInOut,
+            duration: const Duration(milliseconds: 500),
             child: FadeInAnimation(
-              child: CollectionEvenCard(collection: collectionList[index]),
+              curve: Curves.easeIn,
+              child: CollectionEvenCard(product: collectionList[index]),
             ),
           ),
         ),

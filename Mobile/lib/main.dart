@@ -1,5 +1,4 @@
 import 'package:ecom/core/utils/utils.dart';
-import 'package:ecom/features/auth/screens/signIn_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +16,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       onGenerateRoute: Routes.generate,
       initialRoute: Screens.landingScreen,
-      home: SignInScreen(),
     );
   }
 }

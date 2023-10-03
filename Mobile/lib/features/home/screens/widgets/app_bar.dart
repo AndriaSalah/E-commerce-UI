@@ -11,19 +11,16 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       elevation: 0,
       backgroundColor: Colors.transparent,
-      title: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
-        child: Row(
-          children: [
-            const CircleAvatar(
-                radius: 25, backgroundImage: AssetImage(AppImages.avatar)),
-            const Space(width: 10),
-            Text(
-              "Anna Doe",
-              style: AppTypography.medium20(color: AppColors.black),
-            ),
-          ],
-        ),
+      title: Row(
+        children: [
+          const CircleAvatar(
+              radius: 25, backgroundImage: AssetImage(AppImages.avatar)),
+          const Space(width: 10),
+          Text(
+            "Anna Doe",
+            style: AppTypography.medium20(color: AppColors.black),
+          ),
+        ],
       ),
       actions: [
         IconButton(
@@ -32,7 +29,6 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
               AppIcons.search,
               color: AppColors.black,
             )),
-        const Space(width: 10),
       ],
     );
   }

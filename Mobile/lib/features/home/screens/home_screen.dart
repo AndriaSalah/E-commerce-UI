@@ -8,29 +8,26 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const HomeAppBar(),
-          Space(height: AppSizes.height! * 0.02),
-          SizedBox(
-            height: AppSizes.height! * 0.1,
-            child: const CategoriesList(),
-          ),
-          Space(height: AppSizes.height! * 0.03),
-          const EventsList(),
-          const Section(title: "Trending Offers"),
-          SizedBox(
-            height: AppSizes.height! * 0.362,
-            child: const TrendingList(),
-          ),
-          const Section(title: "Deals Of The Day"),
-          const DealsList(),
-          const Section(title: "Our Collection"),
-          const CollectionList()
-        ],
-      ),
+    return ListView(
+      children: [
+        const HomeAppBar(),
+        Space(height: AppSizes.height! * 0.02),
+        SizedBox(
+          height: AppSizes.height! * 0.12,
+          child: const CategoriesList(),
+        ),
+        Space(height: AppSizes.height! * 0.03),
+        const EventsList(),
+        const Section(title: "Trending Offers"),
+        SizedBox(
+          height: AppSizes.height! * 0.362,
+          child: const TrendingList(),
+        ),
+        const Section(title: "Deals Of The Day"),
+        const DealsList(),
+        const Section(title: "Our Collection"),
+        const CollectionList()
+      ],
     );
   }
 }
