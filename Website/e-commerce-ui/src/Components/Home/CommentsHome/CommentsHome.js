@@ -75,7 +75,7 @@ const CommentsHome = () => {
                     commentData.map(comment => (
                         [<SwiperSlide key={Math.random()}>
                             <div className={'Comment'}>
-                                <img src={comment.profileImg} alt={"item"}/>
+                                <img src={comment.profileImg} alt={"item"} loading={"lazy"}/>
                                 <div id={"Section1"}>
                                     <p>{comment.stars}
                                         {viewStars(comment.stars).map((item)=>(

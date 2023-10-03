@@ -52,7 +52,7 @@ const Categories = () => {
                 {categoryData.map((category) => (
                     <div className={category.className}>
                         <a href={category.page}>
-                            <img src={category.imgSrc} alt={"img1"}/>
+                            <img src={category.imgSrc} alt={"img1"}  loading={"lazy"}/>
                             <p>{category.categoryTitle}</p>
                         </a>
                     </div>

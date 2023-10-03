@@ -5,7 +5,7 @@ const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPri
 
     return(
         <div className={'ProductCard'}>
-            <img src={ImgSrc} alt={"item"}/>
+            <img src={ImgSrc} alt={"item"} loading={"lazy"}/>
             <h3 id={"itemName"}>{ItemName}</h3>
             <div id={"Section1"}>
                 <h4>{BrandName}</h4>
@@ -16,7 +16,7 @@ const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPri
             <div id={'Section2'}>
                 <h3 id={"priceData"}>{`Rs. ${OfferPrice}`}</h3>
                 <h4 id={"priceData"} className={"actual"}>{`Rs. ${ActualPrice}`}</h4>
-                <p id={"priceData"}>{`(${((ActualPrice-OfferPrice)/ActualPrice)*100}% off)`}</p>
+                <p id={"priceData"}>{`(30% off)`}</p>
             </div>
         </div>
     )

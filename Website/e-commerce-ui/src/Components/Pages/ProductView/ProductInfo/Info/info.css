@@ -1,0 +1,12 @@
+.Details{
+    display: none;
+}
+.Ratings{
+    display: none;
+}
+.Specification{
+    display: none;
+}
+.activePage{
+    display: block;
+}

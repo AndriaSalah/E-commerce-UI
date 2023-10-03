@@ -1,37 +1,10 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import image1 from '../../../Assets/TrendingOffers/img1.png'
-import image2 from '../../../Assets/TrendingOffers/img2.png'
-import brandImg from '../../../Assets/Icons/brand1.png'
+
 import './TrendingOffers.css'
 import {EffectCoverflow} from "swiper/modules";
 import Button from "../../Ui/ExploreButton/Button";
-const TrendingOffersData = [
-    {
-        BrandImgSrc:brandImg,
-        PunchLine:"Min 60% off",
-        ImgSrc : image1
-    },
-    {
-        BrandImgSrc:brandImg,
-        PunchLine:"Min 60% off",
-        ImgSrc : image2
-    },
-    {
-        BrandImgSrc:brandImg,
-        PunchLine:"Min 60% off",
-        ImgSrc : image1
-    },
-    {
-        BrandImgSrc:brandImg,
-        PunchLine:"Min 60% off",
-        ImgSrc : image2
-    },
-    {
-        BrandImgSrc:brandImg,
-        PunchLine:"Min 60% off",
-        ImgSrc : image1
-    }
-]
+import {TrendingOffersData} from "../../ProductsData";
+
 const TrendingOffers = ()=>{
 
     return(
@@ -59,7 +32,7 @@ const TrendingOffers = ()=>{
                         [<SwiperSlide key={Math.random()}>
                             <div className={'TrendingOffer'}>
                                 <div id={"OfferDetails"}>
-                                    <img src={item.BrandImgSrc} alt={"brand"}/>
+                                    <img src={item.BrandImgSrc} alt={"brand"}  loading={"lazy"}/>
                                     <h2>{item.PunchLine}</h2>
                                     <Button lightMode={false} href="../Pages/Products.js">Explore</Button>
                                 </div>

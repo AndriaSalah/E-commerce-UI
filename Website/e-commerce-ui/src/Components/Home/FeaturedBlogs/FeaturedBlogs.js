@@ -66,16 +66,16 @@ const FeaturedBlogs = ()=>{
                                     <span/>
                                     <div id={"footer"}>
                                         <h3>By Souha . h</h3>
-                                        <a href='../../Pages/Products.js'><FontAwesomeIcon id={'icon'} icon={faArrowRight} ></FontAwesomeIcon></a>
+                                        <a href='../../Pages/Products/Products.js'><FontAwesomeIcon id={'icon'} icon={faArrowRight} ></FontAwesomeIcon></a>
                                     </div>
                                 </div>
-                                <img id={"CoverImg"} src={Blog.cover} alt={"offer"}/>
+                                <img id={"CoverImg"} src={Blog.cover} alt={"offer"} loading={"lazy"}/>
                             </div>
                         </SwiperSlide>
                         ]))}
             </Swiper>
             <div id={"buttonSpace"}>
-                <a href='../../Pages/Products.js' id={"viewAll"}>View all</a>
+                <a href='../../Pages/Products/Products.js' id={"viewAll"}>View all</a>
             </div>
         </div>
     )

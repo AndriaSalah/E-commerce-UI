@@ -5,6 +5,8 @@
     transition-duration: 0.2s;
 }
 
-.NavButton:hover{
-    color: #706f6f;
+
+.active,.active:hover,.NavButton:hover{
+    color: #808080;
 }
+
