@@ -49,7 +49,9 @@ class SignUpScreen extends StatelessWidget {
             ),
             Space(height: AppSizes.height! * 0.026),
             PrimaryButton(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, Screens.homeScreen);
+              },
               text: "Login",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),
@@ -61,7 +63,9 @@ class SignUpScreen extends StatelessWidget {
             HaveAccountOrNot(
               content: 'Already have an account? ',
               link: 'Log In',
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, Screens.signInScreen);
+              },
             )
           ],
         ),

@@ -1,5 +1,6 @@
 import 'package:ecom/core/common/buttons/primary_button.dart';
 import 'package:ecom/core/utils/app_decoration.dart';
+import 'package:ecom/core/utils/app_routes.dart';
 import 'package:ecom/core/utils/utils.dart';
 import 'package:ecom/features/auth/screens/widgets/auth_field.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,9 @@ class ForgotPasswordScreen extends StatelessWidget {
             ),
             Space(height: AppSizes.height! * 0.04),
             PrimaryButton(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(context, Screens.otpScreen);
+              },
               text: "Send Verification",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),

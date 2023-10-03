@@ -31,7 +31,10 @@ class OtpScreen extends StatelessWidget {
             ),
             Space(height: AppSizes.height! * 0.04),
             PrimaryButton(
-              onTap: () {},
+              onTap: () {
+                Navigator.pushReplacementNamed(
+                    context, Screens.resetPasswordScreen);
+              },
               text: "Confirm",
               textStyle: AppTypography.regular18(color: AppColors.background),
             ),
