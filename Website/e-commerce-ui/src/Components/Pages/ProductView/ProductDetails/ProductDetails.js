@@ -1,18 +1,20 @@
 import './ProductDetails.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faStar,faHeart} from "@fortawesome/free-solid-svg-icons";
+import {faHeart} from "@fortawesome/free-solid-svg-icons";
+import {renderStars} from "../../../ProductsData";
 const Sizes=["XS","S","M","L","XL"]
 
+
 const ProductDetails =({Data}) =>{
-console.log(Data.Comments)
+console.log(renderStars(4))
     return(
         <div className={"ProductDetails"}>
             <h1>{Data.ItemName}</h1>
             <h2>{Data.BrandName}</h2>
             <h4> Sold by : {Data.SellerName}</h4>
             <div id={"Rating"}>
-                <p>{Data.Rating} <FontAwesomeIcon icon={faStar}/></p>
-                <p>{Data.Reviews} Reviews</p>
+                <p>{Data.Rating}{renderStars(Data.Rating)} </p>
+                <p>{Data.ReviewCount} Reviews</p>
             </div>
             <div id={"Price"}>
                 <p id={"Offer"}>Rs. {Data.OfferPrice}</p>

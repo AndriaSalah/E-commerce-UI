@@ -11,6 +11,7 @@ import ProductView from "./Components/Pages/ProductView/ProductView";
 function App() {
 
   return (
+
         <Router>
             <Navbar/>
             <Routes>
