@@ -1,0 +1,29 @@
+.Details{
+    display: none;
+}
+.Ratings{
+    display: none;
+}
+.Specification{
+    display: none;
+}
+.activePage{
+    display: block;
+
+}
+.Ratings .Review{
+    margin: 3rem 0 ;
+}
+
+.Ratings .ReviewImages{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.Ratings .ReviewImages img{
+    aspect-ratio: 1/1;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 10px;
+}

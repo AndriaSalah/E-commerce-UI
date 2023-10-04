@@ -1,0 +1,20 @@
+.ProductFilters #tag{
+    margin: 8px 0;
+}
+.ProductFilters #tag label{
+    color: #6e6e6e;
+    margin-left: 8px;
+}
+.ProductFilters #tag input[type="checkbox"]{
+    /*background-color: #848484 ;*/
+    accent-color:#848484 ;
+    outline: none;
+    border: none;
+}
+.ProductFilters span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #d9d8d8;
+    margin-top: 1rem;
+}

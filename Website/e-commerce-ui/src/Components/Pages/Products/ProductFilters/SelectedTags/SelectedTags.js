@@ -4,7 +4,7 @@ import {faXmark} from "@fortawesome/free-solid-svg-icons";
 const SelectedTags = ({tags, ShowFilterBar , ClearFilter,addTags}) =>{
     return(
         <div className={tags.length !== 0 ? "Sticky":""}>
-            <div className={"Right__Button"}>
+            <div className={"Close__Button"}>
                 <button onClick={ShowFilterBar} className={"close"} ><FontAwesomeIcon icon={faXmark}/></button>
             </div>
             <h1>Filters</h1>
@@ -14,8 +14,8 @@ const SelectedTags = ({tags, ShowFilterBar , ClearFilter,addTags}) =>{
                     {tag}
                 </div>
             )}</div>
-            <div className={"Right__Button"}>
-                <button className={tags.length === 0 ? "Hide":""} onClick={ClearFilter}>Clear all</button>
+            <div className={"Close__Button"}>
+                <button className={tags.length === 0 ? "remove":""} onClick={ClearFilter}>Clear all</button>
             </div>
             <span></span>
         </div>

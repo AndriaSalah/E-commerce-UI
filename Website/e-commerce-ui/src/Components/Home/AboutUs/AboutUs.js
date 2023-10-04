@@ -29,7 +29,7 @@ const AboutUs = () => {
                     <p id={"contactInfo mail"}>Someting@random.com</p>
                     <Button>Directions</Button>
                 </div>
-                <img src={aboutUs} alt={"about us"}/>
+                <img src={aboutUs} alt={"about us"} loading={"lazy"}/>
             </div>
         </div>
     )

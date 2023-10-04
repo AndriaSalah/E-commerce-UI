@@ -1,4 +1,18 @@
+.allLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 45rem;
+}
 .NavButtons{
     display: flex;
     justify-content: space-between;
+}
+
+#logo{
+    position: relative;
+    aspect-ratio: 1;
+    height: 2.8rem;
+    bottom: 0.5rem;
+
+    filter:  invert(8%) sepia(94%) saturate(5041%) hue-rotate(226deg) brightness(90%) contrast(103%);
 }

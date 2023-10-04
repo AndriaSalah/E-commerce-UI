@@ -9,12 +9,40 @@
     -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
     -moz-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.44);
     border-radius: 10px;
-    transition-duration: 0.5s;
     margin: 1rem;
+    animation: unHide 0.75s forwards ;
 }
+@keyframes unHide {
+    0%{
+        left: -30rem;
+
+    }
+    50%{
+
+    }
+    100%{
+        left: 0;
+
+    }
+}
+
 .Hide{
-    display: none;
+    animation: hide 0.5s forwards;
+}
+@keyframes hide {
+    0%{
+        left: 0;
+
+    }
+    50%{
+
+    }
+    100%{
+        left: -30rem;
+
+    }
 }
 .ProductFilters .Container{
     margin: 1rem;
 }
+

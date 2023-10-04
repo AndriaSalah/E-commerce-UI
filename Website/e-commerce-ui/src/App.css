@@ -1,5 +1,6 @@
 *{
   font-family: 'Libre Baskerville', serif;
+  scrollbar-gutter: stable;
 }
 .App {
   text-align: center;

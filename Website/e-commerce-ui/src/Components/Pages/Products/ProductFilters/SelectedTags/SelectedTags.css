@@ -9,7 +9,7 @@
 .ProductFilters .selectedTags{
     display:flex;
     flex-flow: wrap;
-    transition-duration: 1s;
+
 
 }
 .ProductFilters .selectedTags .Tag{
@@ -20,21 +20,28 @@
     height: fit-content;
     padding:5px 12px;
     margin:2px;
+    opacity: 0;
+    animation: add 0.5s forwards;
 }
-.ProductFilters .Right__Button{
+@keyframes add {
+    100%{
+        opacity: 1;
+    }
+}
+.ProductFilters .Close__Button{
     text-align: right;
 }
-.ProductFilters .Right__Button button , .ProductFilters .selectedTags button{
+.ProductFilters .Close__Button button , .ProductFilters .selectedTags button{
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
 }
-.ProductFilters .Right__Button button:hover , .ProductFilters .selectedTags button:hover{
+.ProductFilters .Close__Button button:hover , .ProductFilters .selectedTags button:hover{
     color: #b03535;
 }
 
-.ProductFilters .Right__Button .Hide{
-    position: absolute;
+.ProductFilters .Close__Button .remove{
+    visibility: hidden;
     opacity: 0;
 }
