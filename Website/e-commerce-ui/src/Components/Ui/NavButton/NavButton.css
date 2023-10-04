@@ -1,6 +1,6 @@
 .NavButton{
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
     margin: auto 15px;
     transition-duration: 0.2s;
 }

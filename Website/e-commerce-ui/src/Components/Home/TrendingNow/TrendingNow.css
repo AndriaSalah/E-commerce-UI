@@ -9,5 +9,6 @@
 .TrendingItems h2{
     font-size: 28px;
     margin-bottom: 2rem;
+    color: var(--textColor);
 }
 

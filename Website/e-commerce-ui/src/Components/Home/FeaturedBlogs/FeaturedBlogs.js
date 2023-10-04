@@ -5,6 +5,7 @@ import cover2 from "../../../Assets/FeaturedBlogs/img2.png";
 import './FeaturedBlogs.css'
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Button from "../../Ui/ExploreButton/Button";
 
 const FeaturedBlogs = ()=>{
     const BlogsData = [
@@ -75,7 +76,8 @@ const FeaturedBlogs = ()=>{
                         ]))}
             </Swiper>
             <div id={"buttonSpace"}>
-                <a href='../../Pages/Products/Products.js' id={"viewAll"}>View all</a>
+                {/*<a href='../../Pages/Products/Products.js' id={"viewAll"}>View all</a>*/}
+                <Button lightMode={true} >View all</Button>
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ const trendingNow = getTrendingOffers()
             <Swiper
 
                     spaceBetween={-50}
-                    slidesPerView={4}
+                    slidesPerView={5}
                     grabCursor={true}
             >
                 {

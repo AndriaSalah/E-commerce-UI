@@ -34,7 +34,7 @@ const TrendingOffers = ()=>{
                                 <div id={"OfferDetails"}>
                                     <img src={item.BrandImgSrc} alt={"brand"}  loading={"lazy"}/>
                                     <h2>{item.PunchLine}</h2>
-                                    <Button lightMode={false} href="../Pages/Products.js">Explore</Button>
+                                    <Button lightMode={true} href="../Pages/Products.js">Explore</Button>
                                 </div>
                                 <img id={"CoverImg"} src={item.ImgSrc} alt={"offer"}/>
                             </div>

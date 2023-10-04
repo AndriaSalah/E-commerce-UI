@@ -12,7 +12,7 @@ import AboutUs from "../Home/AboutUs/AboutUs";
 
 const Home = () =>{
     return (
-        <div>
+        <div className={"Home"}>
             <OffersCarousel/>
             <TrendingNow/>
             <DealsOfTheDay/>

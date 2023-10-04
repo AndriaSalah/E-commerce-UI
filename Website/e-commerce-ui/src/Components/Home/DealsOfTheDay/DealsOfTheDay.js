@@ -7,7 +7,7 @@ import {DealsOfTheDayData} from "../../ProductsData";
 const TrendingNow = ()=>{
     return(
         <div className={'DealsOfTheDay'}>
-            <h2>Deals of theDay</h2>
+            <h2 id={"title"}>Deals of theDay</h2>
             <Swiper
                 modules={[Scrollbar]}
                 spaceBetween={-100}

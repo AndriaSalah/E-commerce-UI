@@ -1,10 +1,9 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
 import {Navigation} from "swiper/modules";
 import profileImg from '../../../Assets/profile.png'
 import 'swiper/css/navigation';
 import './CommentsHome.css'
+import {renderStars} from "../../ProductsData";
 const CommentsHome = () => {
     const commentData = [
         {
@@ -49,15 +48,7 @@ const CommentsHome = () => {
         },
 
     ]
-    const viewStars =(stars)=>{
-        let starsArr = []
-        console.log(stars)
-        for (let i = 0; i <stars ; i++) {
-            starsArr.push(" ")
-        }
-        console.log(starsArr)
-        return starsArr
-    }
+
     return (
         <div className={'Comments'}>
             <h2>What Our Customers Say</h2>
@@ -78,12 +69,10 @@ const CommentsHome = () => {
                                 <img src={comment.profileImg} alt={"item"} loading={"lazy"}/>
                                 <div id={"Section1"}>
                                     <p>{comment.stars}
-                                        {viewStars(comment.stars).map((item)=>(
-                                            <FontAwesomeIcon id={"icon"} icon={faStar}/>
-                                        ))}
+                                        {renderStars(comment.stars)}
                                     </p>
                                 </div>
-                                <h4>{comment.text}</h4>
+                                <p id={"text"}>{comment.text}</p>
                             </div>
                         </SwiperSlide>
                         ]))}

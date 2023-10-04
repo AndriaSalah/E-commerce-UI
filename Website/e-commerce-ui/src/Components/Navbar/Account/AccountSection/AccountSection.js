@@ -1,16 +1,15 @@
-import FavIcon from "../../../../Assets/Icons/Navbar/Favourites.png"
-import Cart from "../../../../Assets/Icons/Navbar/Cart.png"
 import profile from "../../../../Assets/Icons/Navbar/icon.png"
 import "./AccountSection.css"
+import {AiOutlineHeart, AiOutlineShoppingCart} from "react-icons/ai";
 const AccountSection = () => {
 
     return(
         <div className={"AccountSection"}>
             <button id={"favourites"}>
-                <img src={FavIcon} alt={"Favourites"}/>
+                <AiOutlineHeart />
             </button>
             <button id={"cart"}>
-                <img src={Cart} alt={"Cart"}/>
+                <AiOutlineShoppingCart/>
             </button>
             <div className={"profile"}>
                 <img src={profile} alt={profile} />

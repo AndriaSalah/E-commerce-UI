@@ -2,10 +2,10 @@
     display: flex;
     width: fit-content;
     flex-direction: column;
-    background-color:white ;
-    box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
-    -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
-    -moz-box-shadow: 0 0 10px 1px rgba(59, 58, 58, 0.78);
+    background-color:var(--accentColor) ;
+    box-shadow: 0 0 10px 1px var(--shadowColor);
+    -webkit-box-shadow: 0 0 10px 1px var(--shadowColor);
+    -moz-box-shadow: 0 0 10px 1px var(--shadowColor);
     border-radius: 10px;
     text-decoration: none;
 }
@@ -16,7 +16,13 @@
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-
+.ProductCard #itemName{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 15rem;
+    color: var(--textColor);
+}
 .ProductCard #Section1{
     width: 90%;
     height: 20px;
@@ -25,17 +31,12 @@
     font-size: 14px;
     margin-left: 1rem;
 }
-.ProductCard #itemName{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 15rem;
-}
+
 .ProductCard #Section1 h4 {
     width: 9rem;
     margin-right: 3rem;
     margin-top: 0;
-    color: #272727;
+    color: var(--textColor);
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -43,7 +44,8 @@
 
 .ProductCard #Section1 p{
     margin-top: 0;
-    color: #848484;
+    color: var(--textColor);
+    /*color: #848484;*/
 }
 
 .ProductCard #Section2{
@@ -51,20 +53,23 @@
     width: 100%;
 }
 
-.ProductCard #Section2 #priceData{
+.ProductCard #Section2 .priceData{
     margin-top: 0;
     margin-left: 1rem;
 }
 
 .ProductCard #Section2 p{
-    color: #0A8200;
+    color: var(--accentColor3);
 }
 
 .ProductCard #itemName ,.ProductCard #Section1,.ProductCard #Section2 #priceData {
     margin-left: 1rem;
 }
 
-.ProductCard #Section2 .actual{
+.ProductCard #Section2 #actual{
     text-decoration: line-through;
-    color: #848484;
+    color: var(--accentColor2);
+}
+.ProductCard #Section2 #offer{
+    color: var(--textColor);
 }

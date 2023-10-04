@@ -1,7 +1,6 @@
 import {useState} from "react";
 import Details from "./Info/Details";
 import Ratings from "./Info/Ratings";
-import Specification from "./Info/Specification";
 import './ProductInfo.css'
 
 const ProductInfo = ({Data}) => {

@@ -3,6 +3,14 @@
     /*text-align: center;*/
     margin-bottom: 1rem;
 }
+.Blogs .title {
+     font-size: 28px;
+     margin-bottom: 2rem;
+     margin-top: 2rem;
+     margin-left: 2rem;
+     color:var(--textColor)
+ }
+
 .Blogs #buttonSpace{
     text-align: center;
 }
@@ -18,12 +26,6 @@
 .Blogs #buttonSpace #viewAll:hover{
     background: black;
     color: white;
-}
-.Blogs .title {
-    font-size: 28px;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    margin-left: 2rem;
 }
 
 .Blogs .swiper {
@@ -48,22 +50,24 @@
     justify-content: center;
     align-items: baseline;
     padding: 2rem;
-    background: #FFFFFF;
-    border-radius: 10px;
+    background: var(--accentColor);
+    border-radius: 0 10px 10px 0;
 }
 
 .Blog #CoverImg {
     height: 480px;
     width: 480px;
+    border-radius: 10px 0 0 10px;
 }
 
 .Blog #BlogDetails #type, .Blog #BlogDetails #text {
-    color: #848484;
+    color: var(--accentColor2);
     font-weight: lighter;
 }
 
 .Blog #BlogDetails h2 {
     font-size: 23px;
+    color:var(--textColor)
 }
 
 .Blog #BlogDetails span {
@@ -85,6 +89,7 @@
 
 .Blog #footer h3 {
     margin-right: 4.5rem;
+    color:var(--textColor)
 }
 
 .Blog #footer a {

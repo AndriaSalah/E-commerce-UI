@@ -1,5 +1,6 @@
 .DetailsSection{
     padding: 1rem 15%;
+    color: var(--textColor);
 }
 .DetailsSection span{
     display: block;
@@ -22,11 +23,12 @@
     background-color: transparent;
     border: none;
     transition-duration: 0.25s;
+    color: var(--textColor);
 }
 
 .Navigation button:hover , .activeButton {
-    color: #002482;
-    text-decoration: underline 2px #002482;
+
+    text-decoration: underline 2px #3562e1;
     text-underline-offset: 1rem;
 
 }
