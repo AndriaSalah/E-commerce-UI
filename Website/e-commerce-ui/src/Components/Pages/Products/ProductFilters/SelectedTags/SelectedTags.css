@@ -1,7 +1,11 @@
+.ProductFilters h2 , .ProductFilters h1{
+    color: var(--textColor);
+}
+
 .ProductFilters .Sticky{
     position: sticky;
     top:0;
-    background-color: #FFFFFF;
+    background-color: var(--accentColor);
     padding-bottom:1rem;
 
 }
@@ -28,14 +32,18 @@
         opacity: 1;
     }
 }
-.ProductFilters .Close__Button{
+.ProductFilters .Close__Button {
     text-align: right;
+}
+.ProductFilters .Close__Button button{
+    color: var(--textColor);
 }
 .ProductFilters .Close__Button button , .ProductFilters .selectedTags button{
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
+
 }
 .ProductFilters .Close__Button button:hover , .ProductFilters .selectedTags button:hover{
     color: #b03535;

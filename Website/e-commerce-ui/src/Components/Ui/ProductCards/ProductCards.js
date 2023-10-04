@@ -14,9 +14,9 @@ const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPri
                 </p>
             </div>
             <div id={'Section2'}>
-                <h3 id={"priceData"}>{`Rs. ${OfferPrice}`}</h3>
-                <h4 id={"priceData"} className={"actual"}>{`Rs. ${ActualPrice}`}</h4>
-                <p id={"priceData"}>{`(30% off)`}</p>
+                <h3 id={"offer"} className={"priceData"}>{`Rs. ${OfferPrice}`}</h3>
+                <h4 id={"actual"} className={"priceData"}>{`Rs. ${ActualPrice}`}</h4>
+                <p id={"discount"}  className={"priceData"}>{`(30% off)`}</p>
             </div>
         </div>
     )

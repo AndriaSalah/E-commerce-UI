@@ -1,6 +1,7 @@
 .Footer{
     font-family: 'Libre Baskerville', serif;
-    background-color: #00071B;
+    /*background-color: #00071B;*/
+    background-color: var(--footerColor);
     color: #FFFFFF;
 }
 

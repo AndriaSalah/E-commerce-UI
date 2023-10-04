@@ -8,6 +8,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: 'Libre Baskerville', serif;
+    color:var(--textColor);
 }
 
 .Categories {

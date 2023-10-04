@@ -10,6 +10,7 @@
     font-size: 28px;
     margin-bottom: 2rem;
     margin-left: 2rem;
+    color: var(--textColor);
 }
 
 .Comment{
@@ -40,16 +41,19 @@
     margin-top: 1rem;
 }
 
-.Comment h4 {
+.Comment #text {
     text-align: center;
     width: 100%;
     margin-top: 0;
-    color: #272727;
+    color: var(--textColor);
 }
 
 .Comment #Section1 p{
     margin-top: 0;
-    color: #848484;
+    color: var(--textColor);
+}
+.Comment #Section1 p svg{
+    width: 1rem;
 }
 .swiper-button-prev, .swiper-button-next{
     background-color: black;

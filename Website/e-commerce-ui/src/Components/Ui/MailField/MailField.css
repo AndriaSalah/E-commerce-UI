@@ -1,6 +1,9 @@
 :root{}
 
 .MailField{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     background: transparent;
     border-radius: 2px;
     width: 20rem;
@@ -9,17 +12,19 @@
 }
 
 .MailField #InputField{
-    width: 14rem;
+    width: 15rem;
     height: 2.1rem;
     background: transparent;
     outline: transparent;
     border: transparent;
-    margin-left: 1rem;
     color: #FFFFFF;
     font-family: 'Libre Baskerville', serif;
 }
 
 .MailField #icon{
-    margin-left: 1rem;
     color: #706f6f;
+}
+
+.MailField #icon svg{
+    width: 1rem;
 }

@@ -1,5 +1,6 @@
 .SimilarProducts h2{
-    padding-left: 1rem
+    padding-left: 1rem;
+    color: var(--textColor);
 }
 
 .SimilarProducts .swiper{

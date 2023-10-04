@@ -687,7 +687,7 @@ export const DealsOfTheDayData = [
         ImgSrc : image1
     }
 ]
-export function renderStars(Rating, Color="black"){
+export function renderStars(Rating, Color="var(--textColor)"){
     let stars=[]
     for (let i = 1; i<=5 ; i++,Rating--){
         if(Rating>0) stars.push(<AiFillStar style={{color:Color}}/>)

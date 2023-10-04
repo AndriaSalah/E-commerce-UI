@@ -4,13 +4,19 @@
 }
 .AboutUs #title{
     font-size: 28px;
+    color:var(--textColor)
 }
 .AboutUs .content {
     display: flex;
     justify-content: space-around;
+
 }
 .AboutUs .content img{
-    width: 45% ;
+    width: 50% ;
+    object-fit: cover;
+}
+.AboutUs .content #data{
+    color:var(--textColor)
 }
 .AboutUs .content #data #text{
     width: 75%;

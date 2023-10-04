@@ -1,5 +1,5 @@
 import './Footer.css'
-import logo from '../../Assets/Logo.svg'
+
 import FooterBody from "./FooterBody/FooterBody";
 import FooterHeader from "./FooterHeader/FooterHeader";
 import FooterLegals from "./Legals/FooterLegals";

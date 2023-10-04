@@ -1,18 +1,17 @@
-.TrendingOffers{
-    font-family: 'Libre Baskerville', serif;
-}
+
 .TrendingOffers .title{
     font-size: 28px;
     margin-bottom: 2rem;
     margin-top: 2rem;
     margin-left: 2rem;
+    color: var(--textColor);
 }
 .TrendingOffer{
     display: flex;
     width: fit-content;
-    box-shadow: 0 0 10px 1px rgba(87,85,85,0.75);
-    -webkit-box-shadow: 0 0 10px 1px rgba(87,85,85,0.75);
-    -moz-box-shadow: 0 0 10px 1px rgba(87,85,85,0.75);
+    box-shadow: 0 0 10px 1px var(--shadowColor);
+    -webkit-box-shadow: 0 0 10px 1px var(--shadowColor);
+    -moz-box-shadow: 0 0 10px 1px var(--shadowColor);
     border-radius: 10px;
 }
 .TrendingOffer #OfferDetails{
@@ -21,17 +20,20 @@
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    background: #FFFFFF;
-    border-radius: 10px;
+    background: var(--accentColor);
+    border-radius: 10px 0 0 10px;
 
 }
 .TrendingOffer #OfferDetails h2{
     font-size: 23px;
     text-align: center;
+    color: var(--textColor);
 }
 .TrendingOffer #CoverImg{
     height: 480px;
     width: 480px;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0 ;
 }
 .TrendingOffers .swiper {
     padding: 2rem !important;

@@ -27,7 +27,7 @@ const AboutUs = () => {
                     <h4>Contact Information</h4>
                     <p id={"contactNumber"}>+91 1256378409</p>
                     <p id={"contactInfo mail"}>Someting@random.com</p>
-                    <Button>Directions</Button>
+                    <Button lightMode={true}>Directions</Button>
                 </div>
                 <img src={aboutUs} alt={"about us"} loading={"lazy"}/>
             </div>

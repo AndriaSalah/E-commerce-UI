@@ -5,17 +5,16 @@ import 'swiper/css/pagination';
 import 'swiper/css/grid';
 import './ProductsDisplay.css'
 import 'swiper/css/navigation';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faSliders, faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
+import {BsChevronDown, BsSliders} from "react-icons/bs";
 
 const ProductsDisplay = ({Shown, ShowFiltersBar, Products}) => {
     return (
         Products.length > 0 ?
             <div className={"ProductDisplay " + (!Shown ? "Expand" : "")}>
                 <div id={"options"}>
-                    <button onClick={ShowFiltersBar}>Filters <FontAwesomeIcon id={"icon"} icon={faSliders}/></button>
-                    <button>Sort By <FontAwesomeIcon id={"icon"} icon={faChevronDown}/></button>
+                    <button onClick={ShowFiltersBar}>Filters <BsSliders/></button>
+                    <button>Sort By <BsChevronDown/></button>
                 </div>
                 <div id={"View"}>
                     <Swiper

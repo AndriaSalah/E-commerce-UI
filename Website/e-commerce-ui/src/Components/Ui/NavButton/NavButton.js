@@ -4,7 +4,7 @@ const NavButton = (props)=>{
 
     return(
 
-        <Link to={props.src} state={{category :props.category}} onClick={props.onClick} className={"NavButton " + props.className} >{props.children}</Link>
+        <Link  to={props.src} state={{category :props.category}} onClick={props.onClick} className={"NavButton " + props.className} >{props.children}</Link>
     );
 }
 

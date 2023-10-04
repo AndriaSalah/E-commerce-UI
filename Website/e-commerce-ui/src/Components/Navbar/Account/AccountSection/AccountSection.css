@@ -11,10 +11,12 @@
     margin: auto 0.5rem;
     border-radius: 50%;
     transition-duration: 0.5s;
+    text-align: center;
 }
-.AccountSection button img{
-    aspect-ratio: 1.2;
-    height: 20px;
+.AccountSection button svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: var(--textColor);
 }
 .AccountSection button:hover {
     background: rgba(208, 206, 206, 0.48);
@@ -35,6 +37,7 @@
 }
 .AccountSection .profile p{
     margin: auto 0.5rem;
+    color: var(--textColor);
     transition-duration: 0.5s
 }
 

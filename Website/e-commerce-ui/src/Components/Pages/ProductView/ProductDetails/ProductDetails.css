@@ -1,6 +1,6 @@
 .ProductDetails{
     margin-left: 5rem;
-
+    color: var(--textColor);
 }
 .ProductDetails #Rating{
     display: flex;
