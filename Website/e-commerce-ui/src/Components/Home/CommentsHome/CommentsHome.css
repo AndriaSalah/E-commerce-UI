@@ -20,10 +20,11 @@
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
-    -webkit-box-shadow: 0 0 10px 1px rgba(138, 136, 136, 0.63);
-    -moz-box-shadow: 0 0 10px 1px rgba(59, 58, 58, 0.78);
+    box-shadow: 0 0 10px 1px var(--shadowColor);
+    -webkit-box-shadow: 0 0 10px 1px var(--shadowColor);
+    -moz-box-shadow: 0 0 10px 1px var(--shadowColor);
     border-radius: 10px;
+    background-color: var(--accentColor);
 }
 .Comment img{
     aspect-ratio: 1/1;
