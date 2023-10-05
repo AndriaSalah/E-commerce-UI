@@ -4,11 +4,11 @@ import EndSection from "./Account/EndSection";
 
 
 
-const Navbar = ()=>{
+const Navbar = ({Theme ,SwitchColor})=>{
     return(
         <nav>
             <NavLinks></NavLinks>
-            <EndSection></EndSection>
+            <EndSection Theme={Theme} SwitchColor={SwitchColor} ></EndSection>
         </nav>
     );
 

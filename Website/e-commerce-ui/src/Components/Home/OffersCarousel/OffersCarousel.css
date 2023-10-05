@@ -1,7 +1,3 @@
-:root{
-    --bottom-offset: 10%;
-    --left-offset:10%;
-}
 
 .swiper-pagination-bullet-active{
     width: 13px;
@@ -11,6 +7,7 @@
 .OfferImg{
     object-fit: cover;
     width: 100%;
+    background-color: white;
 }
 
 .OffersExplore{
