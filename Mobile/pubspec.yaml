@@ -19,6 +19,7 @@ dependencies:
   smooth_page_indicator:
   like_button:
   readmore:
+  mobkit_dashed_border: ^0.0.5
 
 dev_dependencies:
   flutter_test:

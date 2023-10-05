@@ -112,29 +112,34 @@ class _ViewProductDetailsState extends State<ViewProductDetails> {
             "Delivery Details",
             style: AppTypography.medium18(),
           ),
-          Container(
-            width: AppSizes.width! * 0.65,
-            height: AppSizes.height! * 0.055,
-            padding: const EdgeInsets.symmetric(horizontal: 15),
-            margin: const EdgeInsets.only(top: 15, bottom: 30),
-            decoration: ShapeDecoration(
-              shape: RoundedRectangleBorder(
-                side: const BorderSide(width: 1, color: Colors.grey),
-                borderRadius: BorderRadius.circular(10),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, Screens.promoCodeScreen);
+            },
+            child: Container(
+              width: AppSizes.width! * 0.65,
+              height: AppSizes.height! * 0.055,
+              padding: const EdgeInsets.symmetric(horizontal: 15),
+              margin: const EdgeInsets.only(top: 15, bottom: 30),
+              decoration: ShapeDecoration(
+                shape: RoundedRectangleBorder(
+                  side: const BorderSide(width: 1, color: Colors.grey),
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Enter Pincode",
-                  style: AppTypography.regular14(),
-                ),
-                Text(
-                  "Check",
-                  style: AppTypography.regular14(),
-                ),
-              ],
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Enter Pincode",
+                    style: AppTypography.regular14(),
+                  ),
+                  Text(
+                    "Check",
+                    style: AppTypography.regular14(),
+                  ),
+                ],
+              ),
             ),
           ),
         ],

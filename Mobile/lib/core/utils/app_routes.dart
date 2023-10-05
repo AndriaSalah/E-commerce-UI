@@ -7,6 +7,7 @@ import 'package:ecom/features/home/data/product_model.dart';
 import 'package:ecom/features/home/screens/detail_screen.dart';
 import 'package:ecom/features/home/screens/home_screen.dart';
 import 'package:ecom/features/landing_screen/landing_Screen.dart';
+import 'package:ecom/features/promo_code/screens/promp_code_screen.dart';
 import 'package:flutter/material.dart';
 
 class Screens {
@@ -18,6 +19,7 @@ class Screens {
   static const homeScreen = "homeScreen";
   static const detailScreen = "detailScreen";
   static const landingScreen = "landingScreen";
+  static const promoCodeScreen = "promoCodeScreen";
 }
 
 class Routes {
@@ -56,6 +58,10 @@ class Routes {
         } else {
           return _unHandleRoute();
         }
+      case Screens.promoCodeScreen:
+        return MaterialPageRoute(
+          builder: (context) => const PromoCodeScreen(),
+        );
       case Screens.landingScreen:
         return MaterialPageRoute(
           builder: (context) => const LandingScreen(),
