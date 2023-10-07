@@ -1,11 +1,12 @@
 import profile from "../../../../Assets/Icons/Navbar/icon.png"
 import "./AccountSection.css"
 import {AiOutlineHeart, AiOutlineShoppingCart} from "react-icons/ai";
-import {useState} from "react";
+import {useContext} from "react";
 import {MdDarkMode, MdLightMode} from "react-icons/md";
+import {ThemeContext} from "../../../../App";
 
-const AccountSection = ({Theme,SwitchColor}) => {
-    console.log(Theme)
+const AccountSection = () => {
+    const {SwitchColor,Theme} = useContext(ThemeContext)
     return (
         <div className={"AccountSection"}>
             <button id={"colorsButton"} onClick={SwitchColor}>

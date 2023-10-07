@@ -1,3 +1,19 @@
 .EndSection{
     display: flex;
+    width: 80%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .EndSection{
+        width: 60%;
+    }
+}
+@media (max-width: 768px) {
+    .EndSection {
+        width: 100%;
+        height: 8rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0.5rem 0;
+    }
 }

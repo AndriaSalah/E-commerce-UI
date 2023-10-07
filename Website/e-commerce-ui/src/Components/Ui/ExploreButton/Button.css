@@ -25,3 +25,9 @@
     background: black;
     color: white;
 }
+@media (max-width: 768px) {
+    .explore{
+        padding: 0.25rem 1rem;
+        font-size: 14px;
+    }
+}

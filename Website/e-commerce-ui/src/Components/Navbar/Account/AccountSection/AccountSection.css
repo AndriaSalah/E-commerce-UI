@@ -1,6 +1,7 @@
 .AccountSection{
     display: flex;
     align-content: space-between;
+    width: 40%;
 }
 .AccountSection button{
     height: 40px;
@@ -8,7 +9,7 @@
     background: transparent;
     border: none;
     outline: 1px black;
-    margin: auto 0.5rem;
+    margin: auto;
     border-radius: 50%;
     transition-duration: 0.5s;
     text-align: center;
@@ -44,4 +45,8 @@
 .AccountSection .profile:hover p{
     color: grey;
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+    .AccountSection{
+        width: 45%;
+    }
+}

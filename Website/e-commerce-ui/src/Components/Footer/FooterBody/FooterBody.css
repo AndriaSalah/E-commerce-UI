@@ -3,7 +3,7 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 5px ;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 6rem;
 }
 #partition1 { grid-area: 1 / 1 / 2 / 2; }
@@ -12,3 +12,33 @@
 #partition4 { grid-area: 1 / 4 / 2 / 5; }
 #partition5 { grid-area: 1 / 5 / 2 / 6; }
 #partition6 { grid-area: 1 / 6 / 2 / 8; }
+
+@media (max-width: 768px) {
+    /*.Body {*/
+    /*    grid-template-columns: repeat(4, 1fr);*/
+    /*    grid-template-rows: 1fr;*/
+    /*    grid-column-gap: 10px;*/
+    /*    grid-row-gap: 10px;*/
+    /*    margin: 0;*/
+    /*}*/
+
+    /*#partition4 { grid-area: 1 / 1 / 2 / 2; }*/
+    /*#partition5 { grid-area: 1 / 2 / 2 / 3; }*/
+    /*#partition6 { grid-area: 1 / 3 / 2 / 5; }*/
+    .Body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 0;
+    }
+
+    #partition4 { grid-area: 1 / 1 / 2 / 2; }
+    #partition5 { grid-area: 1 / 2 / 2 / 3; }
+    #partition6 { grid-area: 2 / 1 / 3 / 3; }
+
+    #partition1,#partition2,#partition3{
+        display: none;
+    }
+}

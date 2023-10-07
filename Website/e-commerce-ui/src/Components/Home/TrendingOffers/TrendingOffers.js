@@ -11,15 +11,23 @@ const TrendingOffers = ()=>{
         <div className={'TrendingOffers'}>
             <h2 className={"title"}>Trending offers</h2>
             <Swiper
+                breakpoints={
+                    {
+                        768: {
+                            slidesPerView: 2,
+                            coverflowEffect:{stretch: -250}
+                        }
+                    }
+                }
                 modules={[EffectCoverflow]}
                 effect={'coverflow'}
-                slidesPerView={2}
+                slidesPerView={1}
                 initialSlide={1}
                 centeredSlides={true}
                 grabCursor={true}
                 coverflowEffect={{
                     rotate: 0,
-                    stretch: -250,
+                    stretch: -50,
                     depth: 400,
                     modifier: 1,
                     slideShadows: false,

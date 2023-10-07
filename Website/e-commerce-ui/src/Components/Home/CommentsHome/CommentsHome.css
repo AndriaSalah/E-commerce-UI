@@ -70,7 +70,11 @@
 .swiper-button-next::after{
     width: 20px;
 }
-
+@media (max-width: 768px) {
+    .Comment{
+        padding: 2.5rem;
+    }
+}
 
 
 

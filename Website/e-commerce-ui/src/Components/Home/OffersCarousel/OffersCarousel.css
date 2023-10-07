@@ -1,7 +1,48 @@
-
+.OffersCarousel{
+    padding: 2rem;
+}
 .swiper-pagination-bullet-active{
     width: 13px;
     height: 13px;
+}
+.Offer{
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#OfferImage{
+    width: 50%;
+}
+#OfferImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#offerDetails{
+    position: relative;
+    width: 50%;
+}
+#offerDetails img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#DetailsWrapper{
+    padding: 1rem ;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top:25%;
+    text-align: center;
+    box-sizing: border-box;
+}
+#DetailsWrapper h2{
+    font-size: 66px;
 }
 
 .OfferImg{
@@ -12,11 +53,36 @@
 
 .OffersExplore{
     /*color: black!important;*/
-    position: absolute;
+    /*position: absolute;*/
     /*outline: solid black 1px !important;*/
     /*border-radius: 5px;*/
     padding: 0.5rem 2rem;
-    right: 18%;
-    bottom:24% ;
+    /*right: 50%;*/
+    /*bottom:24% ;*/
     font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .OffersCarousel{
+        padding: 0rem;
+    }
+    .OfferImg{
+        height: 40rem;
+    }
+    .Offer{
+        flex-direction: column;
+        height: 80vh;
+    }
+    #OfferImage{
+        width: 100%;
+    }
+    #offerDetails{
+        width: 100%;
+    }
+    #DetailsWrapper h2{
+        font-size: 40px;
+    }
+    #DetailsWrapper{
+        top:0;
+    }
 }
