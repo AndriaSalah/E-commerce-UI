@@ -2,17 +2,30 @@
     display: flex;
     width: 100%;
     padding: 1rem 0;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
 }
-
+.legals .legalsWrapper{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
 .legals #icons{
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .legals #icons img{
     height: 32px;
     width: 32px;
+}
+@media (max-width: 768px) {
+    .legals{
+        flex-direction: column ;
+    }
+    .legals .legalsWrapper{
+        width: 100%;
+    }
 }

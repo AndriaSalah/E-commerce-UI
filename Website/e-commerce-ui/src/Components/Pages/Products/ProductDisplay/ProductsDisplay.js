@@ -18,6 +18,13 @@ const ProductsDisplay = ({Shown, ShowFiltersBar, Products}) => {
                 </div>
                 <div id={"View"}>
                     <Swiper
+                        breakpoints={
+                        {
+                            340:{
+                                slidesPerView:{slidesPerView:2}
+                            }
+                        }
+                        }
                         modules={[Grid, Pagination, Navigation]}
                         spaceBetween={20}
                         slidesPerView={Shown ? 4 : 5}

@@ -6,8 +6,10 @@ import icon4 from '../../../Assets/Icons/ScoialMedia/twitter.png'
 const FooterLegals = () =>{
     return (
         <div className={"legals"}>
-            <p>Terms & conditions</p>
-            <p>Privacy Policy</p>
+            <div className={"legalsWrapper"}>
+                <p>Terms & conditions</p>
+                <p>Privacy Policy</p>
+            </div>
             <div id={"icons"}>
                 <img src={icon1} alt="facebook"/>
                 <img src={icon2} alt="instagram"/>

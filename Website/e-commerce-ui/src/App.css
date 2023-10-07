@@ -10,6 +10,13 @@
   --LogoFilter: invert(100%) sepia(100%) saturate(1%) hue-rotate(174deg) brightness(110%) contrast(101%);
   --footerColor:#243138;
   --hoverColor: #707070;
+  --swiper-pagination-color: var(--accentColor);
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 4px;
+  --swiper-pagination-bottom: 2px;
+  --swiper-pagination-bullet-inactive-color: var(--accentColor2);
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+
 }
 /*.swiper .swiper-slide{*/
 /*  width: fit-content !important;*/
@@ -52,39 +59,4 @@ body{
   transition-duration: 0.5s;
   margin: 0;
   padding: 0;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

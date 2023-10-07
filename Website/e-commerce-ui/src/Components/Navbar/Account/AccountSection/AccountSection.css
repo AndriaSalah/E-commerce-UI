@@ -1,6 +1,7 @@
 .AccountSection{
     display: flex;
-    align-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     width: 40%;
 }
 .AccountSection button{
@@ -9,7 +10,6 @@
     background: transparent;
     border: none;
     outline: 1px black;
-    margin: auto;
     border-radius: 50%;
     transition-duration: 0.5s;
     text-align: center;
@@ -29,12 +29,16 @@
     margin-left: 1rem;
     height: 40px;
     cursor: pointer;
-    width: 10rem;
+    width: fit-content;
+    align-items: center;
 }
 
 .AccountSection .profile img{
     aspect-ratio: 1 / 1;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
+
 }
 .AccountSection .profile p{
     margin: auto 0.5rem;
@@ -46,7 +50,7 @@
     color: grey;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    .AccountSection{
-        width: 45%;
-    }
+    /*.AccountSection{*/
+    /*    width: 100%;*/
+    /*}*/
 }

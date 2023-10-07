@@ -16,6 +16,8 @@ nav{
     position: sticky;
     top: 0;
     z-index: 10;
+    /*width: 100%;*/
+    /*height: 3.5rem;*/
     background-color: var(--accentColor);
 }
 
@@ -62,7 +64,8 @@ nav #logo{
 @media (max-width: 768px) {
     nav #logo{
         position: absolute;
-        left: 10%;
+        left: 3%;
+        bottom: 0.5rem;
     }
     .burger{display: flex ;   flex-direction: column;}
     .menu{

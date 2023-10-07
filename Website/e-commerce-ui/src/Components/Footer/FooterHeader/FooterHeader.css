@@ -19,12 +19,11 @@
         width: 100%;
         padding:  1rem;
         box-sizing: border-box;
-        /*justify-content: space-around;*/
+        justify-content: flex-start;
     }
     #Header img{
-
         width: 15vw;
         height: 7.5vh;
-
+        margin-right: 2rem;
     }
 }

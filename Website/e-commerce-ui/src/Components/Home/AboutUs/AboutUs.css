@@ -1,6 +1,8 @@
 .AboutUs{
+    box-sizing: border-box;
     padding: 2rem;
     font-family: 'Libre Baskerville', serif;
+    width: 100%;
 }
 .AboutUs #title{
     font-size: 28px;
@@ -9,18 +11,34 @@
 .AboutUs .content {
     display: flex;
     justify-content: space-around;
-
+    width: 100%;
 }
 .AboutUs .content img{
     width: 50% ;
     object-fit: cover;
 }
 .AboutUs .content #data{
+    width: 50%;
+    padding: 1rem;
     color:var(--textColor)
 }
 .AboutUs .content #data #text{
-    width: 75%;
+    width: 100%;
 }
 .AboutUs .content #data h4{
     margin-bottom: 5px;
+}
+@media (max-width: 768px) {
+    .AboutUs .content {
+        flex-direction: column-reverse;
+    }
+    .AboutUs .content img{
+        width: 100% ;
+    }
+    .AboutUs .content #data{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
 }

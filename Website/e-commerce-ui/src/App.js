@@ -7,15 +7,18 @@ import Products from "./Components/Pages/Products/Products";
 import Footer from "./Components/Footer/Footer";
 import ProductView from "./Components/Pages/ProductView/ProductView";
 import {createContext, useLayoutEffect, useState} from "react";
+
 export const ThemeContext = createContext({})
+
 function ScrollToTop() {
-    const { pathname } = useLocation();
+    const {pathname} = useLocation();
     useLayoutEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
 
     return null;
 }
+
 const whiteTheme = {
     '--backGroundColor': '#FFFFFF',
     '--shadowColor': 'rgba(169, 169, 169, 0.6)',
@@ -29,29 +32,31 @@ const whiteTheme = {
     '--footerColor': '#00071B',
     '--hoverColor': '#000000'
 };
+
 function App() {
     const [Theme, setTheme] = useState("dark");
+
     function SwitchColor() {
         Theme === "dark" ? setTheme("white") : setTheme("dark");
     }
 
     return (
-        <div className={"MainContainer"} style={Theme === "white" ? { ...whiteTheme } : {}}>
+        <div className={"MainContainer"} style={Theme === "white" ? {...whiteTheme} : {}}>
             <Router>
-                <ScrollToTop />
-                <ThemeContext.Provider value={{SwitchColor,Theme}}>
+                <ScrollToTop/>
+                <ThemeContext.Provider value={{SwitchColor, Theme}}>
                     <Navbar/>
+                    <Routes>
+                        <Route path={"/"} element={<Home/>}/>
+                        <Route path={"/Shop"} element={<Products/>}/>
+                        <Route path={"/Kids"} element={<Products/>}/>
+                        <Route path={"/Men"} element={<Products/>}/>
+                        <Route path={"/Women"} element={<Products/>}/>
+                        <Route path={"/ContactUs"} element={<Products/>}/>
+                        <Route path={"/ProductView"} element={<ProductView/>}/>
+                    </Routes>
+                    <Footer/>
                 </ThemeContext.Provider>
-                <Routes>
-                    <Route path={"/"} element={<Home />} />
-                    <Route path={"/Shop"} element={<Products />} />
-                    <Route path={"/Kids"} element={<Products />} />
-                    <Route path={"/Men"} element={<Products />} />
-                    <Route path={"/Women"} element={<Products />} />
-                    <Route path={"/ContactUs"} element={<Products />} />
-                    <Route path={"/ProductView"} element={<ProductView />} />
-                </Routes>
-                <Footer />
             </Router>
         </div>
     );
