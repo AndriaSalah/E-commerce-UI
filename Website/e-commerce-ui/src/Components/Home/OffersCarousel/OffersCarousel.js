@@ -52,7 +52,7 @@ const OffersCarousel = () => {
                     <SwiperSlide key={Math.random()}>
                         <div className={"Offer"}>
                             <div id={"OfferImage"}><img src={item.OfferImg} alt={"asd"}/></div>
-                            <div id={"OfferDetails"}>
+                            <div id={"offerDetails"}>
                                 <img src={item.detailsBg} alt={"asd"}></img>
                                 <div id={"DetailsWrapper"}>
                                     <h2>{item.details}</h2>
