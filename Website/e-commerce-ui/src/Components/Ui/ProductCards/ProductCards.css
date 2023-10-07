@@ -73,3 +73,27 @@
 .ProductCard #Section2 #offer{
     color: var(--textColor);
 }
+@media (max-width: 768px) {
+   .ProductCard{
+       width: 13.5rem;
+   }
+    .ProductCard img{
+        width: 100%;
+    }
+    .ProductCard #itemName{
+        font-size: 16px;
+        width: 95%;
+    }
+    .ProductCard #Section1{
+        font-size: 14px;
+    }
+    .ProductCard #Section1 h4 {
+        margin-right: 0;
+    }
+    .ProductCard #Section2{
+        font-size: 12px;
+    }
+    .ProductCard #Section2 .priceData{
+
+    }
+}

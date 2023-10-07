@@ -9,6 +9,32 @@ const TrendingNow = ()=>{
         <div className={'DealsOfTheDay'}>
             <h2 id={"title"}>Deals of theDay</h2>
             <Swiper
+                breakpoints={{
+                    320:{
+                        slidesPerView: 1,
+                        spaceBetween: -50,
+                    },
+                    480:{
+                        slidesPerView: 1,
+                        spaceBetween: 40,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 40,
+                    },
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 40,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                }}
                 modules={[Scrollbar]}
                 spaceBetween={-100}
                 slidesPerView={3}

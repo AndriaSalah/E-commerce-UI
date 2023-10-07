@@ -41,3 +41,29 @@
 /*.swiper-slide{*/
 /*    width: fit-content !important;*/
 /*}*/
+@media (max-width: 768px) {
+    .TrendingOffer {
+        height: 20rem;
+    }
+
+    .TrendingOffer #OfferDetails {
+        display: flex;
+        width: 6rem;
+        height: calc(100% - 2rem);
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .TrendingOffer #OfferDetails img {
+        width: 6rem;
+    }
+
+    .TrendingOffer #OfferDetails h2 {
+        font-size: 23px;
+    }
+
+    .TrendingOffer #CoverImg {
+        height: 100%;
+        width: 40vw;
+    }
+}

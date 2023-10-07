@@ -1,10 +1,10 @@
 import './NavButton.css'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 const NavButton = (props)=>{
 
     return(
 
-        <Link  to={props.src} state={{category :props.category}} onClick={props.onClick} className={"NavButton " + props.className} >{props.children}</Link>
+        <NavLink  to={props.src} state={{category :props.category}}  className={"NavButton "} >{props.children}</NavLink>
     );
 }
 

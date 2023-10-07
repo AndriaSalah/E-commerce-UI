@@ -25,11 +25,11 @@
 }
 .ProductDetails #Price #Actual{
     text-decoration: line-through;
-    color: #848484;
+    color: var(--accentColor2);
 }
 
 .ProductDetails #Price #Discount{
-    color:#0A8200 ;
+    color:var(--accentColor3) ;
 }
 .ProductDetails .Sizes{
     display: flex;
@@ -50,7 +50,7 @@
     transition-duration: 0.25s;
 }
 .ProductDetails .Sizes .Size:hover:not(.NoStock){
-    background-color: #000000;
+    background-color: var(--hoverColor);
     color: white;
 }
 .ProductDetails .Sizes .NoStock{
@@ -83,7 +83,7 @@
 }
 
 .ProductDetails .buttons{
-    padding: 1rem 0px;
+    padding: 1rem 0;
     display: flex ;
     align-items: center;
     width: 50%;

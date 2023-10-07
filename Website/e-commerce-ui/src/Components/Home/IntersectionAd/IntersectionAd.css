@@ -34,16 +34,17 @@
 /* Media queries for different screen sizes */
 @media (max-width: 768px) {
     .IntersectionAd {
+        margin: 0.5rem;
         width: auto;
         height: auto; /* Allow the height to adjust based on content */
         padding: 1rem; /* Add padding to create spacing */
     }
 
     .IntersectionAd .Dim__adData h2 {
-        font-size: 5vw;
+        font-size: 23px;
     }
 
     .IntersectionAd .Dim__adData h4 {
-        font-size: 3vw;
+        font-size: 18px;
     }
 }

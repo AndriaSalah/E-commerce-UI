@@ -6,13 +6,13 @@
     justify-content: space-around;
     background: transparent;
     border-radius: 2px;
-    width: 20rem;
+    width: 100%;
     border: #C4C4C4 1px solid;
 
 }
 
 .MailField #InputField{
-    width: 15rem;
+    width: 80%;
     height: 2.1rem;
     background: transparent;
     outline: transparent;

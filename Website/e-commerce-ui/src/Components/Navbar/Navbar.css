@@ -19,5 +19,60 @@ nav{
     background-color: var(--accentColor);
 }
 
+nav #logo{
+    position: relative;
+    aspect-ratio: 1;
+    height: 2.8rem;
+    bottom: 0.5rem;
+    filter:var(--LogoFilter)
 
+}
 
+.burger {
+    gap: 5px;
+    position: absolute;
+    right: 1rem;
+    top: 40%;
+    display: none;
+    cursor: pointer;
+
+}
+.burger span{
+    transition-duration: 0.25s;
+    height: 2px;
+    background-color: var(--textColor);
+    width: 1.5rem;
+    border-radius: 20px;
+}
+.burger:hover span{
+    background-color: var(--accentColor2);
+}
+.menu{
+    background-color: var(--accentColor);
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    transition-duration: 0.25s;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .menu{
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    nav #logo{
+        position: absolute;
+        left: 10%;
+    }
+    .burger{display: flex ;   flex-direction: column;}
+    .menu{
+        width: 100%;
+        position: absolute;
+        top:80%;
+        flex-direction: column;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 0 0 30px 30px;
+    }
+
+}

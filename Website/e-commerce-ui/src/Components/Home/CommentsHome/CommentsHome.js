@@ -53,6 +53,21 @@ const CommentsHome = () => {
         <div className={'Comments'}>
             <h2>What Our Customers Say</h2>
             <Swiper
+                breakpoints={{
+                        340:{
+                            slidesPerView:1,
+                            spaceBetween:60
+                        },
+                        540:{
+                            slidesPerView:1,
+                            spaceBetween:10
+                        },
+                        768:{
+                            slidesPerView:2,
+                            spaceBetween:50
+                        }
+                    }
+                }
                 modules={[Navigation]}
                 initialSlide={1}
                 navigation={true}

@@ -1,7 +1,7 @@
 #Header{
     display: flex;
     width: 20%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 1rem;
 }
 #Header img{
@@ -13,4 +13,18 @@
 }
 #Header h1{
     font-size: 38px;
+}
+@media (max-width: 768px) {
+    #Header{
+        width: 100%;
+        padding:  1rem;
+        box-sizing: border-box;
+        /*justify-content: space-around;*/
+    }
+    #Header img{
+
+        width: 15vw;
+        height: 7.5vh;
+
+    }
 }

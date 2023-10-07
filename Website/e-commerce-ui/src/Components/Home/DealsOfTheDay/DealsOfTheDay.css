@@ -1,12 +1,12 @@
 .DealsOfTheDay{
     margin-top: 5rem;
-    margin-left: 1.5rem;
     font-family: 'Libre Baskerville', serif;
 }
 
 .DealsOfTheDay #title{
     font-size: 28px;
     margin-bottom: 2rem;
+    margin-left: 2rem;
     color: var(--textColor);
 }
 
@@ -23,6 +23,7 @@
     margin: 1rem;
     background-color: var(--accentColor);
 }
+
 .DealOfTheDay img{
     border-radius:10px 10px 0 0 ;
 }
@@ -48,4 +49,12 @@
 .DealOfTheDay h4{
     margin-top: 0;
     color:var(--textColor);
+}
+
+@media (max-width: 768px) {
+
+    .DealOfTheDay img:nth-child(1){
+        width: 80vw;
+    }
+
 }
