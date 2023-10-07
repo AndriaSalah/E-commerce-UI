@@ -57,19 +57,19 @@
     width: 1rem;
 }
 .swiper-button-prev, .swiper-button-next{
-    background-color: black;
-    border-radius: 50%;
-    width: 62px !important;
-    height: 62px !important;
-    color: #FFFFFF !important;
+    /*background-color: black;*/
+    /*border-radius: 50%;*/
+    /*width: 62px !important;*/
+    /*height: 62px !important;*/
+    color: var(--textColor) !important;
 }
 
-.swiper-button-prev::after{
-    width: 30px;
-}
-.swiper-button-next::after{
-    width: 20px;
-}
+/*.swiper-button-prev::after{*/
+/*    width: 30px;*/
+/*}*/
+/*.swiper-button-next::after{*/
+/*    width: 20px;*/
+/*}*/
 @media (max-width: 768px) {
     .Comment{
         padding: 2.5rem;

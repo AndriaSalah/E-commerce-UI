@@ -1,47 +1,64 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {EffectCoverflow} from "swiper/modules";
+import {EffectCoverflow,Pagination} from "swiper/modules";
 import cover1 from "../../../Assets/FeaturedBlogs/img1.png";
 import cover2 from "../../../Assets/FeaturedBlogs/img2.png";
 import './FeaturedBlogs.css'
+import "swiper/css/pagination";
+import 'swiper/css/effect-coverflow';
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Button from "../../Ui/ExploreButton/Button";
-
+import {ThemeContext} from "../../../App";
+import {useContext} from "react";
+const BlogsData = [
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover1
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover2
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover1
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover2
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover1
+    }
+]
 const FeaturedBlogs = ()=>{
-    const BlogsData = [
-        {
-            BlogTitle:"Discover new way to decorate your home .",
-            Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-            cover : cover1
-        },
-        {
-            BlogTitle:"Discover new way to decorate your home .",
-            Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-            cover : cover2
-        },
-        {
-            BlogTitle:"Discover new way to decorate your home .",
-            Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-            cover : cover1
-        },
-        {
-            BlogTitle:"Discover new way to decorate your home .",
-            Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-            cover : cover2
-        },
-        {
-            BlogTitle:"Discover new way to decorate your home .",
-            Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-            cover : cover1
-        }
-    ]
+    const {Theme}=useContext(ThemeContext)
+
     return(
         <div className={'Blogs'}>
             <h2 className={"title"}>Featured Blogs</h2>
             <Swiper
-                modules={[EffectCoverflow]}
+                breakpoints={
+                {
+                    340:{
+                       slidesPerView:1,
+                        spaceBetween:0,
+
+                    },
+                    786:{
+                        slidesPerView:2
+                    }
+                }
+                }
+                modules={[EffectCoverflow,Pagination]}
                 effect={'coverflow'}
-                spaceBetween={-60}
+                spaceBetween={0}
                 slidesPerView={2}
                 initialSlide={1}
                 centeredSlides={true}
@@ -53,6 +70,10 @@ const FeaturedBlogs = ()=>{
                     modifier: 1,
                     slideShadows: false,
                 }}
+                pagination={{
+                    type : "bullets"
+                }
+                }
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
@@ -77,7 +98,7 @@ const FeaturedBlogs = ()=>{
             </Swiper>
             <div id={"buttonSpace"}>
                 {/*<a href='../../Pages/Products/Products.js' id={"viewAll"}>View all</a>*/}
-                <Button lightMode={true} >View all</Button>
+                <Button lightMode={Theme==="dark" && true} >View all</Button>
             </div>
         </div>
     )
