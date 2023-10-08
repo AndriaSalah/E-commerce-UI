@@ -22,7 +22,7 @@ import image2 from "../Assets/TrendingOffers/img2.png";
 import image3 from "../Assets/DealsOfTheDay/dotd3.png";
 import {AiFillStar, AiOutlineStar} from "react-icons/ai";
 import offer1 from "../Assets/MainCarousel1.svg";
-import offer2 from "../Assets/MainCarousel2.svg";
+import offer2 from "../Assets/MainCarousel2.jpg";
 import Category1 from "../Assets/Categories/img1.png";
 import Category2 from "../Assets/Categories/img2.png";
 import Category3 from "../Assets/Categories/img3.png";
