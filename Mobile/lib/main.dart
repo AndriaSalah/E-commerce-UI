@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: Routes.generate,
-      initialRoute: Screens.landingScreen,
+      initialRoute: Screens.promoCodeScreen,
     );
   }
 }

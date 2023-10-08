@@ -5,13 +5,18 @@ import 'package:like_button/like_button.dart';
 class DetailAppBar extends StatelessWidget implements PreferredSizeWidget {
   const DetailAppBar({
     super.key,
+    this.title,
   });
-
+  final String? title;
   @override
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
+      title: Text(
+        title ?? '',
+        style: AppTypography.medium20(color: AppColors.black),
+      ),
       actionsIconTheme: const IconThemeData(color: AppColors.black),
       iconTheme: const IconThemeData(color: AppColors.black),
       actions: [
