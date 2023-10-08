@@ -18,19 +18,25 @@ const ProductsDisplay = ({Shown, ShowFiltersBar, Products}) => {
                 </div>
                 <div id={"View"}>
                     <Swiper
-                        breakpoints={
-                        {
-                            340:{
-                                slidesPerView:{slidesPerView:2}
+
+                        breakpoints={{
+                            340: {
+                                slidesPerView: 1.7,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
+                            },
+                            768:{
+                                slidesPerView: Shown ? 4 : 5,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
                             }
-                        }
-                        }
+                        }}
+
                         modules={[Grid, Pagination, Navigation]}
-                        spaceBetween={20}
-                        slidesPerView={Shown ? 4 : 5}
+
                         navigation={true}
                         pagination={{clickable: true, type: "bullets", dynamicBullets: true, dynamicMainBullets: 1}}
-                        grid={{rows: 2, fill: "row"}}
+
                         className={'men'}
 
                     >
