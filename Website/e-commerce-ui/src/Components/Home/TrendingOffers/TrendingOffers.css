@@ -1,5 +1,5 @@
 
-.TrendingOffers .title{
+.TrendingOffers #title{
     font-size: 28px;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -42,10 +42,16 @@
 /*    width: fit-content !important;*/
 /*}*/
 @media (max-width: 768px) {
+
+    .TrendingOffers #title{
+        font-size: 24px;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        color: var(--textColor);
+    }
     .TrendingOffer {
         height: 20rem;
     }
-
     .TrendingOffer #OfferDetails {
         width: 6rem;
         height: calc(100% - 2rem);
@@ -65,4 +71,5 @@
         height: 100%;
         width: 40vw;
     }
+
 }

@@ -34,6 +34,7 @@
 }
 @media (max-width: 768px) {
     .Benefits {
+        margin: 3rem 1rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 0.5fr);

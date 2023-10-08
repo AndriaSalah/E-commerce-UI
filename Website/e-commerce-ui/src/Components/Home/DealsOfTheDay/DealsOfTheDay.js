@@ -12,7 +12,7 @@ const TrendingNow = ()=>{
                 breakpoints={{
                     320:{
                         slidesPerView: 1,
-                        spaceBetween: -50,
+                        spaceBetween: -40,
                     },
                     480:{
                         slidesPerView: 1,
@@ -20,22 +20,16 @@ const TrendingNow = ()=>{
                     },
                     640: {
                         slidesPerView: 1,
-                        spaceBetween: 40,
+                        spaceBetween: -40,
                     },
                     768: {
-                        slidesPerView: 1,
-                        spaceBetween: 40,
-                    },
-                    900: {
                         slidesPerView: 3,
                         spaceBetween: 40,
                     },
-                    1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
-                    },
+
                 }}
                 modules={[Scrollbar]}
+                centeredSlides={true}
                 spaceBetween={-100}
                 slidesPerView={3}
                 grabCursor={true}
@@ -51,6 +45,7 @@ const TrendingNow = ()=>{
                                 <h2>{item.Title}</h2>
                                 <h4>{item.PriceTag}</h4>
                             </div>
+                            <div className="swiper-lazy-preloader"></div>
                         </SwiperSlide>
                         ]))}
             </Swiper>

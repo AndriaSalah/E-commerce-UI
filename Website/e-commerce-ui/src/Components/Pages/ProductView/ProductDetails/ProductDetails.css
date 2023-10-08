@@ -116,3 +116,84 @@
 .ProductDetails .buttons #fav:hover{
     color: darkred;
 }
+
+
+@media (max-width: 768px) {
+    .ProductDetails{
+        margin-left: 0;
+        padding: 1rem;
+    }
+    .ProductDetails h1{
+        font-size: 28px;
+    }
+    .ProductDetails #Rating{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .ProductDetails #Rating p{
+        margin: 1px;
+    }
+    .ProductDetails #Price{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ProductDetails .Sizes{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .ProductDetails .Colors{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .ProductDetails .Colors .color{
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        transition-duration: 0.25s;
+        cursor: pointer;
+    }
+    .ProductDetails .Colors .color:hover{
+        scale: 1.2;
+    }
+
+    .ProductDetails .buttons{
+        padding: 1rem 0;
+        display: flex ;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .ProductDetails .buttons button{
+        font-size: 16px;
+        padding: 1rem 3rem;
+        border-radius: 15px;
+        border: none;
+        background-color:#002482 ;
+        color: white;
+        transition-duration: 0.25s;
+        cursor: pointer;
+    }
+
+    .ProductDetails .buttons button:hover{
+        background-color: #263c75;
+    }
+
+    .ProductDetails .buttons #fav{
+        width: 2rem;
+        height: 2rem;
+        color: grey;
+        transition-duration: 0.25s;
+        cursor: pointer;
+    }
+
+    .ProductDetails .buttons #fav:hover{
+        color: darkred;
+    }
+}

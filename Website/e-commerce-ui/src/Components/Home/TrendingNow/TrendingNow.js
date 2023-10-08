@@ -4,64 +4,78 @@ import './TrendingNow.css'
 import 'swiper/css/pagination';
 import ProductCards from "../../Ui/ProductCards/ProductCards";
 import {getTrendingOffers} from "../../ProductsData";
+import {Pagination} from "swiper/modules";
+import {Link} from "react-router-dom";
 
-const TrendingNow = ()=>{
-const trendingNow = getTrendingOffers()
+const TrendingNow = () => {
+    const trendingNow = getTrendingOffers()
     console.log(trendingNow)
-    return(
+    return (
         <div className={'TrendingItems'}>
             <h2>Trending Now</h2>
             <Swiper
-                pagination={{clickable: true, type: "bullets"}}
-                slidesPerView={5}
-                spaceBetween={20}
+
                 breakpoints={{
-                    320:{
+                    240: {
                         slidesPerView: 2,
-                        spaceBetween: 100,
+                        spaceBetween: 150,
+                    },
+                    300: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    360: {
+                        slidesPerView: 1,
+                        spaceBetween: 50,
                     },
                     674: {
                         slidesPerView: 3,
                         spaceBetween: 40,
                     },
                     768: {
-                        slidesPerView: 2,
-                        spaceBetween: -50,
+                        slidesPerView: 3,
+                        spaceBetween: 50,
                     },
                     900: {
-                        slidesPerView: 2,
-                        spaceBetween: -200,
+                        slidesPerView: 3,
+                        spaceBetween: 50,
                     },
                     1024: {
                         slidesPerView: 3,
-                        spaceBetween: 5,
+                        spaceBetween: 20,
                     },
-                    1200:{
+                    1200: {
                         slidesPerView: 4,
-                        spaceBetween: 5,
+                        spaceBetween: 20,
                     },
-                    1400:{
+                    1400: {
                         slidesPerView: 5,
-                        spaceBetween: 5,
+                        spaceBetween: 20,
                     }
                 }}
-
-                    grabCursor={true}
+                modules={[Pagination]}
+                pagination={{clickable: true, type: "bullets"}}
+                slidesPerView={5}
+                spaceBetween={20}
+                grabCursor={true}
             >
                 {
-                    trendingNow.map(item=>(
-                    [<SwiperSlide key={Math.random()}>
-                        <ProductCards
-                        ImgSrc={item.Thumbnail}
-                        ItemName={item.ItemName}
-                        BrandName={item.BrandName}
-                        score={item.Rating}
-                        OfferPrice={item.OfferPrice}
-                        ActualPrice={item.ActualPrice}
-                        SalePercentage={item.Discount}
-                        />
-                    </SwiperSlide>
-                    ]))}
+                    trendingNow.map(item => (
+                        [<SwiperSlide key={Math.random()}>
+                            <Link to={'/ProductView'} state={{...item}}>
+                                <ProductCards
+                                    ImgSrc={item.Thumbnail}
+                                    ItemName={item.ItemName}
+                                    BrandName={item.BrandName}
+                                    score={item.Rating}
+                                    OfferPrice={item.OfferPrice}
+                                    ActualPrice={item.ActualPrice}
+                                    SalePercentage={item.Discount}
+                                />
+                            </Link>
+                            <div className="swiper-lazy-preloader"></div>
+                        </SwiperSlide>
+                        ]))}
             </Swiper>
         </div>
     )

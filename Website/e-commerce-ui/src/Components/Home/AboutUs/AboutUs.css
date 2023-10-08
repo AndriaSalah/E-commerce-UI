@@ -29,6 +29,15 @@
     margin-bottom: 5px;
 }
 @media (max-width: 768px) {
+    .AboutUs{
+        padding: 1rem 2rem;
+    }
+    .AboutUs #title{
+        font-size: 24px;
+        margin-bottom: 2rem;
+        text-align: center;
+        color:var(--textColor)
+    }
     .AboutUs .content {
         flex-direction: column-reverse;
     }
@@ -40,5 +49,6 @@
         text-align: center;
         padding: 0;
     }
+
 
 }

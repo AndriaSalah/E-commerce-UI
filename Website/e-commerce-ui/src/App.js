@@ -2,13 +2,14 @@ import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import 'swiper/css';
 import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
-import Home from "./Components/Pages/Home";
+import Home from "./Components/Home/Home";
 import Products from "./Components/Pages/Products/Products";
 import Footer from "./Components/Footer/Footer";
 import ProductView from "./Components/Pages/ProductView/ProductView";
 import {createContext, useLayoutEffect, useState} from "react";
 
 export const ThemeContext = createContext({})
+
 
 function ScrollToTop() {
     const {pathname} = useLocation();
@@ -34,6 +35,26 @@ const whiteTheme = {
 };
 
 function App() {
+    // const [screenSize, setScreenSize] = useState(getCurrentDimension());
+    //
+    // function getCurrentDimension(){
+    //     return {
+    //         width: window.innerWidth,
+    //         height: window.innerHeight
+    //     }
+    // }
+    //
+    // useEffect(() => {
+    //     const updateDimension = () => {
+    //         setScreenSize(getCurrentDimension())
+    //     }
+    //     window.addEventListener('resize', updateDimension);
+    //
+    //
+    //     return(() => {
+    //         window.removeEventListener('resize', updateDimension);
+    //     })
+    // }, [])
     const [Theme, setTheme] = useState("dark");
 
     function SwitchColor() {

@@ -9,7 +9,9 @@
     margin-left: 2rem;
     color: var(--textColor);
 }
-
+/*.DealsOfTheDay .swiper{*/
+/*    padding: 2rem !important;*/
+/*}*/
 .DealOfTheDay{
     width: fit-content;
     display: flex;
@@ -55,6 +57,11 @@
 
     .DealOfTheDay img:nth-child(1){
         width: 80vw;
+    }
+    .DealsOfTheDay #title{
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
     }
 
 }

@@ -1,6 +1,6 @@
 .ProductCard{
     display: flex;
-    width: fit-content;
+    width: 100%;
     flex-direction: column;
     background-color:var(--accentColor) ;
     box-shadow: 0 0 10px 1px var(--shadowColor);
@@ -12,15 +12,18 @@
 .ProductCard img{
     aspect-ratio: 1/1;
     height: 220px ;
-    width: 280px;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+}
+.ProductCard .detailsContainer{
+
 }
 .ProductCard #itemName{
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width: 15rem;
+    width: 100%;
     color: var(--textColor);
 }
 .ProductCard #Section1{
@@ -33,8 +36,8 @@
 }
 
 .ProductCard #Section1 h4 {
-    width: 9rem;
-    margin-right: 3rem;
+    width: 85%;
+
     margin-top: 0;
     color: var(--textColor);
     text-overflow: ellipsis;
@@ -51,11 +54,15 @@
 .ProductCard #Section2{
     display: flex;
     width: 100%;
+   justify-content: space-between;
+    padding: 0 1rem 0 0 ;
+    box-sizing: border-box;
 }
 
 .ProductCard #Section2 .priceData{
     margin-top: 0;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+    font-size: 95%;
 }
 
 .ProductCard #Section2 p{
@@ -63,7 +70,7 @@
 }
 
 .ProductCard #itemName ,.ProductCard #Section1,.ProductCard #Section2 #priceData {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .ProductCard #Section2 #actual{
@@ -74,26 +81,26 @@
     color: var(--textColor);
 }
 @media (max-width: 768px) {
-   .ProductCard{
-       width: 13.5rem;
-   }
+   /*.ProductCard{*/
+   /*    width: 13.5rem;*/
+   /*}*/
     .ProductCard img{
         width: 100%;
     }
     .ProductCard #itemName{
-        font-size: 16px;
+        font-size: 13px;
         width: 95%;
     }
     .ProductCard #Section1{
-        font-size: 14px;
+        font-size: 13px;
     }
     .ProductCard #Section1 h4 {
         margin-right: 0;
     }
-    .ProductCard #Section2{
-        font-size: 12px;
-    }
-    .ProductCard #Section2 .priceData{
-
+    /*.ProductCard #Section2{*/
+    /*    font-size: 12px;*/
+    /*}*/
+    .ProductCard #Section2 #discount{
+    display: none;
     }
 }

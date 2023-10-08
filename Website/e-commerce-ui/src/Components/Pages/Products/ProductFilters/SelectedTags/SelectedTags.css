@@ -7,23 +7,23 @@
     top:0;
     background-color: var(--accentColor);
     padding-bottom:1rem;
-
+    box-sizing: border-box;
 }
 
-.ProductFilters .selectedTags{
+.ProductFilters .Tags{
     display:flex;
     flex-flow: wrap;
 
 
 }
-.ProductFilters .selectedTags .Tag{
+.ProductFilters .Tags .Tag{
     background : #F0F0F0;
     color:black ;
     border-radius:10px;
     width:fit-content;
     height: fit-content;
     padding:5px 12px;
-    margin:2px;
+    margin:5px;
     opacity: 0;
     animation: add 0.5s forwards;
 }
@@ -34,22 +34,31 @@
 }
 .ProductFilters .Close__Button {
     text-align: right;
+
 }
 .ProductFilters .Close__Button button{
     color: var(--textColor);
 }
-.ProductFilters .Close__Button button , .ProductFilters .selectedTags button{
+.ProductFilters .Close__Button button , .ProductFilters .Tags button{
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
 
 }
-.ProductFilters .Close__Button button:hover , .ProductFilters .selectedTags button:hover{
+.ProductFilters .Close__Button button:hover , .ProductFilters .Tags button:hover{
     color: #b03535;
 }
 
 .ProductFilters .Close__Button .remove{
     visibility: hidden;
     opacity: 0;
+}
+@media (max-width: 768px) {
+    .ProductFilters .Close__Button .close{
+        font-size: 20px;
+    }
+    .selectedTags h1{
+        font-size: 18px;
+    }
 }

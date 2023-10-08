@@ -1,4 +1,4 @@
-import Button from "../../Ui/ExploreButton/Button";
+import Button from "../../Ui/Button/Button";
 import './IntersectionAd.css'
 const IntersectionAd = ()=>{
 

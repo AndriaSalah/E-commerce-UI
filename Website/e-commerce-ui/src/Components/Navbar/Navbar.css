@@ -64,7 +64,7 @@ nav #logo{
 @media (max-width: 768px) {
     nav #logo{
         position: absolute;
-        left: 3%;
+        left: 5%;
         bottom: 0.5rem;
     }
     .burger{display: flex ;   flex-direction: column;}

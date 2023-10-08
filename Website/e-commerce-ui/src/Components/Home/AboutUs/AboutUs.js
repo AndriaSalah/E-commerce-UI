@@ -1,6 +1,6 @@
 import aboutUs from '../../../Assets/aboutus.png'
 import './AboutUs.css'
-import Button from "../../Ui/ExploreButton/Button";
+import Button from "../../Ui/Button/Button";
 const AboutUs = () => {
     return (
         <div className={"AboutUs"}>

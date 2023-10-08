@@ -15,7 +15,8 @@
 
 .Comment{
     display: flex;
-    width: 78%;
+    width: 100%;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -57,23 +58,27 @@
     width: 1rem;
 }
 .swiper-button-prev, .swiper-button-next{
-    /*background-color: black;*/
-    /*border-radius: 50%;*/
-    /*width: 62px !important;*/
-    /*height: 62px !important;*/
+    background-color: black;
+    border-radius: 50%;
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 14px;
+
     color: var(--textColor) !important;
 }
-
-/*.swiper-button-prev::after{*/
-/*    width: 30px;*/
-/*}*/
-/*.swiper-button-next::after{*/
-/*    width: 20px;*/
-/*}*/
+.swiper-button-prev::after, .swiper-button-next::after{
+    font-size: 23px;
+}
 @media (max-width: 768px) {
+    .Comments h2{
+        font-size: 24px;
+        margin: 0 0 1rem 0;
+        text-align: center;
+    }
     .Comment{
         padding: 2.5rem;
     }
+
 }
 
 

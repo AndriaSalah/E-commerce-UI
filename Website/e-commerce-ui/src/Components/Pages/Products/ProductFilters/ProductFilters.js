@@ -74,11 +74,11 @@ const ProductFilters = ({Shown, ShowFiltersBar, SetFilteredProducts , SelectedCa
         SetTags([])
     }
 
-
+    console.log(Shown)
 
     return (
         ProductsData.length > 0 &&
-        <div className={"ProductFilters " + (!Shown ? "Hide" : "")}>
+        <div className={"ProductFilters " + (!Shown ? "Hide" : "unHide")}>
             <div className={"Container"}>
                 <SelectedTags
                     tags={Tags}

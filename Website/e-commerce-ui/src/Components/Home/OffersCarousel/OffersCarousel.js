@@ -1,42 +1,19 @@
 import {Swiper, SwiperSlide} from "swiper/react";
 import 'swiper/css/pagination';
 import './OffersCarousel.css'
-import home from "../../Pages/Home"
-import offer1 from '../../../Assets/mainCarousel1.png'
-import offer2 from '../../../Assets/mainCarousel2.png'
+import home from "../Home"
 import {Pagination, Autoplay} from "swiper/modules";
-import Button from "../../Ui/ExploreButton/Button";
+import Button from "../../Ui/Button/Button";
+import {offersData} from "../../ProductsData";
 
 const OffersCarousel = () => {
-    const offersData = [
-        {
-            OfferImg: offer1,
-            details: "Big Fashion Festival 50% - 80% off",
-            detailsBg: offer2
-        },
-        {
-            OfferImg: offer1,
-            details: "Big Fashion Festival 50% - 80% off",
-            detailsBg: offer2
-        },
-        {
-            OfferImg: offer1,
-            details: "Big Fashion Festival 50% - 80% off",
-            detailsBg: offer2
-        },
-        {
-            OfferImg: offer1,
-            details: "Big Fashion Festival 50% - 80% off",
-            detailsBg: offer2
-        },
 
-    ]
+    console.log(document.querySelector(".swiper-lazy-preloader"))
     return (
         <div className={"OffersCarousel"}>
-            <Swiper style={{
-
-
-            }}
+                <Swiper style={{
+                    "--swiper-pagination-color": '#000000',
+                }}
                     modules={[Pagination, Autoplay,]}
                     autoplay={{
                         delay: 4500,
@@ -57,8 +34,7 @@ const OffersCarousel = () => {
                                 </div>
                             </div>
                         </div>
-                        {/*<img className={"OfferImg"} src={item.OfferImg} alt={'carousel'}/>*/}
-
+                        <div className="swiper-lazy-preloader"></div>
                     </SwiperSlide>
                 ]))}
 
