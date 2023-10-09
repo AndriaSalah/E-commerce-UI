@@ -24,9 +24,9 @@ const OffersCarousel = () => {
                 {offersData.map((item) => ([
                     <SwiperSlide key={Math.random()}>
                         <div className={"Offer"}>
-                            <div id={"OfferImage"}><img src={item.OfferImg} alt={"asd"}/></div>
+                            <div id={"OfferImage"}><img src={item.OfferImg} alt={"asd"} preload="true"/></div>
                             <div id={"offerDetails"}>
-                                <img src={item.detailsBg} alt={"asd"}></img>
+                                <img src={item.detailsBg} alt={"asd"} preload="true"></img>
                                 <div id={"DetailsWrapper"}>
                                     <h2>{item.details}</h2>
                                     <Button lightMode={false} className={"OffersExplore"} href={home}>Explore</Button>
