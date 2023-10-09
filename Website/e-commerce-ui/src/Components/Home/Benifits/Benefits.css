@@ -32,9 +32,10 @@
     margin-top: 0;
     margin-bottom: 10px;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
     .Benefits {
-        margin: 3rem 1rem;
+        margin: 3rem 3rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 0.5fr);
@@ -47,4 +48,14 @@
     .Benefit3 { grid-area: 2 / 1 / 3 / 2; }
     .Benefit4 { grid-area: 2 / 2 / 3 / 3; }
     .Benefit5 { grid-area: 3 / 1 / 4 / 3; }
+}
+@media (max-width: 768px) {
+    .Benefits {
+        margin: 3rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 0.5fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
 }

@@ -31,10 +31,9 @@ const TrendingNow = ()=>{
                 modules={[Scrollbar]}
                 centeredSlides={true}
                 spaceBetween={-100}
+                initialSlide={1}
                 slidesPerView={3}
                 grabCursor={true}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {
                     DealsOfTheDayData.map(item=>(

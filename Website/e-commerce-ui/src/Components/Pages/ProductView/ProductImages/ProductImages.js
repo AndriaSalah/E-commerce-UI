@@ -1,5 +1,4 @@
 import './ProductImages.css'
-import {useLayoutEffect, useState} from "react";
 
 const ProductImages = ({images, setSelectedImg , selectedImg}) => {
 

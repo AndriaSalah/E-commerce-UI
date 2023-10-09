@@ -9,7 +9,6 @@ import {Link} from "react-router-dom";
 
 const TrendingNow = () => {
     const trendingNow = getTrendingOffers()
-    console.log(trendingNow)
     return (
         <div className={'TrendingItems'}>
             <h2>Trending Now</h2>

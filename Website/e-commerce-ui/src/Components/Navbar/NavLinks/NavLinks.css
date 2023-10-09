@@ -1,24 +1,30 @@
-.allLinks{
+.NavLinksWrapper{
     display: flex;
     justify-content: space-between;
     width: 45%;
+    background-color: var(--accentColor);
 }
 .NavButtons{
+    background-color: var(--accentColor);
     width: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+}
+.NavButtons a{
+    padding: 2px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .allLinks{
+    .NavLinksWrapper{
         display: flex;
         justify-content: space-between;
         width: 35%;
     }
 }
 @media (max-width: 768px) {
-    .allLinks{
+    .NavLinksWrapper{
         flex-direction: column;
         align-items: center;
         width: 100%;

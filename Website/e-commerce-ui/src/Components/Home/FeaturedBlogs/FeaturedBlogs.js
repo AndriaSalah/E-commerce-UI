@@ -45,8 +45,6 @@ const FeaturedBlogs = ()=>{
                     type : "bullets"
                 }
                 }
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {
                     BlogsData.map(Blog=>(

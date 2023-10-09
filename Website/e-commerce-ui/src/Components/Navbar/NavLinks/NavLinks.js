@@ -7,7 +7,7 @@ import './NavLinks.css'
 const NavLinks = () =>{
 
     return(
-        <div className={"allLinks"}>
+        <div className={"NavLinksWrapper"}>
             <div className={"NavButtons"}>
                 <NavButton  category={"Men"} src="/Men">Men</NavButton>
                 <NavButton  category={"Women"} src="/Women">Women</NavButton>
