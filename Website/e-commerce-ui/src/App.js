@@ -6,14 +6,14 @@ import Home from "./Components/Home/Home";
 import Products from "./Components/Pages/Products/Products";
 import Footer from "./Components/Footer/Footer";
 import ProductView from "./Components/Pages/ProductView/ProductView";
-import {createContext, useLayoutEffect, useState} from "react";
+import {createContext, useEffect, useState} from "react";
 
 export const ThemeContext = createContext({})
 
 
 function ScrollToTop() {
     const {pathname} = useLocation();
-    useLayoutEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
 

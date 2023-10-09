@@ -11,12 +11,10 @@ const Section = ({title, content, setFilter, selectedTags}) => {
                                 <input type={"checkbox"}
                                        value={item}
                                        name={item}
-                                       onChange={() => [setFilter(item)]}
+                                       onChange={() => setFilter(item)}
                                        checked={selectedTags.includes(item)}
                                 />
-                                <label htmlFor={item}>{item}
-
-                                </label>
+                                <label htmlFor={item} onClick={() => setFilter(item)}>{item}</label>
                             </div>
                         )
                     )
