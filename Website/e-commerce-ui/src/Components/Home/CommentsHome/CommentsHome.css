@@ -64,7 +64,7 @@
     height: 46px !important;
     font-size: 14px;
 
-    color: var(--textColor) !important;
+    color: #ffffff !important;
 }
 .swiper-button-prev::after, .swiper-button-next::after{
     font-size: 23px;
