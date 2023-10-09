@@ -1,4 +1,5 @@
 .ProductDetails{
+    width: 50%;
     margin-left: 5rem;
     color: var(--textColor);
 }
@@ -120,8 +121,10 @@
 
 @media (max-width: 768px) {
     .ProductDetails{
+        width: 100%;
         margin-left: 0;
         padding: 1rem;
+        box-sizing: border-box;
     }
     .ProductDetails h1{
         font-size: 28px;
