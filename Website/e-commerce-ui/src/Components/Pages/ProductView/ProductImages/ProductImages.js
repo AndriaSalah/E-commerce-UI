@@ -1,13 +1,17 @@
 import './ProductImages.css'
+import {useEffect, useState} from "react";
 
-const ProductImages = ({images, setSelectedImg , selectedImg}) => {
+const ProductImages = ({images}) => {
 
-
+    const [selectedImg, setSelectedImg] = useState(images[0])
 
     function changeImg(image) {
         setSelectedImg(image)
     }
 
+    useEffect(() => {
+        setSelectedImg(images[0])
+    }, [images]);
     // noinspection JSValidateTypes
     return (
         <div className="parent">

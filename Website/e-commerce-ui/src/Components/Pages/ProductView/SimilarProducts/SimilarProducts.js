@@ -5,7 +5,7 @@ import './SimilarProducts.css'
 import 'swiper/css/pagination';
 import {Pagination} from "swiper/modules";
 import {Link} from "react-router-dom";
-const SimilarProducts = ()=>{
+const SimilarProducts = ({setSelectedImg})=>{
     const similarProducts = getSimilarProducts()
     return(
         <div className={'SimilarProducts'}>

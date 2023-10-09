@@ -33,12 +33,12 @@
     align-items: center;
     font-size: 14px;
     margin-left: 1rem;
+    margin-bottom: 0.3rem;
 }
 
 .ProductCard #Section1 h4 {
-    width: 85%;
-
-    margin-top: 0;
+    width: 90%;
+    margin: 0;
     color: var(--textColor);
     text-overflow: ellipsis;
     overflow: hidden;
@@ -46,7 +46,11 @@
 }
 
 .ProductCard #Section1 p{
-    margin-top: 0;
+    margin: 0;
+    color: var(--textColor);
+    /*color: #848484;*/
+}
+.ProductCard #Section1 #icon{
     color: var(--textColor);
     /*color: #848484;*/
 }
@@ -88,7 +92,7 @@
         width: 100%;
     }
     .ProductCard #itemName{
-        font-size: 13px;
+        font-size: 15px;
         width: 95%;
     }
     .ProductCard #Section1{

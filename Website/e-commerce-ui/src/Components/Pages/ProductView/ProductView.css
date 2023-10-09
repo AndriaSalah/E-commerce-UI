@@ -4,9 +4,13 @@
     width: 100%;
     box-sizing: border-box;
 }
-@media (max-width: 768px) {
+@media (max-width: 1048px) {
     .ProductView{
         flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .ProductView{
         padding: 1rem 0.5rem;
     }
 }

@@ -1,4 +1,4 @@
-import aboutUs from '../../../Assets/aboutus.png'
+import aboutUs from '../../../Assets/aboutus.webp'
 import './AboutUs.css'
 import Button from "../../Ui/Button/Button";
 const AboutUs = () => {

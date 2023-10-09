@@ -1,18 +1,17 @@
 import './SelectedTags.css'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faXmark} from "@fortawesome/free-solid-svg-icons";
+import {IoMdClose} from "react-icons/io";
 
 const SelectedTags = ({tags, ShowFilterBar, ClearFilter, addTags}) => {
     return (
 
             <div className={"selectedTags " + (tags.length !== 0 ? "Sticky" : "")}>
                 <div className={"Close__Button"}>
-                    <button onClick={ShowFilterBar} className={"close"}><FontAwesomeIcon icon={faXmark}/></button>
+                    <button onClick={ShowFilterBar} className={"close"}><IoMdClose/></button>
                 </div>
                 <h1>Filters</h1>
                 <div className={"Tags"}>{tags.map(tag =>
                     <div className={"Tag"}>
-                        <button onClick={() => addTags(tag)}><FontAwesomeIcon icon={faXmark}/></button>
+                        <button onClick={() => addTags(tag)}><IoMdClose/></button>
                         {tag}
                     </div>
                 )}</div>
