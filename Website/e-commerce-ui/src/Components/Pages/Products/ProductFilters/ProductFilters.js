@@ -74,7 +74,6 @@ const ProductFilters = ({Shown, ShowFiltersBar, SetFilteredProducts , SelectedCa
         SetTags([])
     }
 
-    console.log(Shown)
 
     return (
         ProductsData.length > 0 &&

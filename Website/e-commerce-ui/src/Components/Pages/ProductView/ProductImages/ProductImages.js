@@ -1,8 +1,8 @@
 import './ProductImages.css'
-import {useState} from "react";
 
-const ProductImages = ({images}) => {
-    const [selectedImg, setSelectedImg] = useState(images[0])
+const ProductImages = ({images, setSelectedImg , selectedImg}) => {
+
+
 
     function changeImg(image) {
         setSelectedImg(image)

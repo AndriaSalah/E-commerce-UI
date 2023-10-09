@@ -32,8 +32,6 @@ const TrendingOffers = ()=>{
                     modifier: 1,
                     slideShadows: false,
                 }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {
                     TrendingOffersData.map(item=>(

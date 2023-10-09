@@ -11,7 +11,7 @@ const Products = () => {
     useEffect(() => {
         window.innerWidth > 768 && SetBarShown(true)
     }, []);
-    console.log(category)
+
     function showFiltersBar() {
         !barShown ? SetBarShown(true) : SetBarShown(false)
     }

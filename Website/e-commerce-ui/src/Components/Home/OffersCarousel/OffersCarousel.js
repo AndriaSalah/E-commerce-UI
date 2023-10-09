@@ -8,7 +8,6 @@ import {offersData} from "../../ProductsData";
 
 const OffersCarousel = () => {
 
-    console.log(document.querySelector(".swiper-lazy-preloader"))
     return (
         <div className={"OffersCarousel"}>
                 <Swiper style={{

@@ -6,7 +6,6 @@ const Sizes=["XS","S","M","L","XL"]
 
 
 const ProductDetails =({Data}) =>{
-console.log(renderStars(4))
     return(
         <div className={"ProductDetails"}>
             <h1>{Data.ItemName}</h1>

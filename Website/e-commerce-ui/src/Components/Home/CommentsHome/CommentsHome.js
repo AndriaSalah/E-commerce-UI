@@ -22,16 +22,15 @@ const CommentsHome = () => {
                         slidesPerView:2,
                         spaceBetween:50
                     }
+
                 }
                 }
                 modules={[Navigation]}
                 initialSlide={1}
                 navigation={true}
-                slidesPerView={2}
+                slidesPerView={1}
                 centeredSlides={true}
                 grabCursor={true}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log('slide change')}
             >
                 {
                     commentData.map(comment => (
