@@ -1,24 +1,27 @@
 import './SelectedTags.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faXmark} from "@fortawesome/free-solid-svg-icons";
-const SelectedTags = ({tags, ShowFilterBar , ClearFilter,addTags}) =>{
-    return(
-        <div className={tags.length !== 0 ? "Sticky":""}>
-            <div className={"Close__Button"}>
-                <button onClick={ShowFilterBar} className={"close"} ><FontAwesomeIcon icon={faXmark}/></button>
-            </div>
-            <h1>Filters</h1>
-            <div className={"selectedTags"}>{tags.map(tag =>
-                <div className={"Tag"}>
-                    <button onClick={()=>addTags(tag)}><FontAwesomeIcon icon={faXmark}/></button>
-                    {tag}
+
+const SelectedTags = ({tags, ShowFilterBar, ClearFilter, addTags}) => {
+    return (
+
+            <div className={"selectedTags " + (tags.length !== 0 ? "Sticky" : "")}>
+                <div className={"Close__Button"}>
+                    <button onClick={ShowFilterBar} className={"close"}><FontAwesomeIcon icon={faXmark}/></button>
                 </div>
-            )}</div>
-            <div className={"Close__Button"}>
-                <button className={tags.length === 0 ? "remove":""} onClick={ClearFilter}>Clear all</button>
+                <h1>Filters</h1>
+                <div className={"Tags"}>{tags.map(tag =>
+                    <div className={"Tag"}>
+                        <button onClick={() => addTags(tag)}><FontAwesomeIcon icon={faXmark}/></button>
+                        {tag}
+                    </div>
+                )}</div>
+                <div className={"Close__Button"}>
+                    <button className={tags.length === 0 ? "remove" : ""} onClick={ClearFilter}>Clear all</button>
+                </div>
+                <span></span>
             </div>
-            <span></span>
-        </div>
+
 
     )
 }

@@ -64,7 +64,7 @@
 
 @media (max-width: 768px) {
     .OffersCarousel{
-        padding: 0rem;
+        padding: 0;
     }
     .OfferImg{
         height: 40rem;

@@ -1,9 +1,10 @@
-.TrendingItems{
+.TrendingItems {
     margin-top: 2rem;
     font-family: 'Libre Baskerville', serif;
+
 }
 .TrendingItems .swiper{
-    padding: 1rem !important;
+    padding: 2rem !important;
 }
 .TrendingItems h2{
     font-size: 28px;
@@ -11,4 +12,16 @@
     margin-left: 2rem;
     color: var(--textColor);
 }
-
+@media (max-width: 768px) {
+    .TrendingItems .swiper{
+        padding: 2rem !important;
+    }
+    .TrendingItems .ProductCard #Section2 #discount{
+        display: block;
+    }
+    .TrendingItems h2{
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+    }
+}

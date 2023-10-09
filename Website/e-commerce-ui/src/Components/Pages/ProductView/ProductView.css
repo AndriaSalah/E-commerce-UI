@@ -1,4 +1,12 @@
 .ProductView{
     display: flex;
     padding: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .ProductView{
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+    }
 }

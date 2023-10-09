@@ -82,6 +82,7 @@
 .Blog #footer {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .Blog #footer #icon {
@@ -90,32 +91,38 @@
 }
 
 .Blog #footer h3 {
-    margin-right: 4.5rem;
-    color:var(--textColor)
+    width: 100%;
+    color:var(--textColor);
+    margin-right: 1rem;
 }
 
 .Blog #footer a {
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 45px;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
     transition-duration: 0.2s;
+    color: var(--textColor);
+    font-size: 3vh;
 }
 
-.Blog #footer a:hover {
-    background: rgba(227, 223, 223, 0.75);
-}
 
 @media (max-width: 768px) {
+    .Blogs .title {
+        font-size: 24px;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        color:var(--textColor)
+    }
     .Blog{
         height: 20rem;
         width: 100%;
     }
     .Blog #CoverImg {
         height: 100%;
-        width: 40vw;
+        width: 40%;
     }
     .Blog #BlogDetails {
         position: relative;
@@ -123,6 +130,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
+        box-sizing: border-box;
         padding: 1rem;
     }
     .Blog #BlogDetails h3 {

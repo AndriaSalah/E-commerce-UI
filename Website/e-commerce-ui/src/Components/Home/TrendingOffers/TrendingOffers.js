@@ -2,14 +2,14 @@ import {Swiper, SwiperSlide} from "swiper/react";
 
 import './TrendingOffers.css'
 import {EffectCoverflow} from "swiper/modules";
-import Button from "../../Ui/ExploreButton/Button";
+import Button from "../../Ui/Button/Button";
 import {TrendingOffersData} from "../../ProductsData";
 
 const TrendingOffers = ()=>{
 
     return(
         <div className={'TrendingOffers'}>
-            <h2 className={"title"}>Trending offers</h2>
+            <h2 id={"title"}>Trending offers</h2>
             <Swiper
                 breakpoints={
                     {

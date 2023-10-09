@@ -1,0 +1,33 @@
+.explore{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    transition-duration: 0.5s;
+}
+
+
+.dark{
+    color: black;
+    outline: solid black 1px;
+}
+.dark:hover{
+     background: black;
+     color: white;
+ }
+.white{
+    color: white;
+    outline: solid white 1px;
+}
+.white:hover{
+    background: black;
+    color: white;
+}
+@media (max-width: 768px) {
+    .explore{
+        padding: 0.25rem 1rem;
+        font-size: 14px;
+    }
+}

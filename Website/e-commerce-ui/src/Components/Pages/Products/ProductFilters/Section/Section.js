@@ -1,25 +1,28 @@
 import './Section.css'
-const Section = ({title, content , setFilter , selectedTags }) => {
+
+const Section = ({title, content, setFilter, selectedTags}) => {
     return (
-        <div>
+        <div className={"Section"}>
             <h2>{title}</h2>
-            {
-                content.map((item) => (
-                        <div id={"tag"}>
-                            <input type={"checkbox"}
-                                   value={item}
-                                   name={item}
-                                   onChange={() => [setFilter(item)]}
-                                   checked={selectedTags.includes(item)}
+            <div className={"TagsWrapper"}>
+                {
+                    content.map((item) => (
+                            <div id={"tag"}>
+                                <input type={"checkbox"}
+                                       value={item}
+                                       name={item}
+                                       onChange={() => [setFilter(item)]}
+                                       checked={selectedTags.includes(item)}
+                                />
+                                <label htmlFor={item}>{item}
 
-                            />
-                            <label htmlFor={item}>{item}
-
-                            </label>
-                        </div>
+                                </label>
+                            </div>
+                        )
                     )
-                )
-            }
+                }
+
+            </div>
             <span></span>
         </div>
     )

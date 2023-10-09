@@ -20,8 +20,18 @@ import brandImg from "../Assets/Icons/brand1.png";
 import image1 from "../Assets/TrendingOffers/img1.png";
 import image2 from "../Assets/TrendingOffers/img2.png";
 import image3 from "../Assets/DealsOfTheDay/dotd3.png";
-
 import {AiFillStar, AiOutlineStar} from "react-icons/ai";
+import offer1 from "../Assets/MainCarousel1.svg";
+import offer2 from "../Assets/MainCarousel2.jpg";
+import Category1 from "../Assets/Categories/img1.png";
+import Category2 from "../Assets/Categories/img2.png";
+import Category3 from "../Assets/Categories/img3.png";
+import Category4 from "../Assets/Categories/img4.png";
+import Category5 from "../Assets/Categories/img5.png";
+import Category6 from "../Assets/Categories/img6.png";
+import profileImg from "../Assets/profile.png";
+import cover1 from "../Assets/FeaturedBlogs/img1.png";
+import cover2 from "../Assets/FeaturedBlogs/img2.png";
 
 
 
@@ -687,6 +697,139 @@ export const DealsOfTheDayData = [
         ImgSrc : image1
     }
 ]
+
+export const offersData = [
+    {
+        OfferImg: offer1,
+        details: "Big Fashion Festival 50% - 80% off",
+        detailsBg: offer2
+    },
+    {
+        OfferImg: offer1,
+        details: "Big Fashion Festival 50% - 80% off",
+        detailsBg: offer2
+    },
+    {
+        OfferImg: offer1,
+        details: "Big Fashion Festival 50% - 80% off",
+        detailsBg: offer2
+    },
+    {
+        OfferImg: offer1,
+        details: "Big Fashion Festival 50% - 80% off",
+        detailsBg: offer2
+    },
+
+]
+export const categoryData = [
+    {
+        className: "Category1",
+        page: "../Pages/Products.js",
+        imgSrc: Category1,
+        categoryTitle:"Summer Clothes"
+    },
+    {
+        className: "Category2",
+        page: "../Pages/Products.js",
+        imgSrc: Category2,
+        categoryTitle:"Coats"
+    },
+    {
+        className: "Category3",
+        page: "../Pages/Products.js",
+        imgSrc: Category3,
+        categoryTitle:"Sweaters"
+    },
+    {
+        className: "Category4",
+        page: "../Pages/Products.js",
+        imgSrc: Category4,
+        categoryTitle:"Jackets"
+    },
+    {
+        className: "Category5",
+        page: "../Pages/Products.js",
+        imgSrc: Category5,
+        categoryTitle:"Pants"
+    },
+    {
+        className: "Category6",
+        page: "../Pages/Products.js",
+        imgSrc: Category6,
+        categoryTitle:"Hoodies"
+    },
+]
+export const commentData = [
+    {
+        profileImg:profileImg,
+        stars: 3,
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
+            Porttitor maecenas tincidunt ipsum semper malesuada.
+            In sapien feugiat laoreet convallis eu sed. 
+            Sapien et montes, duis tempor euismod augue cras eu eget. 
+            Risus suspendisse mauris ullamcorper `
+    },
+    {
+        profileImg:profileImg,
+        stars: 4,
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
+            Porttitor maecenas tincidunt ipsum semper malesuada.
+            In sapien feugiat laoreet convallis eu sed. 
+            Sapien et montes, duis tempor euismod augue cras eu eget. 
+            Risus suspendisse mauris ullamcorper `
+    },
+    {
+        profileImg:profileImg,
+        stars: 3,
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
+            Porttitor maecenas tincidunt ipsum semper malesuada.
+            In sapien feugiat laoreet convallis eu sed. 
+            Sapien et montes, duis tempor euismod augue cras eu eget. 
+            Risus suspendisse mauris ullamcorper `
+    },
+    {
+        profileImg:profileImg,
+        stars: 4,
+        text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
+            Porttitor maecenas tincidunt ipsum semper malesuada.
+            In sapien feugiat laoreet convallis eu sed. 
+            Sapien et montes, duis tempor euismod augue cras eu eget. 
+            Risus suspendisse mauris ullamcorper `
+    },
+
+]
+export const BlogsData = [
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover1
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover2
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover1
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover2
+    },
+    {
+        BlogTitle:"Discover new way to decorate your home .",
+        Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
+        cover : cover1
+    }
+]
+
 export function renderStars(Rating, Color="var(--textColor)"){
     let stars=[]
     for (let i = 1; i<=5 ; i++,Rating--){

@@ -1,11 +1,13 @@
 .ProductDisplay{
-    width: 75%;
     margin: 1rem 0;
     transition-duration: 0.4s;
     animation: unexpand 0.75s forwards;
 }
+.ProductDisplay a{
+    width: fit-content;
+}
 @keyframes unexpand {
-    0%{ width: 100%;
+    0%{ width: 95%;
     }
     100%{
         width: 75%;
@@ -20,12 +22,12 @@
         width: 75%;
     }
     100%{
-        width: 100%;
+        width: 95%;
     }
 }
 .ProductDisplay .swiper{
     padding: 2rem 0.5rem;
-
+    box-sizing: border-box;
 }
 .Expand .swiper{
     margin-right:1rem;
@@ -122,4 +124,35 @@
     } 100%, 0% {
           transform: scale(1.0);
       }
+}
+@media (max-width: 768px) {
+    .ProductDisplay{
+        width: 100%;
+        animation: none;
+    }
+    .Expand{
+        animation: none;
+    }
+
+    .ProductDisplay .swiper{
+        padding: 0 0.5rem 2rem 0.5rem;
+
+    }
+    .Expand .swiper{
+        margin: 0;
+
+    }
+    .ProductDisplay .ProductCard img{
+        height: 190px;
+    }
+    .ProductDisplay #options{
+        text-align: center;
+       margin: 0.5rem 0 0.5rem 1rem;
+    }
+    .Loader{
+
+        width: 100%;
+        height: 70vh;
+
+    }
 }

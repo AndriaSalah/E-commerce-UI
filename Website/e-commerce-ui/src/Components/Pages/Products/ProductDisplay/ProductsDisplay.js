@@ -10,34 +10,72 @@ import {BsChevronDown, BsSliders} from "react-icons/bs";
 
 const ProductsDisplay = ({Shown, ShowFiltersBar, Products}) => {
     return (
-        Products.length > 0 ?
+
             <div className={"ProductDisplay " + (!Shown ? "Expand" : "")}>
                 <div id={"options"}>
                     <button onClick={ShowFiltersBar}>Filters <BsSliders/></button>
                     <button>Sort By <BsChevronDown/></button>
                 </div>
+                {Products.length > 0 ?
                 <div id={"View"}>
                     <Swiper
-                        breakpoints={
-                        {
-                            340:{
-                                slidesPerView:{slidesPerView:2}
+
+                        breakpoints={{
+                            240: {
+                                slidesPerView: 1,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
+                            },
+                            300: {
+                                slidesPerView: 1,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
+                            },
+                            360: {
+                                slidesPerView: 2,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:10,
+
+                            },
+                            426: {
+                                slidesPerView: 2,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
+                            },
+                            580: {
+                                slidesPerView: 3,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
+                            },
+                            768:{
+                                slidesPerView: 3,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
+                            },
+                            1024:{
+                                slidesPerView: 4,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:20
+                            },
+                            1200:{
+                                slidesPerView: 4,
+                                grid:{rows: 2, fill: "row"},
+                                spaceBetween:40
                             }
-                        }
-                        }
+
+                        }}
+
                         modules={[Grid, Pagination, Navigation]}
-                        spaceBetween={20}
-                        slidesPerView={Shown ? 4 : 5}
                         navigation={true}
                         pagination={{clickable: true, type: "bullets", dynamicBullets: true, dynamicMainBullets: 1}}
-                        grid={{rows: 2, fill: "row"}}
+                        slidespercolumn={2}
                         className={'men'}
 
                     >
                         {
                             Products.map(item => (
 
-                                [<SwiperSlide key={Math.random()}>
+                                [<SwiperSlide  key={Math.random()}>
                                     <Link to={'/ProductView'} state={{...item}}>
                                         <ProductCards
                                             ImgSrc={item.Thumbnail}
@@ -48,21 +86,23 @@ const ProductsDisplay = ({Shown, ShowFiltersBar, Products}) => {
                                             ActualPrice={item.ActualPrice}
                                         />
                                     </Link>
+                                    <div className="swiper-lazy-preloader"></div>
                                 </SwiperSlide>]
                             ))}
                     </Swiper>
-                </div>
-            </div> :
-            <div className={"Loader"}>
-                <div className="sk-chase">
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                    <div className="sk-chase-dot"></div>
-                </div>
+                </div>:
+                    <div className={"Loader"}>
+                        <div className="sk-chase">
+                            <div className="sk-chase-dot"></div>
+                            <div className="sk-chase-dot"></div>
+                            <div className="sk-chase-dot"></div>
+                            <div className="sk-chase-dot"></div>
+                            <div className="sk-chase-dot"></div>
+                            <div className="sk-chase-dot"></div>
+                        </div>
+                    </div>}
             </div>
+
     )
 }
 export default ProductsDisplay

@@ -13,12 +13,10 @@
     animation: unHide 0.75s forwards ;
     background-color: var(--accentColor)
 }
+
 @keyframes unHide {
     0%{
-        left: -30rem;
-
-    }
-    50%{
+        left: -100%;
 
     }
     100%{
@@ -35,11 +33,8 @@
         left: 0;
 
     }
-    50%{
-
-    }
     100%{
-        left: -30rem;
+        left: -100%;
 
     }
 }
@@ -47,3 +42,31 @@
     margin: 1rem;
 }
 
+@media (max-width: 768px) {
+    .ProductFilters{
+        opacity: 0;
+        position: absolute;
+        z-index: 100;
+        height: 60vh;
+        padding-bottom: 1rem;
+        left: -100%;
+        top:10%;
+        margin: 0;
+        width: 80%;
+        transition-duration: 0.25s;
+        animation: none;
+    }
+    .Hide{
+        animation: none;
+        left: -100%;
+        opacity: 0;
+
+    }
+    .unHide{
+        left: 0;
+        opacity: 1;
+
+    }
+
+
+}

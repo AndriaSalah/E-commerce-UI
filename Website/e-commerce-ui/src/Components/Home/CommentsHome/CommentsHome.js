@@ -1,53 +1,9 @@
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Navigation} from "swiper/modules";
-import profileImg from '../../../Assets/profile.png'
 import 'swiper/css/navigation';
 import './CommentsHome.css'
-import {renderStars} from "../../ProductsData";
+import {commentData, renderStars} from "../../ProductsData";
 const CommentsHome = () => {
-    const commentData = [
-        {
-            profileImg:profileImg,
-            stars: 3,
-            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
-            Porttitor maecenas tincidunt ipsum semper malesuada.
-            In sapien feugiat laoreet convallis eu sed. 
-            Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
-        },
-        {
-            profileImg:profileImg,
-            stars: 4,
-            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
-            Porttitor maecenas tincidunt ipsum semper malesuada.
-            In sapien feugiat laoreet convallis eu sed. 
-            Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
-        },
-        {
-            profileImg:profileImg,
-            stars: 3,
-            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
-            Porttitor maecenas tincidunt ipsum semper malesuada.
-            In sapien feugiat laoreet convallis eu sed. 
-            Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
-        },
-        {
-            profileImg:profileImg,
-            stars: 4,
-            text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Dui vel morbi cursus sed sodales molestie proin dictum gravida.
-            Porttitor maecenas tincidunt ipsum semper malesuada.
-            In sapien feugiat laoreet convallis eu sed. 
-            Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
-        },
-
-    ]
 
     return (
         <div className={'Comments'}>
@@ -89,6 +45,7 @@ const CommentsHome = () => {
                                 </div>
                                 <p id={"text"}>{comment.text}</p>
                             </div>
+                            <div className="swiper-lazy-preloader"></div>
                         </SwiperSlide>
                         ]))}
             </Swiper>
