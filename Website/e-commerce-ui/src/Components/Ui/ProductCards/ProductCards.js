@@ -1,6 +1,5 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
 import './ProductCards.css'
+import {AiFillStar} from "react-icons/ai";
 
 const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPrice}) => {
 
@@ -11,9 +10,8 @@ const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPri
                 <h3 id={"itemName"}>{ItemName}</h3>
                 <div id={"Section1"}>
                     <h4>{BrandName}</h4>
-                    <p>{score}
-                        <FontAwesomeIcon id={"icon"} icon={faStar}/>
-                    </p>
+                    <p>{score}</p>
+                    <AiFillStar id={"icon"}/>
                 </div>
                 <div id={'Section2'}>
                     <h3 id={"offer"} className={"priceData"}>{`Rs. ${OfferPrice}`}</h3>

@@ -1,7 +1,6 @@
 import './ProductDetails.css'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faHeart} from "@fortawesome/free-solid-svg-icons";
 import {renderStars} from "../../../ProductsData";
+import {BsFillSuitHeartFill} from "react-icons/bs";
 const Sizes=["XS","S","M","L","XL"]
 
 
@@ -44,7 +43,7 @@ const ProductDetails =({Data}) =>{
             </div>
             <div className={"buttons"}>
                 <button>Add to cart</button>
-                <FontAwesomeIcon icon={faHeart} id={"fav"}/>
+                <BsFillSuitHeartFill id={"fav"}/>
             </div>
 
 

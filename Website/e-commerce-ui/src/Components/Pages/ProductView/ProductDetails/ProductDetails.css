@@ -1,6 +1,6 @@
 .ProductDetails{
     width: 50%;
-    margin-left: 5rem;
+    margin-left: 3rem;
     color: var(--textColor);
 }
 .ProductDetails #Rating{
@@ -119,11 +119,11 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1048px) {
     .ProductDetails{
         width: 100%;
         margin-left: 0;
-        padding: 1rem;
+        padding: 4rem;
         box-sizing: border-box;
     }
     .ProductDetails h1{
@@ -198,5 +198,10 @@
 
     .ProductDetails .buttons #fav:hover{
         color: darkred;
+    }
+}
+@media (max-width: 768px) {
+    .ProductDetails{
+        padding: 1rem;
     }
 }
