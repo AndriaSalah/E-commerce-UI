@@ -17,8 +17,8 @@
 
 .Ratings .ReviewImages{
     display: flex;
-    width: 40%;
-    justify-content: space-between;
+    width: 45%;
+    justify-content: space-around;
 }
 
 .Ratings .ReviewImages img{
@@ -26,4 +26,17 @@
     width: 8rem;
     object-fit: cover;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .Ratings .ReviewImages img{
+        aspect-ratio: 1/1;
+        width: 5rem;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .Ratings .ReviewImages{
+        width: 100%;
+        justify-content: space-around;
+    }
 }
