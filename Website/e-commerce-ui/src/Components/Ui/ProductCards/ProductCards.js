@@ -1,7 +1,7 @@
 import './ProductCards.css'
 import {AiFillStar} from "react-icons/ai";
 
-const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPrice}) => {
+const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPrice, discount}) => {
 
     return (
         <div className={'ProductCard'}>
@@ -14,9 +14,16 @@ const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPri
                     <AiFillStar id={"icon"}/>
                 </div>
                 <div id={'Section2'}>
-                    <h3 id={"offer"} className={"priceData"}>{`Rs. ${OfferPrice}`}</h3>
-                    <h4 id={"actual"} className={"priceData"}>{`Rs. ${ActualPrice}`}</h4>
-                    <p id={"discount"} className={"priceData"}>{`(30% off)`}</p>
+
+                    {
+                        discount ?
+                        [
+                            <h3 id={"offer"} className={"priceData"}>{`Rs. ${OfferPrice}`}</h3>,
+                            <h4 id={"actual"} className={"priceData"}>{`Rs. ${ActualPrice}`}</h4>,
+                            <p id={"discount"} className={"priceData"}>{`(${discount}% off)`}</p>
+                        ]:
+                            <h3 id={"offer"} className={"priceData"}>{`Rs. ${ActualPrice}`}</h3>
+                    }
                 </div>
             </div>
         </div>

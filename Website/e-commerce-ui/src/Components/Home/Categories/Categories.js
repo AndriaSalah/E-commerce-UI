@@ -1,5 +1,6 @@
 import './Categroies.css'
 import {categoryData} from "../../ProductsData";
+import {NavLink} from "react-router-dom";
 
 const Categories = () => {
 
@@ -9,10 +10,10 @@ const Categories = () => {
             <div className="Categories">
                 {categoryData.map((category) => (
                     <div key={Math.random()} className={category.className}>
-                        <a href={category.page}>
+                        <NavLink to={"/Shop"} state={category.categoryTitle}>
                             <img src={category.imgSrc} alt={"img1"}  loading={"lazy"}/>
                             <p>{category.categoryTitle}</p>
-                        </a>
+                        </NavLink>
                     </div>
                 ))}
             </div>

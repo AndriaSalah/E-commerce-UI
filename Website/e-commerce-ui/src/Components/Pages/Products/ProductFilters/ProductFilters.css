@@ -50,7 +50,7 @@
         height: 60vh;
         padding-bottom: 1rem;
         left: -100%;
-        top:10%;
+        top:9.5%;
         margin: 0;
         width: 80%;
         transition-duration: 0.25s;
@@ -63,7 +63,7 @@
 
     }
     .unHide{
-        left: 3%;
+        left: 2%;
         opacity: 1;
 
     }

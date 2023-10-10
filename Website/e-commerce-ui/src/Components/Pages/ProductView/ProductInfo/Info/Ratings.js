@@ -1,7 +1,6 @@
 import './info.css'
 import {renderStars} from "../../../../ProductsData";
 const Ratings = ({className,Comments ,Rating})=>{
-    console.log(Comments)
     return(
         <div className={"Ratings " + className} >
             <h4>Ratings</h4>

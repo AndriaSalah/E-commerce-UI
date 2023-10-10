@@ -20,8 +20,10 @@ nav{
     /*height: 3.5rem;*/
     background-color: var(--accentColor);
 }
-
-nav #logo{
+nav #logo h1{
+    display: none;
+}
+nav #logo-img{
     position: relative;
     aspect-ratio: 1;
     height: 2.8rem;
@@ -62,10 +64,17 @@ nav #logo{
     }
 }
 @media (max-width: 768px) {
+    nav #logo h1{
+        margin-left: 1rem;
+        display: block;
+        color: var(--textColor);
+    }
     nav #logo{
+        display: flex;
+        align-items: center;
         position: absolute;
-        left: 5%;
-        bottom: 0.5rem;
+        left: 3%;
+        top: 0.5rem;
     }
     .burger{display: flex ;   flex-direction: column;}
     .menu{

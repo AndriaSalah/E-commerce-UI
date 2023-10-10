@@ -7,14 +7,17 @@ import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
     const [MenuShown, setMenuShow] = useState(false)
-    const burgerRef = useRef(null)
+    const MenuRef = useRef(null)
+    const NavRef = useRef(null)
     const ShowMenu= ()=>{
         MenuShown ? setMenuShow(false): setMenuShow(true)
     }
     useEffect(() => {
         function handleClickOutside(event) {
-            if (burgerRef.current && !burgerRef.current.contains(event.target)) {
-                setMenuShow(false);
+            if (MenuShown) {
+                if (MenuRef.current && !MenuRef.current.contains(event.target) && NavRef.current && !NavRef.current.contains(event.target)) {
+                    setMenuShow(false);
+                }
             }
         }
 
@@ -23,16 +26,16 @@ const Navbar = () => {
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
-    }, []);
+    }, [MenuShown]);
 
     return (
-        <nav>
-            <NavLink to={"/"} ><img id={"logo"} src={logo}  alt={"Logo"}/></NavLink>
-            <div className={"menu"} style={ MenuShown? {display:"flex" , opacity:1,visibility:"visible" , top:"100%"}:{}}>
+        <nav ref={NavRef}>
+            <NavLink id={"logo"} to={"/"} ><img id={"logo-img"} src={logo}  alt={"Logo"}/><h1>Globex</h1></NavLink>
+            <div className={"menu"} style={ MenuShown? {display:"flex" , opacity:1,visibility:"visible" , top:"100%"}:{}} ref={MenuRef}>
                 <NavLinks></NavLinks>
                 <EndSection></EndSection>
             </div>
-            <div onClick={ShowMenu} className={"burger"} ref={burgerRef}>
+            <div onClick={ShowMenu} className={"burger"}>
                 <span></span><span></span><span></span>
             </div>
         </nav>

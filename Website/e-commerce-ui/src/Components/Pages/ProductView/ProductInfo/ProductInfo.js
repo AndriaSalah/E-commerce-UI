@@ -10,7 +10,6 @@ const ProductInfo = ({Data}) => {
         setActive(page)
     }
 
-    console.log(Data.Reviews)
     return (
         <div className={"DetailsSection"}>
             <div className={"Navigation"}>

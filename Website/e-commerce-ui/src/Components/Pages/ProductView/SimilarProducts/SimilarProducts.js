@@ -67,7 +67,7 @@ const SimilarProducts = ({setSelectedImg})=>{
                                 score={item.Rating}
                                 OfferPrice={item.OfferPrice}
                                 ActualPrice={item.ActualPrice}
-                                SalePercentage={item.Discount}
+                                discount={item.Discount}
                             />
                             </Link>
                             <div className="swiper-lazy-preloader"></div>
