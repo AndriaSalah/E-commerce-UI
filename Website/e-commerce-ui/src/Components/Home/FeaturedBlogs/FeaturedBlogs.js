@@ -8,6 +8,7 @@ import {ThemeContext} from "../../../App";
 import {useContext} from "react";
 import {BlogsData} from "../../ProductsData";
 import {BsArrowRight} from "react-icons/bs";
+import {NavLink} from "react-router-dom";
 
 const FeaturedBlogs = ()=>{
     const {Theme}=useContext(ThemeContext)
@@ -57,7 +58,7 @@ const FeaturedBlogs = ()=>{
                                     <span/>
                                     <div id={"footer"}>
                                         <h3>By Souha . h</h3>
-                                        <a href='../../Pages/Products/Products.js'><BsArrowRight/></a>
+                                        <NavLink  to={'/'} onClick={(e)=> e.preventDefault()}><BsArrowRight/></NavLink>
                                     </div>
                                 </div>
                                 <img id={"CoverImg"} src={Blog.cover} alt={"offer"} loading={"lazy"}/>

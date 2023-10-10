@@ -1,10 +1,10 @@
 import Searchbar from "../../Ui/SearchBar/Searchbar";
 import AccountSection from "./AccountSection/AccountSection";
 import './EndSection.css'
-const EndSection = ()=> {
+const EndSection = ({ref})=> {
 
     return(
-    <div className={"EndSection"}>
+    <div className={"EndSection"} >
         <Searchbar></Searchbar>
         <AccountSection></AccountSection>
     </div>

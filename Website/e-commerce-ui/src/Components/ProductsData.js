@@ -62,12 +62,12 @@ export const ProductsData = [
         SellerName:"Seller's Name",
         Rating: 4,
         ReviewCount:36,
-        OfferPrice: 700,
+        OfferPrice: null,
         ActualPrice: 1000,
         AvailableSizes:["S","L","XL"],
         colors:['LightSkyBlue','Crimson','Black'],
         Category:"Men",
-        Discount:30,
+        Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
         Care:"Machine wash"
@@ -99,10 +99,10 @@ export const ProductsData = [
         colors:['LightSkyBlue','Crimson','Black'],
         Rating: 4,
         ReviewCount:36,
-        OfferPrice: 700,
+        OfferPrice: null,
         ActualPrice: 1000,
         Category:"Men",
-        Discount:30,
+        Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
         Care:"Machine wash"
@@ -134,10 +134,10 @@ export const ProductsData = [
         colors:['LightSkyBlue','Crimson','Black'],
         Rating: 4,
         ReviewCount:36,
-        OfferPrice: 700,
+        OfferPrice: null,
         ActualPrice: 1000,
         Category:"Women",
-        Discount:30,
+        Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
         Care:"Machine wash"
@@ -239,10 +239,10 @@ export const ProductsData = [
         colors:['LightSkyBlue','Crimson','Black'],
         Rating: 4,
         ReviewCount:36,
-        OfferPrice: 700,
+        OfferPrice: null,
         ActualPrice: 1000,
         Category:"Women",
-        Discount:30,
+        Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
         Care:"Machine wash"
@@ -724,37 +724,31 @@ export const offersData = [
 export const categoryData = [
     {
         className: "Category1",
-        page: "../Pages/Products.js",
         imgSrc: Category1,
         categoryTitle:"Summer Clothes"
     },
     {
         className: "Category2",
-        page: "../Pages/Products.js",
         imgSrc: Category2,
         categoryTitle:"Coats"
     },
     {
         className: "Category3",
-        page: "../Pages/Products.js",
         imgSrc: Category3,
         categoryTitle:"Sweaters"
     },
     {
         className: "Category4",
-        page: "../Pages/Products.js",
         imgSrc: Category4,
         categoryTitle:"Jackets"
     },
     {
         className: "Category5",
-        page: "../Pages/Products.js",
         imgSrc: Category5,
         categoryTitle:"Pants"
     },
     {
         className: "Category6",
-        page: "../Pages/Products.js",
         imgSrc: Category6,
         categoryTitle:"Hoodies"
     },

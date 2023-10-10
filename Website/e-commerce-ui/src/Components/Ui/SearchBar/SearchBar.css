@@ -5,12 +5,12 @@
     margin: auto 2.5rem ;
     background: #F0F0F0;
     border-radius: 5px;
-    width: 50%;
+    width: 40%;
     align-items: center;
 }
 
 .SearchBar #InputField{
-    width: 90%;
+    width: 85%;
     height: 2.1rem;
     background: transparent;
     outline: transparent;
@@ -30,6 +30,7 @@
 }
 @media (max-width: 768px) {
     .SearchBar{
+        width: 80%;
         margin: 0;
     }
 }
