@@ -4,6 +4,9 @@
     width: 100%;
     box-sizing: border-box;
 }
+#productLink{
+    cursor: pointer;
+}
 @media (max-width: 1048px) {
     .ProductView{
         flex-direction: column;
