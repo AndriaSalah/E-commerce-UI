@@ -30,6 +30,7 @@ const ProductInfo = ({Data}) => {
                     className={Active === "Ratings" ? "activePage" : ""}
                     Comments={Data.Reviews}
                     Rating={Data.Rating}
+                    id={Data.id}
                 />
             </div>
         </div>

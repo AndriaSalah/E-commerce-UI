@@ -52,7 +52,8 @@
 }
 .ProductCard #Section1 #icon{
     color: var(--textColor);
-    /*color: #848484;*/
+    width: 1.5rem;
+
 }
 
 .ProductCard #Section2{
@@ -84,6 +85,7 @@
 .ProductCard #Section2 #offer{
     color: var(--textColor);
 }
+
 @media (max-width: 768px) {
    /*.ProductCard{*/
    /*    width: 13.5rem;*/
@@ -92,7 +94,7 @@
         width: 100%;
     }
     .ProductCard #itemName{
-        font-size: 15px;
+        font-size: 3.5vw;
         width: 95%;
     }
     .ProductCard #Section1{

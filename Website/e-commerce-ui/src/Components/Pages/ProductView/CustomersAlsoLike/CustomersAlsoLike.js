@@ -59,7 +59,7 @@ const CustomersAlsoLike = () => {
             >
                 {
                     Recommendations.map(item => (
-                        [<SwiperSlide key={Math.random()}>
+                        [<SwiperSlide key={item.id}>
                             <Link to={'/ProductView'} state={{...item}}>
                                 <ProductCards
                                     ImgSrc={item.Thumbnail}
@@ -69,6 +69,7 @@ const CustomersAlsoLike = () => {
                                     OfferPrice={item.OfferPrice}
                                     ActualPrice={item.ActualPrice}
                                     discount={item.Discount}
+
                                 />
                             </Link>
                             <div className="swiper-lazy-preloader"></div>

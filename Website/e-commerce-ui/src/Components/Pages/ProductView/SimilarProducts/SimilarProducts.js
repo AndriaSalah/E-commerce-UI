@@ -58,7 +58,7 @@ const SimilarProducts = ({setSelectedImg})=>{
             >
                 {
                     similarProducts.map(item=>(
-                        [<SwiperSlide key={Math.random()}>
+                        [<SwiperSlide key={item.id}>
                             <Link to={'/ProductView'} state={{...item}}>
                             <ProductCards
                                 ImgSrc={item.Thumbnail}

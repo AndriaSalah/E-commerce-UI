@@ -9,10 +9,17 @@ import CommentsHome from "./CommentsHome/CommentsHome";
 import FeaturedBlogs from "./FeaturedBlogs/FeaturedBlogs";
 import Benefits from "./Benifits/Benefits";
 import AboutUs from "./AboutUs/AboutUs";
+import {motion} from "framer-motion";
+
 
 const Home = () =>{
     return (
-        <div className={"Home"}>
+        <motion.div
+            initial={{x:"-100%" , opacity:0}}
+            animate={{x:0 , opacity:1 }}
+            exit={{x:"100%" , opacity:0}}
+            transition={{duration:0.5 ,ease:"easeInOut"}}
+            className={"Home"}>
             <OffersCarousel/>
             <TrendingNow/>
             <DealsOfTheDay/>
@@ -23,7 +30,8 @@ const Home = () =>{
             <FeaturedBlogs/>
             <Benefits/>
             <AboutUs/>
-        </div>
+
+        </motion.div>
     );
 }
 

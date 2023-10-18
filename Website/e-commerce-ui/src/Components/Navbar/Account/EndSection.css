@@ -1,11 +1,13 @@
 .EndSection{
     display: flex;
     width: 80%;
+    justify-content: space-around;
     background-color: var(--accentColor);
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .EndSection{
         width: 60%;
+        justify-content: space-between;
     }
 }
 @media (max-width: 768px) {

@@ -11,7 +11,7 @@ import {BsChevronDown, BsSliders} from "react-icons/bs";
 const ProductsDisplay = ({Shown, ShowFiltersBar, Products}) => {
     return (
 
-            <div className={"ProductDisplay " + (!Shown ? "Expand" : "")}>
+            <div className={"ProductDisplay " + (!Shown ? "Expand" : "unExpand")}>
                 <div id={"options"}>
                     <button onClick={ShowFiltersBar}>Filters <BsSliders/></button>
                     <button>Sort By <BsChevronDown/></button>
@@ -75,7 +75,7 @@ const ProductsDisplay = ({Shown, ShowFiltersBar, Products}) => {
                         {
                             Products.map(item => (
 
-                                [<SwiperSlide  key={Math.random()}>
+                                [<SwiperSlide>
                                     <Link to={'/ProductView'} state={{...item}}>
                                         <ProductCards
                                             ImgSrc={item.Thumbnail}

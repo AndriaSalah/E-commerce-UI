@@ -1,7 +1,7 @@
 .Products{
     display: flex;
     justify-content: space-around;
-    
     position: relative;
+    height: 91vh;
 }
 

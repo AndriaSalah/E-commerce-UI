@@ -37,7 +37,7 @@ const TrendingNow = ()=>{
             >
                 {
                     DealsOfTheDayData.map(item=>(
-                        [<SwiperSlide key={Math.random()}>
+                        [<SwiperSlide key={item.id}>
                             <div className={'DealOfTheDay'}>
                                 <img src={item.ImgSrc} alt={"item"} loading={"lazy"}/>
                                 <img src={item.BrandImgSrc} alt={"item"} loading={"lazy"}/>

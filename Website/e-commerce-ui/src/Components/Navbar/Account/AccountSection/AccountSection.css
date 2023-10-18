@@ -50,6 +50,12 @@
 .AccountSection .profile:hover p{
     color: grey;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .AccountSection {
+        width: fit-content;
+    }
+}
 @media (max-width: 768px)  {
     .AccountSection{
         width: 80%;

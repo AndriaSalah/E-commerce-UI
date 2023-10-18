@@ -9,7 +9,7 @@ const Categories = () => {
             <h2>Shop by category</h2>
             <div className="Categories">
                 {categoryData.map((category) => (
-                    <div key={Math.random()} className={category.className}>
+                    <div key={category.id} className={category.className}>
                         <NavLink to={"/Shop"} state={category.categoryTitle}>
                             <img src={category.imgSrc} alt={"img1"}  loading={"lazy"}/>
                             <p>{category.categoryTitle}</p>

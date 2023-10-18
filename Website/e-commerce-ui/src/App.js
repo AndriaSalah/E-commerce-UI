@@ -1,12 +1,11 @@
 import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import 'swiper/css';
-import {BrowserRouter as Router, Routes, Route, useLocation} from "react-router-dom";
-import Home from "./Components/Home/Home";
-import Products from "./Components/Pages/Products/Products";
+import {BrowserRouter as Router, useLocation} from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import ProductView from "./Components/Pages/ProductView/ProductView";
-import {createContext, useEffect, useState} from "react";
+import React, {createContext, useEffect, useState} from "react";
+import AnimatedPages from "./Components/AnimatedPages";
+
 
 export const ThemeContext = createContext({})
 
@@ -14,11 +13,14 @@ export const ThemeContext = createContext({})
 function ScrollToTop() {
     const {pathname} = useLocation();
     useEffect(() => {
-        window.scrollTo(0, 0);
+        setTimeout(()=>{window.scrollTo(0, 0)},500)
+
     }, [pathname]);
 
     return null;
 }
+
+
 
 const whiteTheme = {
     '--backGroundColor': '#FFFFFF',
@@ -41,22 +43,18 @@ function App() {
     function SwitchColor() {
         Theme === "dark" ? setTheme("white") : setTheme("dark");
     }
-
+    useEffect(() => {
+        if (window.history.scrollRestoration) {
+            window.history.scrollRestoration = "manual";
+        }
+    }, []);
     return (
         <div className={"MainContainer"} style={Theme === "white" ? {...whiteTheme} : {}}>
             <Router>
                 <ScrollToTop/>
                 <ThemeContext.Provider value={{SwitchColor, Theme}}>
                     <Navbar/>
-                    <Routes>
-                        <Route path={"/"} element={<Home/>}/>
-                        <Route path={"/Shop"} element={<Products/>}/>
-                        <Route path={"/Kids"} element={<Products/>}/>
-                        <Route path={"/Men"} element={<Products/>}/>
-                        <Route path={"/Women"} element={<Products/>}/>
-                        <Route path={"/ContactUs"} element={<Products/>}/>
-                        <Route path={"/ProductView"} element={<ProductView/>}/>
-                    </Routes>
+                        <AnimatedPages/>
                     <Footer/>
                 </ThemeContext.Provider>
             </Router>

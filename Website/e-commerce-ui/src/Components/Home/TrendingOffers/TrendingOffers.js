@@ -35,7 +35,7 @@ const TrendingOffers = ()=>{
             >
                 {
                     TrendingOffersData.map(item=>(
-                        [<SwiperSlide key={Math.random()}>
+                        [<SwiperSlide key={item.id}>
                             <div className={'TrendingOffer'}>
                                 <div id={"OfferDetails"}>
                                     <img src={item.BrandImgSrc} alt={"brand"}  loading={"lazy"}/>
