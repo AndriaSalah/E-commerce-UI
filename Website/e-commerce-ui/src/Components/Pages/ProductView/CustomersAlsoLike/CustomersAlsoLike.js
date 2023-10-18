@@ -4,10 +4,14 @@ import {getRecommendedProducts} from "../../../ProductsData";
 import './CustomersAlsoLike.css'
 import 'swiper/css/pagination';
 import {Pagination} from "swiper/modules";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const CustomersAlsoLike = () => {
     const Recommendations = getRecommendedProducts()
+    const Navigate = useNavigate();
+    const handleLinkClick = (item) => {
+        Navigate('/ProductView', {state:{...item}} );
+    };
     return (
         <div className={'CustomersAlsoLike'}>
             <h2>Customers also like</h2>
@@ -55,12 +59,12 @@ const CustomersAlsoLike = () => {
                 pagination={{clickable: true, type: "bullets"}}
                 spaceBetween={-50}
                 slidesPerView={4}
-                grabCursor={true}
+
             >
                 {
                     Recommendations.map(item => (
                         [<SwiperSlide key={item.id}>
-                            <Link to={'/ProductView'} state={{...item}}>
+                            <div id={"productLink"} onClick={() => handleLinkClick(item)}>
                                 <ProductCards
                                     ImgSrc={item.Thumbnail}
                                     ItemName={item.ItemName}
@@ -71,7 +75,7 @@ const CustomersAlsoLike = () => {
                                     discount={item.Discount}
 
                                 />
-                            </Link>
+                            </div>
                             <div className="swiper-lazy-preloader"></div>
                         </SwiperSlide>
                         ]))}

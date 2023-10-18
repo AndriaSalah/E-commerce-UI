@@ -10,9 +10,6 @@ import {motion} from "framer-motion";
 
 const ProductView = () => {
 
-
-
-
     function ScrollToTop() {
         const {state} = useLocation()
         useEffect(() => {
@@ -22,16 +19,14 @@ const ProductView = () => {
         return null;
     }
     const {state} = useLocation()
-    const key = state ? state.id : null; // Use a unique identifier from state
+    const key = state ? state.id : null;
     return (
         <motion.div
             initial={{x:"-100%" , opacity:0}}
             animate={{x:0 , opacity:1 }}
             exit={{x:"100%" , opacity:0}}
             transition={{duration:0.5 ,ease:"easeInOut"}}
-            key={key}
-        >
-
+            key={key}  >
             <ScrollToTop/>
             <div className={"ProductView"}>
                 <ProductImages images={state.Images}/>

@@ -4,9 +4,13 @@ import {getSimilarProducts} from "../../../ProductsData";
 import './SimilarProducts.css'
 import 'swiper/css/pagination';
 import {Pagination} from "swiper/modules";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 const SimilarProducts = ({setSelectedImg})=>{
     const similarProducts = getSimilarProducts()
+    const Navigate = useNavigate();
+    const handleLinkClick = (item) => {
+        Navigate('/ProductView', {state:{...item}} );
+    };
     return(
         <div className={'SimilarProducts'}>
             <h2>Similar Product</h2>
@@ -54,12 +58,12 @@ const SimilarProducts = ({setSelectedImg})=>{
                 pagination={{clickable: true, type: "bullets"}}
                 spaceBetween={-50}
                 slidesPerView={4}
-                grabCursor={true}
+
             >
                 {
                     similarProducts.map(item=>(
                         [<SwiperSlide key={item.id}>
-                            <Link to={'/ProductView'} state={{...item}}>
+                            <div id={"productLink"} onClick={() => handleLinkClick(item)}>
                             <ProductCards
                                 ImgSrc={item.Thumbnail}
                                 ItemName={item.ItemName}
@@ -69,7 +73,7 @@ const SimilarProducts = ({setSelectedImg})=>{
                                 ActualPrice={item.ActualPrice}
                                 discount={item.Discount}
                             />
-                            </Link>
+                            </div>
                             <div className="swiper-lazy-preloader"></div>
                         </SwiperSlide>
                         ]))}
