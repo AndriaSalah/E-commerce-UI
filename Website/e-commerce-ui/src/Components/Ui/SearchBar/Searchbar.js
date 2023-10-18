@@ -4,7 +4,7 @@ const Searchbar = () =>{
     return(
         <div className={"SearchBar"}>
             <input id={"InputField"} type={"text"} placeholder={"Search"}/>
-            <HiMagnifyingGlass/>
+            <HiMagnifyingGlass id={"icon"}/>
         </div>
     )
 }

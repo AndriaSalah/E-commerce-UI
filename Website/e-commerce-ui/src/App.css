@@ -44,9 +44,10 @@ a{
 }
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
 }
 *::-webkit-scrollbar-track {
+  margin: 2rem 0;
   background: transparent;
 }
 
@@ -59,7 +60,10 @@ a{
 
 .MainContainer {
   background-color: var(--backGroundColor);
+  overflow-x: clip;
   /*transition-duration: 0.25s;*/
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+

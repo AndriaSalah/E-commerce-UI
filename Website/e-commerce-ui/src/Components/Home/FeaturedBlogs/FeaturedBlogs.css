@@ -37,9 +37,9 @@
     display: flex;
     flex-direction: row-reverse;
     width:100%;
-    box-shadow: 0 0 10px 1px rgba(87, 85, 85, 0.75);
-    -webkit-box-shadow: 0 0 10px 1px rgba(87, 85, 85, 0.75);
-    -moz-box-shadow: 0 0 10px 1px rgba(87, 85, 85, 0.75);
+    box-shadow: 0 0 10px 1px var(--shadowColor);
+    -webkit-box-shadow: 0 0 10px 1px var(--shadowColor);
+    -moz-box-shadow: 0 0 10px 1px var(--shadowColor);
     border-radius: 10px;
     text-align: left;
 }

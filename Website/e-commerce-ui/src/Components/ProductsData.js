@@ -70,7 +70,8 @@ export const ProductsData = [
         Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:1
     },
     {
         Thumbnail: thumb2,
@@ -105,7 +106,8 @@ export const ProductsData = [
         Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:2
     },
     {
         Thumbnail: thumb3,
@@ -140,7 +142,8 @@ export const ProductsData = [
         Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:3
     },
     {
         Thumbnail: thumb4,
@@ -175,7 +178,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:4
     },
     {
         Thumbnail: thumb5,
@@ -210,7 +214,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:5
     },
     {
         Thumbnail: thumb6,
@@ -245,7 +250,8 @@ export const ProductsData = [
         Discount:null,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:6
     },
     {
         Thumbnail: thumb7,
@@ -280,7 +286,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:7
     },
     {
         Thumbnail: thumb8,
@@ -315,7 +322,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:8
     },
     {
         Thumbnail: thumb9,
@@ -350,7 +358,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:9
     },
     {
         Thumbnail: thumb10,
@@ -385,7 +394,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:10
     },
     {
         Thumbnail: thumb11,
@@ -420,7 +430,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:11
     },
     {
         Thumbnail: thumb12,
@@ -455,7 +466,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:12
     },
     {
         Thumbnail: thumb13,
@@ -490,7 +502,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:13
     },
     {
         Thumbnail: thumb14,
@@ -525,7 +538,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:14
     },
     {
         Thumbnail: thumb15,
@@ -560,7 +574,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:15
     },
     {
         Thumbnail: thumb16,
@@ -595,7 +610,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:16
     },
     {
         Thumbnail: thumb17,
@@ -630,7 +646,8 @@ export const ProductsData = [
         Discount:30,
         Description: "Blue washed jacket, has a spread collar, 4 pockets, button closure, long sleeves,straight hem",
         Material:"100% Cotton",
-        Care:"Machine wash"
+        Care:"Machine wash",
+        id:17
     }
 ]
 
@@ -638,27 +655,32 @@ export const TrendingOffersData = [
     {
         BrandImgSrc:brandImg,
         PunchLine:"Min 60% off",
-        ImgSrc : image1
+        ImgSrc : image1,
+        id:1
     },
     {
         BrandImgSrc:brandImg,
         PunchLine:"Min 60% off",
-        ImgSrc : image2
+        ImgSrc : image2,
+        id:2
     },
     {
         BrandImgSrc:brandImg,
         PunchLine:"Min 60% off",
-        ImgSrc : image1
+        ImgSrc : image1,
+        id:3
     },
     {
         BrandImgSrc:brandImg,
         PunchLine:"Min 60% off",
-        ImgSrc : image2
+        ImgSrc : image2,
+        id:4
     },
     {
         BrandImgSrc:brandImg,
         PunchLine:"Min 60% off",
-        ImgSrc : image1
+        ImgSrc : image1,
+        id:5
     }
 ]
 export function getTrendingOffers(){
@@ -676,25 +698,29 @@ export const DealsOfTheDayData = [
         Title:"Best of styles",
         BrandImgSrc:brandImg,
         PriceTag:"Under Rs. 799",
-        ImgSrc : image1
+        ImgSrc : image1,
+        id:1
     },
     {
         Title:"Best of styles",
         BrandImgSrc:brandImg,
         PriceTag:"Under Rs. 799",
-        ImgSrc : image2
+        ImgSrc : image2,
+        id:2
     },
     {
         Title:"Best of styles",
         BrandImgSrc:brandImg,
         PriceTag:"Under Rs. 799",
-        ImgSrc : image3
+        ImgSrc : image3,
+        id:3
     },
     {
         Title:"Best of styles",
         BrandImgSrc:brandImg,
         PriceTag:"Under Rs. 799",
-        ImgSrc : image1
+        ImgSrc : image1,
+        id:4
     }
 ]
 
@@ -702,22 +728,26 @@ export const offersData = [
     {
         OfferImg: offer1,
         details: "Big Fashion Festival 50% - 80% off",
-        detailsBg: offer2
+        detailsBg: offer2,
+        id:1
     },
     {
         OfferImg: offer1,
         details: "Big Fashion Festival 50% - 80% off",
-        detailsBg: offer2
+        detailsBg: offer2,
+        id:2
     },
     {
         OfferImg: offer1,
         details: "Big Fashion Festival 50% - 80% off",
-        detailsBg: offer2
+        detailsBg: offer2,
+        id:3
     },
     {
         OfferImg: offer1,
         details: "Big Fashion Festival 50% - 80% off",
-        detailsBg: offer2
+        detailsBg: offer2,
+        id:4
     },
 
 ]
@@ -725,32 +755,38 @@ export const categoryData = [
     {
         className: "Category1",
         imgSrc: Category1,
-        categoryTitle:"Summer Clothes"
+        categoryTitle:"Summer Clothes",
+        id:1
     },
     {
         className: "Category2",
         imgSrc: Category2,
-        categoryTitle:"Coats"
+        categoryTitle:"Coats",
+        id:2
     },
     {
         className: "Category3",
         imgSrc: Category3,
-        categoryTitle:"Sweaters"
+        categoryTitle:"Sweaters",
+        id:3
     },
     {
         className: "Category4",
         imgSrc: Category4,
-        categoryTitle:"Jackets"
+        categoryTitle:"Jackets",
+        id:4
     },
     {
         className: "Category5",
         imgSrc: Category5,
-        categoryTitle:"Pants"
+        categoryTitle:"Pants",
+        id:5
     },
     {
         className: "Category6",
         imgSrc: Category6,
-        categoryTitle:"Hoodies"
+        categoryTitle:"Hoodies",
+        id:6
     },
 ]
 export const commentData = [
@@ -762,7 +798,8 @@ export const commentData = [
             Porttitor maecenas tincidunt ipsum semper malesuada.
             In sapien feugiat laoreet convallis eu sed. 
             Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
+            Risus suspendisse mauris ullamcorper `,
+        id:1
     },
     {
         profileImg:profileImg,
@@ -772,7 +809,8 @@ export const commentData = [
             Porttitor maecenas tincidunt ipsum semper malesuada.
             In sapien feugiat laoreet convallis eu sed. 
             Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
+            Risus suspendisse mauris ullamcorper `,
+        id:2
     },
     {
         profileImg:profileImg,
@@ -782,7 +820,8 @@ export const commentData = [
             Porttitor maecenas tincidunt ipsum semper malesuada.
             In sapien feugiat laoreet convallis eu sed. 
             Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
+            Risus suspendisse mauris ullamcorper `,
+        id:3
     },
     {
         profileImg:profileImg,
@@ -792,7 +831,8 @@ export const commentData = [
             Porttitor maecenas tincidunt ipsum semper malesuada.
             In sapien feugiat laoreet convallis eu sed. 
             Sapien et montes, duis tempor euismod augue cras eu eget. 
-            Risus suspendisse mauris ullamcorper `
+            Risus suspendisse mauris ullamcorper `,
+        id:4
     },
 
 ]
@@ -800,27 +840,32 @@ export const BlogsData = [
     {
         BlogTitle:"Discover new way to decorate your home .",
         Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-        cover : cover1
+        cover : cover1,
+        id:1
     },
     {
         BlogTitle:"Discover new way to decorate your home .",
         Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-        cover : cover2
+        cover : cover2,
+        id:2
     },
     {
         BlogTitle:"Discover new way to decorate your home .",
         Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-        cover : cover1
+        cover : cover1,
+        id:3
     },
     {
         BlogTitle:"Discover new way to decorate your home .",
         Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-        cover : cover2
+        cover : cover2,
+        id:4
     },
     {
         BlogTitle:"Discover new way to decorate your home .",
         Text:"Lorem ipsum dolor sit amet,aliquaconsectetur adipiscing elit ut ...",
-        cover : cover1
+        cover : cover1,
+        id:5
     }
 ]
 

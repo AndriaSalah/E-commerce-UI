@@ -7,6 +7,7 @@ import {getTrendingOffers} from "../../ProductsData";
 import {Pagination} from "swiper/modules";
 import {Link} from "react-router-dom";
 
+
 const TrendingNow = () => {
     const trendingNow = getTrendingOffers()
     return (
@@ -60,7 +61,7 @@ const TrendingNow = () => {
             >
                 {
                     trendingNow.map(item => (
-                        [<SwiperSlide key={Math.random()}>
+                        [<SwiperSlide>
                             <Link to={'/ProductView'} state={{...item}}>
                                 <ProductCards
                                     ImgSrc={item.Thumbnail}
@@ -70,6 +71,7 @@ const TrendingNow = () => {
                                     OfferPrice={item.OfferPrice}
                                     ActualPrice={item.ActualPrice}
                                     discount={item.Discount}
+                                    key={item.id}
                                 />
                             </Link>
                             <div className="swiper-lazy-preloader"></div>

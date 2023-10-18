@@ -34,7 +34,7 @@ const CommentsHome = () => {
             >
                 {
                     commentData.map(comment => (
-                        [<SwiperSlide key={Math.random()}>
+                        [<SwiperSlide key={comment.id}>
                             <div className={'Comment'}>
                                 <img src={comment.profileImg} alt={"item"} loading={"lazy"}/>
                                 <div id={"Section1"}>

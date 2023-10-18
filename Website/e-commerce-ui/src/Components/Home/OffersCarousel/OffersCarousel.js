@@ -22,7 +22,7 @@ const OffersCarousel = () => {
                     pagination={{clickable: true, type: "bullets"}}
             >
                 {offersData.map((item) => ([
-                    <SwiperSlide key={Math.random()}>
+                    <SwiperSlide key={item.id}>
                         <div className={"Offer"}>
                             <div  id={"OfferImage"}><img src={item.OfferImg} alt={"asd"}/></div>
                             <div id={"offerDetails"}>

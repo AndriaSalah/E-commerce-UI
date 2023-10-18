@@ -6,10 +6,13 @@ import ProductInfo from "./ProductInfo/ProductInfo";
 import SimilarProducts from "./SimilarProducts/SimilarProducts";
 import CustomersAlsoLike from "./CustomersAlsoLike/CustomersAlsoLike";
 import {useEffect} from "react";
+import {motion} from "framer-motion";
 
 const ProductView = () => {
-    // let imgKey = 0
-    // const {Images} = useLocation().state
+
+
+
+
     function ScrollToTop() {
         const {state} = useLocation()
         useEffect(() => {
@@ -18,10 +21,17 @@ const ProductView = () => {
 
         return null;
     }
-
     const {state} = useLocation()
+    const key = state ? state.id : null; // Use a unique identifier from state
     return (
-        <div>
+        <motion.div
+            initial={{x:"-100%" , opacity:0}}
+            animate={{x:0 , opacity:1 }}
+            exit={{x:"100%" , opacity:0}}
+            transition={{duration:0.5 ,ease:"easeInOut"}}
+            key={key}
+        >
+
             <ScrollToTop/>
             <div className={"ProductView"}>
                 <ProductImages images={state.Images}/>
@@ -30,7 +40,7 @@ const ProductView = () => {
             <ProductInfo Data={{...state}}/>
             <SimilarProducts />
             <CustomersAlsoLike />
-        </div>
+        </motion.div>
     )
 }
 

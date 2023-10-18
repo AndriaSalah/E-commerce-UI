@@ -49,7 +49,7 @@ const FeaturedBlogs = ()=>{
             >
                 {
                     BlogsData.map(Blog=>(
-                        [<SwiperSlide key={Math.random()}>
+                        [<SwiperSlide key={Blog.id}>
                             <div className={'Blog'}>
                                 <div id={"BlogDetails"}>
                                     <h3 id={"type"}>Blog</h3>
