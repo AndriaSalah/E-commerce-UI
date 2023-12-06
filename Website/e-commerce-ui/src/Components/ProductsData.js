@@ -884,14 +884,14 @@ export function renderStars(Rating, Color="var(--textColor)"){
 //  API testing
 // export const fetchData = async () => {
 //         try {
-//             // const response = await fetch('https://my.api.mockaroo.com/test.json?key=659c2480');
-//             const response = await fetch('https://dummyjson.com/products?limit=30');
-//             if (!response.ok) {
-//                 throw new Error('Network response was not ok');
-//             }
-//             return await response.json();
-//         } catch (error) {
-//             console.error('Error fetching data:', error);
-//             throw error;
-//         }
+// //             // const response = await fetch('https://my.api.mockaroo.com/test.json?key=659c2480');
+// //             const response = await fetch('https://dummyjson.com/products?limit=30');
+// //             if (!response.ok) {
+// //                 throw new Error('Network response was not ok');
+// //             }
+// //             return await response.json();
+// //         } catch (error) {
+// //             console.error('Error fetching data:', error);
+// //             throw error;
+// //         }
 // };

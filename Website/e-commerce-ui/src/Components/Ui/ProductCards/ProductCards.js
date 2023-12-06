@@ -17,11 +17,12 @@ const ProductCards = ({ImgSrc, ItemName, BrandName, score, OfferPrice, ActualPri
 
                     {
                         discount ?
-                        [
+                        <>
                             <h3 id={"offer"} className={"priceData"}>{`Rs. ${OfferPrice}`}</h3>,
                             <h3 id={"actual"} className={"priceData"}>{`Rs. ${ActualPrice}`}</h3>,
                             <p id={"discount"} className={"priceData"}>{`(${discount}% off)`}</p>
-                        ]:
+                        </>
+                            :
                             <h3 id={"offer"} className={"priceData"}>{`Rs. ${ActualPrice}`}</h3>
                     }
                 </div>

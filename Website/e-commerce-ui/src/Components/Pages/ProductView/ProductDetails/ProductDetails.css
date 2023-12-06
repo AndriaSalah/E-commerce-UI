@@ -50,10 +50,11 @@
     cursor: pointer;
     transition-duration: 0.25s;
 }
-.ProductDetails .Sizes .Size:hover:not(.NoStock){
+.ProductDetails .Sizes .Size:hover:not(.NoStock),.ProductDetails .Sizes .active_size{
     background-color: var(--hoverColor);
     color: white;
 }
+
 .ProductDetails .Sizes .NoStock{
     position: relative;
     color: #848484  ;
@@ -114,11 +115,10 @@
     cursor: pointer;
 }
 
-.ProductDetails .buttons #fav:hover{
-    color: darkred;
+.ProductDetails .buttons #fav:hover, .ProductDetails .buttons .is_favourite {
+    color: darkred !important;
+
 }
-
-
 @media (max-width: 1048px) {
     .ProductDetails{
         width: 100%;
