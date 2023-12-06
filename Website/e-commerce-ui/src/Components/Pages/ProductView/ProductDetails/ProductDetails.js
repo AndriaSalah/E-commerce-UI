@@ -1,11 +1,15 @@
 import './ProductDetails.css'
 import {renderStars} from "../../../ProductsData";
 import {BsFillSuitHeartFill} from "react-icons/bs";
+import {useState} from "react";
 
 const Sizes = ["XS", "S", "M", "L", "XL"]
 
 
 const ProductDetails = ({Data}) => {
+    const [activeSize, setActiveSize] = useState("")
+    const [activeColor , setActiveColor] = useState("")
+    const [isFavourite , setIsFavourite] = useState(false)
     return (
         <div className={"ProductDetails"}>
             <h1>{Data.ItemName}</h1>
@@ -29,7 +33,9 @@ const ProductDetails = ({Data}) => {
             <h4>Select Size</h4>
             <div className={"Sizes"}>
                 {Sizes.map(size => (
-                    <div className={"Size" + (!Data.AvailableSizes.includes(size) ? " NoStock" : "")}>
+                    <div onClick={() => setActiveSize(size)}
+                         className={" Size " + (!Data.AvailableSizes.includes(size) ? " NoStock " : "")
+                             + (activeSize === size && "active_size ")}>
                         {size}
                         {!Data.AvailableSizes.includes(size) && <span className={"line"}></span>}
                     </div>
@@ -38,7 +44,8 @@ const ProductDetails = ({Data}) => {
             <h4>Select Color</h4>
             <div className={"Colors"}>
                 {Data.colors.map(itemColor => (
-                    <div className={"color"} style={{backgroundColor: itemColor}}></div>
+                    <div onClick={()=> {setActiveColor(itemColor)}} className={"color"}
+                         style={{backgroundColor: itemColor , transform: activeColor === itemColor ? "scale(1.5)" : "scale(1)"}}></div>
                 ))}
             </div>
             <h4>Best Offers</h4>
@@ -50,7 +57,8 @@ const ProductDetails = ({Data}) => {
             </div>
             <div className={"buttons"}>
                 <button>Add to cart</button>
-                <BsFillSuitHeartFill id={"fav"}/>
+                <BsFillSuitHeartFill onClick={()=> setIsFavourite(!isFavourite)}
+                                     id={"fav"} className={isFavourite && "is_favourite"}/>
             </div>
 
 

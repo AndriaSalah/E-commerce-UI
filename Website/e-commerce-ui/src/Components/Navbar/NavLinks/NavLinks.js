@@ -9,8 +9,7 @@ const NavLinks = () =>{
                 <NavButton  category={"Men"} src="/Men">Men</NavButton>
                 <NavButton  category={"Women"} src="/Women">Women</NavButton>
                 <NavButton  category={"Kids"} src="/Kids">Kids</NavButton>
-                <NavButton  src="/Shop">Shop</NavButton>
-                <NavButton  src="/ContactUs">Contact us</NavButton>
+                <NavButton  category={""} src="/Shop">Shop</NavButton>
             </div>
         </div>
     )

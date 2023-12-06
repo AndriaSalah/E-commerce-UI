@@ -6,8 +6,8 @@ const Section = ({title, content, setFilter, selectedTags}) => {
             <h2>{title}</h2>
             <div className={"TagsWrapper"}>
                 {
-                    content.map((item) => (
-                            <div id={"tag"}>
+                    content.map((item,index) => (
+                            <div id={"tag"} key={index}>
                                 <input type={"checkbox"}
                                        value={item}
                                        name={item}
