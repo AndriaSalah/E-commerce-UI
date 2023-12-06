@@ -38,7 +38,7 @@
 }
 .ProductFilters .Close__Button button{
     color: var(--textColor);
-   
+
 }
 .ProductFilters .Close__Button button , .ProductFilters .Tags button{
     background-color: transparent;
